@@ -37,3 +37,6 @@ https://www.lifeinvader.com/profile/legendary_motorsport
 https://www.lifeinvader.com/profile/los_santos_customs
 https://www.lifeinvader.com/profile/sprunk
 https://www.lifeinvader.com/profile/warstock_cache_n_carry
+
+Bugs:
+Loading animation is still ontop of the pages
