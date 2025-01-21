@@ -45,7 +45,7 @@ function randomTinyText() {
 
 function getAdLink(index) {
     const phraseArray = [
-        "elitas_travel.htm",
+        "../elitas_travel.htm",
         "herr_kutz.htm",
         "inkinc.htm",
         "legendary_motorsport.htm",
