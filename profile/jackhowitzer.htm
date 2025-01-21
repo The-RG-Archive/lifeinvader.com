@@ -4236,16 +4236,32 @@ replace images and texts and stuff.
 
                     </script>
 
-                    <div id="li-nav-logged-in" class="pull-right">
-                        <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                            <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
-                        </a>
-                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
-                            class="nav-user">Default User</a><a
-                            href="https://redsoupdev.github.io/lifeinvader.com/logoff.html"
-                            data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
-
-                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
+                      <div id="li-nav-logged-in" class="pull-right">
+                        <div id="loggedInDiv" class="pull-right">
+                            <a id="userIcon" href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
+                                <img src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
+                            </a>
+                            <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                                class="nav-user">Default User</a><a
+                                href="https://redsoupdev.github.io/lifeinvader.com/logoff.html"
+                                data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                        </div>
+                        <div id="loggedOffDiv" class="pull-right">
+                            <a href="https://redsoupdev.github.io/lifeinvader.com/login.html" data-rockstarid="15130174"
+                                class="nav-signout" style="color: white;" id="signOut">Log in</a>
+                        </div>
+                        <script>
+                            document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
+                            if (localStorage.getItem('currUsername') + "" !== "null") {
+        
+                                document.getElementById("loggedOffDiv").style.visibility = "hidden";
+        
+                            } else {
+                                document.getElementById("loggedInDiv").style.visibility = "hidden";
+        
+        
+                            }
+                        </script>
                     </div>
 
                 </div>
