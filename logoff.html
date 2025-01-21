@@ -4207,33 +4207,34 @@
         .ot-floating-button__front {
             background-image: url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')
         }
-
-      
     </style>
 </head>
 
 <body>
     <center>
 
-       
+
         <div id="indexBg" class="indexBg">
             <center>
 
-                <br><br><br><br>
-                <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 200px;">Error 404</h1>
-                <br><br><br>
-                <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This page doesn't exist.
+
+                <br><br>
+                <h1 id="loggingoff" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Logging off..
                 </h1>
-                   
-                <button onclick="randomPage()">Go to a random page</button>
-             
+                <p>Login to a account!</p>
+                <br>
+                <script>
+                    document.getElementById('loggingoff').innerHTML =  "Logging off '"+localStorage.getItem('currUsername') + "'...";
+                    localStorage.clear();
+                </script>
+              
 
 
 
             </center>
-        
+
         </div>
-    </div>
+        </div>
     </center>
 
 
@@ -4249,7 +4250,8 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a></h1>
+                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a>
+                    </h1>
 
                     <!-- Logged in -->
 
@@ -4260,9 +4262,7 @@
                             <img src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
                         <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
-                            class="nav-user">Default User</a><a
-                            href="https://redsoupdev.github.io/lifeinvader.com/logoff.html"
-                            data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            class="nav-user">Default User</a>
 
                         <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
                     </div>
