@@ -4228,6 +4228,7 @@
                 <label for="fname">Type a Username:</label>
                 <input type="text" id="usernameText" name="username">
                 <p id="errorText" style="color: red;"></p>
+                <p id="goodText" style="color: #004900;"></p>
 
 
 
@@ -4238,7 +4239,7 @@
                         var input = document.getElementById('usernameText').value;
                         // Get the value entered by the user
                         if (input !== "") {
-                            document.getElementById('errorText').innerHTML = "Logging in..";
+                            document.getElementById('goodText').innerHTML = "Logging in..";
                             // Store the value in localStorage
                             //localStorage.setItem('hi', document.getElementById('usernameText').value);
                             localStorage.clear();
