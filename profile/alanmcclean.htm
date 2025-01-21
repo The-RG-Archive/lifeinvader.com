@@ -4238,13 +4238,14 @@ replace images and texts and stuff.
 
                     <div id="li-nav-logged-in" class="pull-right">
                         <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                            <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32"
-                                srcset="">
+                            <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
-                        <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+
+                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
                     </div>
 
                 </div>
@@ -4268,7 +4269,8 @@ replace images and texts and stuff.
                                     <span>Alan McClean</span>
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="alanmcclean"><i class="fa fa-plus"></i> Stalk</button>
+                                        data-stalk="true" data-profile="alanmcclean"><i class="fa fa-plus"></i>
+                                        Stalk</button>
                                 </div>
                                 <p class="info-band">
                                     <!--descriptioin-->
@@ -4300,45 +4302,50 @@ replace images and texts and stuff.
                                 <h6>
                                     Basic Information</h6>
                                 <table class="data">
-                                        <tr>
-                                            <td>
-                                                <span>Birthday:</span> July 5th<br/>
-                                                <span>Relationship Status:</span> Visitation rights
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <hr/>
-                                            </td>
-                                        </tr>
-                                                <tr>
-                                            <td>
-                                                <span>Sex:</span> Male, obviously<br/>
-                                                <span>Interested in:</span> Parental discipline done right, spelunking, dune buggies, Roman history, gladiator books, Marines
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <hr/>
-                                            </td>
-                                        </tr>
-                                                <tr>
-                                            <td>
-                                                    <span>Religious Views:</span> - Old Testament<br/>
-                                                                        <span>Political Views:</span> - Coffee Grinder Party, until they went soft. <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <hr>
-                                            </td>
-                                        </tr>
-                                                <tr>
-                                            <td>
-                                                <span>About:</span><br/>
-                                                Getting ready for my HKWW boot camp.   Kids and Dads weekend off the grid where we go through the 9 steps from my book Hitting Kids Works Wonders.  Your kid may come back a bit bruised, but he’ll never disrespect you again.  And that’s a fact.
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Birthday:</span> July 5th<br />
+                                            <span>Relationship Status:</span> Visitation rights
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Sex:</span> Male, obviously<br />
+                                            <span>Interested in:</span> Parental discipline done right, spelunking, dune
+                                            buggies, Roman history, gladiator books, Marines
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Religious Views:</span> - Old Testament<br />
+                                            <span>Political Views:</span> - Coffee Grinder Party, until they went soft.
+                                            <br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>About:</span><br />
+                                            Getting ready for my HKWW boot camp. Kids and Dads weekend off the grid
+                                            where we go through the 9 steps from my book Hitting Kids Works Wonders.
+                                            Your kid may come back a bit bruised, but he’ll never disrespect you again.
+                                            And that’s a fact.
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -4391,7 +4398,8 @@ replace images and texts and stuff.
                                         alt="Distinguish yourself from others with Elitas Travel" width="468"
                                         height="263">
                                 </button>
-                                <div class="annotation">Drinking whiskey hanging off side of boat taking pics of self hope don't drop ph</div>
+                                <div class="annotation">Drinking whiskey hanging off side of boat taking pics of self
+                                    hope don't drop ph</div>
                             </div>
                         </div>
 
@@ -4413,10 +4421,11 @@ replace images and texts and stuff.
                                         alt="Distinguish yourself from others with Elitas Travel" width="468"
                                         height="263">
                                 </button>
-                                <div class="annotation">My book is #1! Ha Ha! Parenting books are easy to right when you re-purpose what you learned in the Marines about what breaks a man</div>
+                                <div class="annotation">My book is #1! Ha Ha! Parenting books are easy to right when you
+                                    re-purpose what you learned in the Marines about what breaks a man</div>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

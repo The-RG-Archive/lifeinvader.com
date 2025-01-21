@@ -34,7 +34,8 @@ function randomTinyText() {
         "Amplify your personality",
         "putting your personal life in the public domain",
         "where your personal information becomes a marketing profile (that we can sell)",
-        "make friends with strangers"
+        "make friends with strangers",
+        "social self respect"
     ];
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
