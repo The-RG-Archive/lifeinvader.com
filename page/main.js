@@ -45,14 +45,14 @@ function randomTinyText() {
 
 function getAdLink(index) {
     const phraseArray = [
-        "../elitas_travel.htm",
-        "herr_kutz.htm",
-        "inkinc.htm",
-        "legendary_motorsport.htm",
-        "los_santos_customs.htm",
-        "redwood_cigarettes.htm",
-        "sprunk.htm",
-        "warstock_cache_n_carry.htm"
+        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
     ];
 
     return phraseArray[index];
@@ -115,17 +115,17 @@ function getAdImg(index) {
 }
 function randomPage() {
     const linkArray = [
-        "profile/elitas_travel.htm",
-        "profile/herr_kutz.htm",
-        "profile/inkinc.htm",
-        "profile/jackhowitzer.htm",
-        "profile/karlkelly.htm",
-        "profile/legendary_motorsport.htm",
-        "profile/los_santos_customs.htm",
-        "profile/redwood_cigarettes.htm",
-        "profile/sprunk.htm",
-        "profile/warstock_cache_n_carry.htm",
-        "profile/alanmcclean.htm"
+        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/karlkelly.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/alanmcclean.htm"
     ]
 
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
