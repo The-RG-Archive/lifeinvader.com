@@ -6,7 +6,7 @@ Huge thanks to https://github.com/GreenSoupDeveloper we is the main developer at
 Also big thank you to "MGgames100" for providing us with copy's of all company websites to make this even possible.
 
 Notes:
-https://redsoupdev.github.io/lifeinvader.com/index.html and https://redsoupdev.github.io/lifeinvader.com/profile/spruk.htm IS NOT FROM R* it is a page we created to make the website more fun.
+https://redsoupdev.github.io/lifeinvader.com/index.html and https://redsoupdev.github.io/lifeinvader.com/404.html IS NOT FROM R* it is a page we created to make the website more fun.
 
 
 List of known domains:
