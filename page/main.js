@@ -90,7 +90,7 @@ function getAdImg(index) {
         "../page/ads/elitas.jpg", 
         "../page/ads/herr_kutz.png", 
         "../page/ads/inkinc.png", 
-        "../page/ads/lmotorsport", 
+        "../page/ads/lmotorsport.jpg", 
         "../page/ads/lsc.png", 
         "../page/ads/redwood.png",
         "../page/ads/sprunk.png", 
