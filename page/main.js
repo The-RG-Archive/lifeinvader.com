@@ -26,32 +26,32 @@ function randomTinyText() {
     const phraseArray = ["Making The Private Public", "Dock and Dock Again", "PORTRAY THE LIFE YOU WANT Online", "Create Friends Today", "Inflate Yourself Online", "Excel Online", "Excite Your Life Online"];
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
-    
+
     return phraseArray[i];
 }
 function getAdLink(index) {
     const phraseArray = [
-        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
+        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
     ];
 
     return phraseArray[index];
 }
 function getAdText(index) {
     const phraseArray = [
-        "Elitas Travel", 
-        "Herr Kutz", 
-        "Ink Inc.", 
-        "Legendary Motorsport", 
-        "Los Santos Customs", 
+        "Elitas Travel",
+        "Herr Kutz",
+        "Ink Inc.",
+        "Legendary Motorsport",
+        "Los Santos Customs",
         "Redwood Cigarettes",
-        "Sprunk", 
+        "Sprunk",
         "Warstock Cache & Carry"
     ];
 
@@ -59,13 +59,13 @@ function getAdText(index) {
 }
 function getDescText(index) {
     const phraseArray = [
-        "10% off your next purchase.", 
-        "First haircut free.", 
-        "First tattoo free.", 
-        "10% discount on your first website purchase.", 
-        "Get a free spray paint job.", 
+        "10% off your next purchase.",
+        "First haircut free.",
+        "First tattoo free.",
+        "10% discount on your first website purchase.",
+        "Get a free spray paint job.",
         "10% discount on your first hospital visit",
-        "Get a free can from any participating vending machine! ", 
+        "Get a free can from any participating vending machine! ",
         "10% off your first purchase."
     ];
 
@@ -73,13 +73,13 @@ function getDescText(index) {
 }
 function getStalkText(index) {
     const phraseArray = [
-        "1811265 are stalking Elitas Travel", 
-        "1528629 are stalking Herr Kutz Barber", 
-        "1576007 are stalking Ink Inc.", 
-        "2271521 are stalking Legendary Motorsport", 
-        "2178062 are stalking Los Santos Customs", 
+        "1811265 are stalking Elitas Travel",
+        "1528629 are stalking Herr Kutz Barber",
+        "1576007 are stalking Ink Inc.",
+        "2271521 are stalking Legendary Motorsport",
+        "2178062 are stalking Los Santos Customs",
         "1357089 are stalking Redwood Cigarettes",
-        "1528688 are stalking Sprunk", 
+        "1528688 are stalking Sprunk",
         "2022210 are stalking Warstock Cache & Carry"
     ];
 
@@ -87,13 +87,13 @@ function getStalkText(index) {
 }
 function getAdImg(index) {
     const phraseArray = [
-        "../page/ads/elitas.jpg", 
-        "../page/ads/herr_kutz.png", 
-        "../page/ads/inkinc.png", 
-        "../page/ads/lmotorsport.jpg", 
-        "../page/ads/lsc.png", 
+        "../page/ads/elitas.jpg",
+        "../page/ads/herr_kutz.png",
+        "../page/ads/inkinc.png",
+        "../page/ads/lmotorsport.jpg",
+        "../page/ads/lsc.png",
         "../page/ads/redwood.png",
-        "../page/ads/sprunk.png", 
+        "../page/ads/sprunk.png",
         "../page/ads/warstock.png"
     ];
 
@@ -101,18 +101,18 @@ function getAdImg(index) {
 }
 function randomPage() {
     const linkArray = [
-    "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/karlkelly.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm", 
-    "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
+        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/karlkelly.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
     ]
-   
+
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
     window.location.href = linkArray[i];
 }
