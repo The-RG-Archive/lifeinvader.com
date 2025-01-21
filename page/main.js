@@ -23,12 +23,25 @@
 }, function (t) { t.O(0, [729], (function () { return i = 7877, t(t.s = i); var i })); t.O() }]);
 
 function randomTinyText() {
-    const phraseArray = ["Making The Private Public", "Dock and Dock Again", "PORTRAY THE LIFE YOU WANT Online", "Create Friends Today", "Inflate Yourself Online", "Excel Online", "Excite Your Life Online"];
+    const phraseArray = [
+        "Making The Private Public",
+        "Dock and Dock Again",
+        "PORTRAY THE LIFE YOU WANT Online",
+        "Create Friends Today",
+        "Inflate Yourself Online",
+        "Excel Online",
+        "Excite Your Life Online",
+        "Amplify your personality",
+        "putting your personal life in the public domain",
+        "where your personal information becomes a marketing profile (that we can sell)",
+        "make friends with strangers"
+    ];
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
 
     return phraseArray[i];
 }
+
 function getAdLink(index) {
     const phraseArray = [
         "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm",
@@ -116,4 +129,12 @@ function randomPage() {
 
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
     window.location.href = linkArray[i];
+}
+function loginey() {
+    // Get the value entered by the user
+ 
+
+    // Store the value in localStorage
+    localStorage.setItem('hi', document.getElementById('usernameText').value);
+    window.location.href = "profile/elitas_travel.htm";
 }
