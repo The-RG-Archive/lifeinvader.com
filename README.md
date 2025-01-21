@@ -1,6 +1,12 @@
 # lifeinvader.com
 A backup of the lifeinvader.com hosted by rockstar games that got shut down
 
+Huge thanks to https://github.com/GreenSoupDeveloper we is the main developer at this point i am just gathering information 
+
+Notes
+https://redsoupdev.github.io/lifeinvader.com/index.html and https://redsoupdev.github.io/lifeinvader.com/profile/spruk.htm IS NOT FROM R* it is a page we created to make the website more fun.
+
+
 List of known domains
 
 - https://www.lifeinvader.com/profile/elitas_travel
