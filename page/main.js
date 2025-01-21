@@ -130,12 +130,4 @@ function randomPage() {
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
     window.location.href = linkArray[i];
 }
-function loginey() {
-    // Get the value entered by the user
- 
 
-    // Store the value in localStorage
-    //localStorage.setItem('hi', document.getElementById('usernameText').value);
-    localStorage.setItem('hi', "hhello");
-    window.location.href = "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm";
-}

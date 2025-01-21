@@ -4207,19 +4207,17 @@
         .ot-floating-button__front {
             background-image: url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')
         }
-
-      
     </style>
 </head>
 
 <body>
     <center>
 
-       
+
         <div id="indexBg" class="indexBg">
             <center>
 
-            
+
                 <br><br>
                 <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Welcome to
                     LifeInvader!
@@ -4229,13 +4227,24 @@
                 <input type="text" id="usernameText" name="username">
                 <br>
                 <button onclick="loginey()">Login!</button>
+                <script>
+                    function loginey() {
+                        // Get the value entered by the user
+
+
+                        // Store the value in localStorage
+                        //localStorage.setItem('hi', document.getElementById('usernameText').value);
+                        localStorage.setItem('hi', document.getElementById('usernameText').value);
+                        window.location.href = "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm";
+                    }
+                </script>
 
 
 
             </center>
-        
+
         </div>
-    </div>
+        </div>
     </center>
 
 
@@ -4251,7 +4260,8 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a></h1>
+                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a>
+                    </h1>
 
                     <!-- Logged in -->
 
