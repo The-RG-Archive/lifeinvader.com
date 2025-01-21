@@ -32,7 +32,7 @@ Missing pages:
 - https://www.lifeinvader.com/profile/duaneearl
 
 
-Completely Workin Pages:
+Completely Working Pages:
 
 - https://www.lifeinvader.com/profile/redwood_cigarettes
 - https://www.lifeinvader.com/profile/elitas_travel
