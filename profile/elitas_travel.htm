@@ -4580,37 +4580,45 @@
                     </div>
                     <hr>
                     <script>
-                        var i = Math.floor(Math.random() * (0 - 8)) + 8;
-                        document.getElementById('desc1').innerHTML = getDescText(i);
-                        document.getElementById('ad1').innerHTML = getAdText(i);
-                        document.getElementById('stalkT1').innerHTML = getStalkText(i);
-                        document.getElementById("adImg1").src = getAdImg(i);
-                        document.getElementById('ad1').href = getAdLink(i);
-                        document.getElementById('adLink1').href = getAdLink(i);
+                        let arr = [0, 1, 2, 3, 4, 5, 6, 7]; // an array with 5 elements
 
-                        var i = Math.floor(Math.random() * (0 - 8)) + 8;
-                        document.getElementById('desc2').innerHTML = getDescText(i);
-                        document.getElementById('ad2').innerHTML = getAdText(i);
-                        document.getElementById('stalkT2').innerHTML = getStalkText(i);
-                        document.getElementById("adImg2").src = getAdImg(i);
-                        document.getElementById('ad2').href = getAdLink(i);
-                        document.getElementById('adLink2').href = getAdLink(i);
 
-                        var i = Math.floor(Math.random() * (0 - 8)) + 8;
-                        document.getElementById('desc3').innerHTML = getDescText(i);
-                        document.getElementById('ad3').innerHTML = getAdText(i);
-                        document.getElementById('stalkT3').innerHTML = getStalkText(i);
-                        document.getElementById("adImg3").src = getAdImg(i);
-                        document.getElementById('ad3').href = getAdLink(i);
-                        document.getElementById('adLink3').href = getAdLink(i);
 
-                        var i = Math.floor(Math.random() * (0 - 8)) + 8;
-                        document.getElementById('desc4').innerHTML = getDescText(i);
-                        document.getElementById('ad4').innerHTML = getAdText(i);
-                        document.getElementById('stalkT4').innerHTML = getStalkText(i);
-                        document.getElementById("adImg4").src = getAdImg(i);
-                        document.getElementById('ad4').href = getAdLink(i);
-                        document.getElementById('adLink4').href = getAdLink(i);
+                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                        document.getElementById('desc1').innerHTML = getDescText(arr[i]);
+                        document.getElementById('ad1').innerHTML = getAdText(arr[i]);
+                        document.getElementById('stalkT1').innerHTML = getStalkText(arr[i]);
+                        document.getElementById("adImg1").src = getAdImg(arr[i]);
+                        document.getElementById('ad1').href = getAdLink(arr[i]);
+                        document.getElementById('adLink1').href = getAdLink(arr[i]);
+                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                        document.getElementById('desc2').innerHTML = getDescText(arr[i]);
+                        document.getElementById('ad2').innerHTML = getAdText(arr[i]);
+                        document.getElementById('stalkT2').innerHTML = getStalkText(arr[i]);
+                        document.getElementById("adImg2").src = getAdImg(arr[i]);
+                        document.getElementById('ad2').href = getAdLink(arr[i]);
+                        document.getElementById('adLink2').href = getAdLink(arr[i]);
+                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                        document.getElementById('desc3').innerHTML = getDescText(arr[i]);
+                        document.getElementById('ad3').innerHTML = getAdText(arr[i]);
+                        document.getElementById('stalkT3').innerHTML = getStalkText(arr[i]);
+                        document.getElementById("adImg3").src = getAdImg(arr[i]);
+                        document.getElementById('ad3').href = getAdLink(arr[i]);
+                        document.getElementById('adLink3').href = getAdLink(arr[i]);
+                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                        document.getElementById('desc4').innerHTML = getDescText(arr[i]);
+                        document.getElementById('ad4').innerHTML = getAdText(arr[i]);
+                        document.getElementById('stalkT4').innerHTML = getStalkText(arr[i]);
+                        document.getElementById("adImg4").src = getAdImg(arr[i]);
+                        document.getElementById('ad4').href = getAdLink(arr[i]);
+                        document.getElementById('adLink4').href = getAdLink(arr[i]);
+                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
                     </script>
                 </div>
             </div>
