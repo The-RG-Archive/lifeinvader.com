@@ -29,6 +29,20 @@ function randomTinyText() {
     
     return phraseArray[i];
 }
+function getAdLink(index) {
+    const phraseArray = [
+        "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/inkinc.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/legendary_motorsport.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm", 
+    "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm"
+    ];
+
+    return phraseArray[index];
+}
 function getAdText(index) {
     const phraseArray = [
         "Elitas Travel", 
@@ -77,7 +91,7 @@ function getAdImg(index) {
         "../page/ads/herr_kutz.png", 
         "../page/ads/inkinc.png", 
         "../page/ads/lmotorsport", 
-        "../page/ads/lcs.png", 
+        "../page/ads/lsc.png", 
         "../page/ads/redwood.png",
         "../page/ads/sprunk.png", 
         "../page/ads/warstock.png"

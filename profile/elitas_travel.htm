@@ -4511,7 +4511,7 @@
                             <a id="ad1"href="https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm">Elitas
                                 Travel</a>
                         </h5>
-                        <a href="https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm">
+                        <a  id="adLink1"href="https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm">
                             <img id="adImg1" src="../page/ads/elitas.jpg" alt="Elitas Travel" width="220" height="110">
                         </a>
                         <p id="desc1">
@@ -4524,10 +4524,10 @@
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a href="https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm">Redwood
+                            <a id="ad2"href="https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm">Redwood
                                 Cigarettes</a>
                         </h5>
-                        <a id="ad2"href="https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm">
+                        <a id="adLink2"href="https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm">
                             <img id="adImg2" src="../page/ads/redwood.png" alt="Redwood Cigarettes" width="220" height="110">
                         </a>
                         <p id="desc2">
@@ -4543,7 +4543,7 @@
                             <a id="ad3"href="https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm">Los
                                 Santos Customs</a>
                         </h5>
-                        <a href="https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm">
+                        <a id="adLink3" href="https://redsoupdev.github.io/lifeinvader.com/profile/los_santos_customs.htm">
                             <img id="adImg3" src="../page/ads/lsc.png" alt="Los Santos Customs" width="220" height="110">
                         </a>
                         <p id="desc3">
@@ -4556,10 +4556,10 @@
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a id="ad4"href="https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm">Herr Kutz
+                            <a id="ad4" href="https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm">Herr Kutz
                                 Barber</a>
                         </h5>
-                        <a href="https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm">
+                        <a id="adLink4" href="https://redsoupdev.github.io/lifeinvader.com/profile/herr_kutz.htm">
                             <img id="adImg4" src="../page/ads/herr_kutz.png" alt="Herr Kutz Barber" width="220" height="110">
                         </a>
                         <p id="desc4">
@@ -4576,6 +4576,8 @@
     
                         document.getElementById('desc1').innerHTML = getDescText(i);
                          document.getElementById('ad1').innerHTML = getAdText(i);
+                         document.getElementById('ad1').href = getAdLink(i);
+                         document.getElementById('adLink1').href = getAdLink(i);
                          document.getElementById('stalkT1').innerHTML = getStalkText(i);
                        
                          document.getElementById("adImg1").src = getAdImg(i);
