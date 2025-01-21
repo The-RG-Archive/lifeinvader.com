@@ -1,7 +1,8 @@
 # lifeinvader.com
 A backup of the lifeinvader.com hosted by rockstar games that got shut down
 
-Huge thanks to https://github.com/GreenSoupDeveloper we is the main developer at this point i am just gathering information .
+Huge thanks to https://github.com/GreenSoupDeveloper we is the main developer at this point i am just gathering information.
+
 Also big thank you to "MGgames100" for providing us with copy's of all company websites to make this even possible.
 
 Notes:
