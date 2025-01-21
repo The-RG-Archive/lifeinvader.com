@@ -4224,19 +4224,32 @@
                 </h1>
                 <p>Login to a account!</p>
                 <br>
-                <input type="text" id="usernameText" name="username">
+                <form>
+                    <label for="fname">Type a Username:</label>
+                    <input type="text" id="usernameText" name="username">
+                    <p id="errorText" style="color: red;"></p>
+                </form>
+
+
                 <br>
                 <button onclick="loginey()">Login!</button>
                 <script>
                     function loginey() {
+                        var input = document.getElementById('usernameText').value;
                         // Get the value entered by the user
-
-
-                        // Store the value in localStorage
-                        //localStorage.setItem('hi', document.getElementById('usernameText').value);
-                        localStorage.clear();
-                        localStorage.setItem('currUsername', document.getElementById('usernameText').value);
-                        randomPage();
+                        if (input !== "") {
+                            document.getElementById('errorText').innerHTML = "Logging in..";
+                            // Store the value in localStorage
+                            //localStorage.setItem('hi', document.getElementById('usernameText').value);
+                            localStorage.clear();
+                            localStorage.setItem('currUsername',document.getElementById('usernameText').value);
+                            
+                            randomPage();
+                        
+                        }
+                        else {
+                            document.getElementById('errorText').innerHTML = "Type a valid Username!!!!!";
+                        }
                     }
                 </script>
 
