@@ -4224,11 +4224,11 @@
                 </h1>
                 <p>Login to a account!</p>
                 <br>
-                <form>
-                    <label for="fname">Type a Username:</label>
-                    <input type="text" id="usernameText" name="username">
-                    <p id="errorText" style="color: red;"></p>
-                </form>
+
+                <label for="fname">Type a Username:</label>
+                <input type="text" id="usernameText" name="username">
+                <p id="errorText" style="color: red;"></p>
+
 
 
                 <br>
@@ -4242,10 +4242,10 @@
                             // Store the value in localStorage
                             //localStorage.setItem('hi', document.getElementById('usernameText').value);
                             localStorage.clear();
-                            localStorage.setItem('currUsername',document.getElementById('usernameText').value);
-                            
+                            localStorage.setItem('currUsername', document.getElementById('usernameText').value);
+
                             randomPage();
-                        
+
                         }
                         else {
                             document.getElementById('errorText').innerHTML = "Type a valid Username!!!!!";
