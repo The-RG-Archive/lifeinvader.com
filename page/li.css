@@ -7286,16 +7286,7 @@ textarea:focus {
     border-right: 1px solid #ebc2c2;
     min-height: 220px
 }
-#indexBg {
-    background-color: #fff;
-    border-bottom: 1px solid #ebc2c2;
-    border-left: 1px solid #ebc2c2;
-    border-right: 1px solid #ebc2c2;
-    width: 900px;
-    height: 91vh;
 
-    
-}
 
 #li-header .img {
     background-color: #fff;
