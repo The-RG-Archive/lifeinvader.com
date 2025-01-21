@@ -125,7 +125,8 @@ function randomPage() {
         "https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm",
         "https://redsoupdev.github.io/lifeinvader.com/profile/sprunk.htm",
         "https://redsoupdev.github.io/lifeinvader.com/profile/warstock_cache_n_carry.htm",
-        "https://redsoupdev.github.io/lifeinvader.com/profile/alanmcclean.htm"
+        "https://redsoupdev.github.io/lifeinvader.com/profile/alanmcclean.htm",
+        "https://redsoupdev.github.io/lifeinvader.com/profile/duaneearl.htm"
     ]
 
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
