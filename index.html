@@ -4210,7 +4210,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <!--<div class="container">
 
         <div class="row temp-grid">
             <div class="span9">
@@ -4232,7 +4232,20 @@
         </div>
     </div>
 
-    <script>window.location.href = 'https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm';</script>
+    <script>window.location.href = 'https://redsoupdev.github.io/lifeinvader.com/profile/redwood_cigarettes.htm';</script>-->
+    <center>
+        <script></script>
+        <br><br><br><br>
+        <img src="page/hdlogo.png" alt="LifeInvader Logo" width="850px">
+        <br><br>
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Welcome to LifeInvader!
+        </h1>
+        <p>This is a recreation made with love by a tiny team.</p>
+        <button onclick="randomPage()">I feel lucky!</button>
+        
+        
+        
+    </center>
     <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -4249,7 +4262,7 @@
 
                     <!-- Logged in -->
 
-                    <h3>Making The Private Public</h3>
+                    <h3 id="tinyText">Making The Private Public</h3>
 
                     <div id="li-nav-logged-in" class="pull-right">
                         <a href="default.png" alt="Default Avatar Icon" width=" 32" height="32">
@@ -4260,6 +4273,10 @@
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
                     </div>
+                    <script>
+                        document.getElementById('tinyText').innerHTML = randomTinyText();
+                       
+                    </script>
 
                 </div>
             </div>
