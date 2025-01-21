@@ -21,8 +21,7 @@ Progress
 
 Missing pages:
 
-- https://www.lifeinvader.com/profile/karlkelly 
-- https://www.lifeinvader.com/profile/jackhowitzer
+
 - https://www.lifeinvader.com/profile/drray
 - https://www.lifeinvader.com/profile/duaneearl
 - https://www.lifeinvader.com/profile/alanmcclean
@@ -37,6 +36,8 @@ Completely Workin Pages:
 - https://www.lifeinvader.com/profile/los_santos_customs
 - https://www.lifeinvader.com/profile/sprunk
 - https://www.lifeinvader.com/profile/warstock_cache_n_carry
+- https://www.lifeinvader.com/profile/karlkelly 
+- https://www.lifeinvader.com/profile/jackhowitzer
 
 Bugs:
 Loading animation is still ontop of the pages
