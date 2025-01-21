@@ -4221,11 +4221,12 @@
                 <br><br>
                 <h1 id="loggingoff" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Logging off..
                 </h1>
-                <p>Login to a account!</p>
+                <p>Logging off your account..</p>
                 <br>
                 <script>
                     document.getElementById('loggingoff').innerHTML =  "Logging off '"+localStorage.getItem('currUsername') + "'...";
                     localStorage.clear();
+                   window.location.href = "https://redsoupdev.github.io/lifeinvader.com/index.html";
                 </script>
               
 
@@ -4257,15 +4258,7 @@
 
                     <h3 id="tinyText">Making The Private Public</h3>
 
-                    <div id="li-nav-logged-in" class="pull-right">
-                        <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                            <img src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
-                        </a>
-                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
-                            class="nav-user">Default User</a>
-
-                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
-                    </div>
+                   
                     <script>
                         document.getElementById('tinyText').innerHTML = randomTinyText();
 
