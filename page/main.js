@@ -136,5 +136,5 @@ function loginey() {
 
     // Store the value in localStorage
     localStorage.setItem('hi', document.getElementById('usernameText').value);
-    window.location.href = "profile/elitas_travel.htm";
+    window.location.href = "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm";
 }
