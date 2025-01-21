@@ -29,6 +29,62 @@ function randomTinyText() {
     
     return phraseArray[i];
 }
+function getAdText(index) {
+    const phraseArray = [
+        "Elitas Travel", 
+        "Herr Kutz", 
+        "Ink Inc.", 
+        "Legendary Motorsport", 
+        "Los Santos Customs", 
+        "Redwood Cigarettes",
+        "Sprunk", 
+        "Warstock Cache & Carry"
+    ];
+
+    return phraseArray[index];
+}
+function getDescText(index) {
+    const phraseArray = [
+        "10% off your next purchase.", 
+        "First haircut free.", 
+        "First tattoo free.", 
+        "10% discount on your first website purchase.", 
+        "Get a free spray paint job.", 
+        "10% discount on your first hospital visit",
+        "Get a free can from any participating vending machine! ", 
+        "10% off your first purchase."
+    ];
+
+    return phraseArray[index];
+}
+function getStalkText(index) {
+    const phraseArray = [
+        "1811265 are stalking Elitas Travel", 
+        "1528629 are stalking Herr Kutz Barber", 
+        "1576007 are stalking Ink Inc.", 
+        "2271521 are stalking Legendary Motorsport", 
+        "2178062 are stalking Los Santos Customs", 
+        "1357089 are stalking Redwood Cigarettes",
+        "1528688 are stalking Sprunk", 
+        "2022210 are stalking Warstock Cache & Carry"
+    ];
+
+    return phraseArray[index];
+}
+function getAdImg(index) {
+    const phraseArray = [
+        "../page/ads/elitas.jpg", 
+        "../page/ads/herr_kutz.png", 
+        "../page/ads/inkinc.png", 
+        "../page/ads/lmotorsport", 
+        "../page/ads/lcs.png", 
+        "../page/ads/redwood.png",
+        "../page/ads/sprunk.png", 
+        "../page/ads/warstock.png"
+    ];
+
+    return phraseArray[index];
+}
 function randomPage() {
     const linkArray = [
     "https://redsoupdev.github.io/lifeinvader.com/profile/elitas_travel.htm", 
