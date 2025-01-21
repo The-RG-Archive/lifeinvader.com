@@ -3,7 +3,7 @@ A backup of the lifeinvader.com hosted by rockstar games that got shut down
 
 Huge thanks to https://github.com/GreenSoupDeveloper he is the main developer at this point i am just gathering information.
 
-Also big thank you to "MGgames100" for providing us with copy's of all company websites to make this even possible.
+Also big thank you to "MGgames100" for providing us with copy's of all company websites and research to make this even possible.
 
 Notes:
 https://redsoupdev.github.io/lifeinvader.com/index.html and https://redsoupdev.github.io/lifeinvader.com/404.html IS NOT FROM R* it is a page we created to make the website more fun.
