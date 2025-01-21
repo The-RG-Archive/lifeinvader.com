@@ -4240,10 +4240,12 @@ replace images and texts and stuff.
                         <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
                             <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
-                        <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+
+                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
                     </div>
 
                 </div>
@@ -4786,8 +4788,8 @@ replace images and texts and stuff.
                 <div class="ot-pc-footer-logo"><a href="https://www.onetrust.com/products/cookie-consent/"
                         target="_blank" rel="noopener noreferrer"
                         aria-label="Powered by OneTrust Opens in a new Tab"><img alt="Powered by Onetrust"
-                            src="example_site/poweredBy_ot_logo.svg"
-                            title="Powered by OneTrust Opens in a new Tab"></a></div>
+                            src="example_site/poweredBy_ot_logo.svg" title="Powered by OneTrust Opens in a new Tab"></a>
+                </div>
             </div>
             <!-- Cookie subgroup container --><!-- Vendor list link --><!-- Cookie lost link --><!-- Toggle HTML element --><!-- Checkbox HTML --><!-- plus minus--><!-- Arrow SVG element --><!-- Accordion basic element --><span
                 class="ot-scrn-rdr" aria-atomic="true"

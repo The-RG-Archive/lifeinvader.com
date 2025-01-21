@@ -4240,10 +4240,12 @@ replace images and texts and stuff.
                         <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
                             <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
-                        <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+
+                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
                     </div>
 
                 </div>
@@ -4257,204 +4259,223 @@ replace images and texts and stuff.
 
                 <div class="row temp-grid">
                     <div class="span9">
-                      <div id="li-header" class="clearfix">
-                        <div class="img">
-                          <img src="jackhowitzer/jackhowitzer.jpeg" alt="" width="172" height="172">
+                        <div id="li-header" class="clearfix">
+                            <div class="img">
+                                <img src="jackhowitzer/jackhowitzer.jpeg" alt="" width="172" height="172">
+                            </div>
+                            <div class="info">
+                                <h1>
+                                    <span>Jack Howitzer</span>
+                                </h1>
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" data-profile="sprunk"><i class="fa fa-plus"></i>
+                                        Stalk</button>
+                                </div>
+                                <div id="divStlk"></div>
+                                <p class="info-band">
+                                    Ho Chi is my company. He understands me<br>
+                                    Still working on that. <span class="info-likes">547322 Stalkers</span> <span
+                                        class="info-likes">
+                                        <!--Stalkers Count here-->
+                                    </span>
+                                </p>
+                                <div class="info-thumbs clearfix">
+                                    <p>
+
+                                        <a href="https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm"
+                                            title="Photos" class="modal-media" data-modalcontent="photos">
+                                            <img src="jackhowitzer/2.webp" alt="" width="132" height="74"></a><br>
+                                        <a href="https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm"
+                                            title="Photos" class="modal-media" data-modalcontent="photos"
+                                            enabled="false">
+                                            Photos</a> <span id="photoCount"></span><span id="photoCount">2</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="info">
-                          <h1>
-                            <span>Jack Howitzer</span>
-                          </h1>
-                          <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                            data-stalk="true" data-profile="sprunk"><i class="fa fa-plus"></i>
-                            Stalk</button>
-                          </div>
-                          <div id="divStlk"></div>
-                          <p class="info-band">
-                            Ho Chi is my company. He understands me<br>
-                            Still working on that. <span class="info-likes">547322 Stalkers</span> <span class="info-likes">
-                              <!--Stalkers Count here-->
-                            </span>
-                          </p>
-                          <div class="info-thumbs clearfix">
-                            <p>
-          
-                              <a href="https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm"
-                                title="Photos" class="modal-media" data-modalcontent="photos">
-                                <img src="jackhowitzer/2.webp" alt="" width="132" height="74"></a><br>
-                              <a href="https://redsoupdev.github.io/lifeinvader.com/profile/jackhowitzer.htm"
-                                title="Photos" class="modal-media" data-modalcontent="photos" enabled="false">
-                                Photos</a> <span id="photoCount"></span><span id="photoCount">2</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="row temp-grid">
+                </div>
+                <div class="row temp-grid">
                     <div id="li-info-col" class="span3">
-                      <div id="li-sidebar">
-                        <div class="info">
-                          <h6>
-                            Basic Information</h6>
-                          <table class="data">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <span>Birthday:</span> May 17th<br>
-                                  <span>Relationship Status:</span> Friends
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <hr>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span>Sex:</span> Tape… if you want to join in? <br>
-                                  <span>Interested in:</span> Defeating commies with pushups, winning the war for real, poker,
-                                  expressionist paintings in bright colors, long brooding walks in the park, patriotism, bringing
-                                  back the 80s, by any means necessary.
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <hr>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span>Religious Views:</span> - God made Jack for a reason. Now Jack is back. <br>
-                                  <span>Political Views:</span> - Can’t vote (felony – MASSIVELY exaggerated) ;-)) <br>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <hr>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <span>About:</span><br>
-                                  believe. I’m back.
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <div id="li-sidebar">
+                            <div class="info">
+                                <h6>
+                                    Basic Information</h6>
+                                <table class="data">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>Birthday:</span> May 17th<br>
+                                                <span>Relationship Status:</span> Friends
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <hr>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Sex:</span> Tape… if you want to join in? <br>
+                                                <span>Interested in:</span> Defeating commies with pushups, winning the
+                                                war for real, poker,
+                                                expressionist paintings in bright colors, long brooding walks in the
+                                                park, patriotism, bringing
+                                                back the 80s, by any means necessary.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <hr>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Religious Views:</span> - God made Jack for a reason. Now Jack is
+                                                back. <br>
+                                                <span>Political Views:</span> - Can’t vote (felony – MASSIVELY
+                                                exaggerated) ;-)) <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <hr>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>About:</span><br>
+                                                believe. I’m back.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div id="li-feed">
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">Rufus, is my password HoChi?</div>
                         </div>
-                        <div class="text">Rufus, is my password HoChi?</div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">Rufus why don't you answer me</div>
                         </div>
-                        <div class="text">Rufus why don't you answer me</div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            shared an image
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    shared an image
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img src="jackhowitzer/2.webp" alt="I'm still the complete package." width="468"
+                                    height="263">
+
+                                <div class="annotation">I'm still the complete package.</div>
+                            </div>
                         </div>
-                        <div class="media">
-                          <img src="jackhowitzer/2.webp" alt="I'm still the complete package." width="468" height="263">
-          
-                          <div class="annotation">I'm still the complete package.</div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    shared an image
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img src="jackhowitzer/1.jpeg"
+                                    alt="Seriously. I'm still funny. And i can still break people's necks." width="468"
+                                    height="263">
+
+                                <div class="annotation">Seriously. I'm still funny. And i can still break people's
+                                    necks.</div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            shared an image
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">That was a joke.</div>
                         </div>
-                        <div class="media">
-                          <img src="jackhowitzer/1.jpeg" alt="Seriously. I'm still funny. And i can still break people's necks." width="468" height="263">
-          
-                          <div class="annotation">Seriously. I'm still funny. And i can still break people's necks.</div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">That girl looks really hot running down that street on fire</div>
                         </div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">I have a virus</div>
                         </div>
-                        <div class="text">That was a joke.</div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
+                        <div class="post">
+                            <div class="type clearfix">
+                                <div class="avatar">
+                                    <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32"
+                                        height="32">
+                                </div>
+                                <div class="type-info">
+                                    <strong>Jack Howitzer</strong>
+                                    posted a status update
+                                </div>
+                            </div>
+                            <div class="text">Ok fans I set up Lifeinvader page with rufus he says I need to become
+                                popular.<br>Rufus where do i find the videos of girls you talked about?</div>
                         </div>
-                        <div class="text">That girl looks really hot running down that street on fire</div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
-                        </div>
-                        <div class="text">I have a virus</div>
-                      </div>
-                      <div class="post">
-                        <div class="type clearfix">
-                          <div class="avatar">
-                            <img src="jackhowitzer/jackhowitzer.jpeg" alt="Jack Howitzer avatar" width="32" height="32">
-                          </div>
-                          <div class="type-info">
-                            <strong>Jack Howitzer</strong>
-                            posted a status update
-                          </div>
-                        </div>
-                        <div class="text">Ok fans I set up Lifeinvader page with rufus he says I need to become popular.<br>Rufus where do i find the videos of girls you talked about?</div>
-                      </div>
-          
+
                     </div>
-                  </div>
-          
                 </div>
+
+            </div>
             <!-- ads bar -->
             <div id="ads-col" class="span3">
                 <div id="li-adsbar">
@@ -4795,8 +4816,8 @@ replace images and texts and stuff.
                 <div class="ot-pc-footer-logo"><a href="https://www.onetrust.com/products/cookie-consent/"
                         target="_blank" rel="noopener noreferrer"
                         aria-label="Powered by OneTrust Opens in a new Tab"><img alt="Powered by Onetrust"
-                            src="example_site/poweredBy_ot_logo.svg"
-                            title="Powered by OneTrust Opens in a new Tab"></a></div>
+                            src="example_site/poweredBy_ot_logo.svg" title="Powered by OneTrust Opens in a new Tab"></a>
+                </div>
             </div>
             <!-- Cookie subgroup container --><!-- Vendor list link --><!-- Cookie lost link --><!-- Toggle HTML element --><!-- Checkbox HTML --><!-- plus minus--><!-- Arrow SVG element --><!-- Accordion basic element --><span
                 class="ot-scrn-rdr" aria-atomic="true"

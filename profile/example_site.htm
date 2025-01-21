@@ -4240,10 +4240,12 @@ replace images and texts and stuff.
                         <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
                             <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
-                        <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+
+                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
                     </div>
 
                 </div>
@@ -4260,15 +4262,15 @@ replace images and texts and stuff.
                         <div id="li-header" class="clearfix">
                             <div class="img">
                                 <!--user picture-->
-                                <img src="example_site/default.png" alt="Elitas Travel" width="172"
-                                    height="172">
+                                <img src="example_site/default.png" alt="Elitas Travel" width="172" height="172">
                             </div>
                             <div class="info">
                                 <h1>
                                     <span>Example User</span>
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="example_site"><i class="fa fa-plus"></i> Stalk</button>
+                                        data-stalk="true" data-profile="example_site"><i class="fa fa-plus"></i>
+                                        Stalk</button>
                                 </div>
                                 <p class="info-band">
                                     <!--descriptioin-->
@@ -4278,10 +4280,9 @@ replace images and texts and stuff.
                                 </p>
                                 <div class="info-thumbs clearfix">
                                     <p>
-                                          <!--latest image preview-->
+                                        <!--latest image preview-->
                                         <button class="resetButton modal-media" data-modalcontent="photos">
-                                            <img src="example_site/image01.jpeg" alt="Photos" width="132"
-                                                height="74">
+                                            <img src="example_site/image01.jpeg" alt="Photos" width="132" height="74">
                                         </button>
                                         <br>
                                         <!--amount of photos-->
@@ -4697,8 +4698,8 @@ replace images and texts and stuff.
                 <div class="ot-pc-footer-logo"><a href="https://www.onetrust.com/products/cookie-consent/"
                         target="_blank" rel="noopener noreferrer"
                         aria-label="Powered by OneTrust Opens in a new Tab"><img alt="Powered by Onetrust"
-                            src="example_site/poweredBy_ot_logo.svg"
-                            title="Powered by OneTrust Opens in a new Tab"></a></div>
+                            src="example_site/poweredBy_ot_logo.svg" title="Powered by OneTrust Opens in a new Tab"></a>
+                </div>
             </div>
             <!-- Cookie subgroup container --><!-- Vendor list link --><!-- Cookie lost link --><!-- Toggle HTML element --><!-- Checkbox HTML --><!-- plus minus--><!-- Arrow SVG element --><!-- Accordion basic element --><span
                 class="ot-scrn-rdr" aria-atomic="true"

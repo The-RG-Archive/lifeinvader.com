@@ -4237,12 +4237,13 @@
                         <a href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
                             <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
-                        <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+                        <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
                             href="https://signin.rockstargames.com/logout/lifeinvader?returnUrl=%2Fprofile%2Fredwood_cigarettes"
                             data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
-                    </div>
 
+                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -4264,7 +4265,8 @@
                                     <span>Los Santos Customs</span>
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="los_santos_customs"><i class="fa fa-plus"></i> Stalk</button>
+                                        data-stalk="true" data-profile="los_santos_customs"><i class="fa fa-plus"></i>
+                                        Stalk</button>
                                 </div>
                                 <p class="info-band">
                                     Auto Repairs<br>
