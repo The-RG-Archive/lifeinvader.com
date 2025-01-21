@@ -4207,15 +4207,13 @@
         .ot-floating-button__front {
             background-image: url('https://cdn.cookielaw.org/logos/static/ot_persistent_cookie.png')
         }
-
-      
     </style>
 </head>
 
 <body>
     <center>
 
-       
+
         <div id="indexBg" class="indexBg">
             <center>
 
@@ -4231,9 +4229,9 @@
 
 
             </center>
-        
+
         </div>
-    </div>
+        </div>
     </center>
 
 
@@ -4249,23 +4247,41 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a></h1>
+                    <h1><a class="brand" href="https://redsoupdev.github.io/lifeinvader.com/index.html">LifeInvader</a>
+                    </h1>
 
                     <!-- Logged in -->
 
                     <h3 id="tinyText">Making The Private Public</h3>
 
                     <div id="li-nav-logged-in" class="pull-right">
-                        <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
+                        <a id="userIcon" href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
                             <img src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                         </a>
                         <a id="userText" href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
                             class="nav-user">Default User</a><a
-                            href="https://redsoupdev.github.io/lifeinvader.com/logoff.html"
-                            data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            href="https://redsoupdev.github.io/lifeinvader.com/logoff.html" data-rockstarid="15130174"
+                            class="nav-signout" id="signOut">sign out</a>
 
-                        <script>document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";</script>
+                        
                     </div>
+                    <div id="li-nav-logged-off" class="pull-right">
+                        <a
+                            href="https://redsoupdev.github.io/lifeinvader.com/login.html" data-rockstarid="15130174"
+                            class="nav-signout" style="color: white;" id="signOut">Log in</a>
+                    </div>
+                    <script>
+                         document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
+                        if (localStorage.getItem('currUsername') + "" !== "null") {
+                          
+                            document.getElementById("li-nav-logged-off").style.visibility = "hidden";
+                           
+                        }else{
+                            document.getElementById("li-nav-logged-in").style.visibility = "hidden";
+                          
+                           
+                        }
+                    </script>
                     <script>
                         document.getElementById('tinyText').innerHTML = randomTinyText();
 
