@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="page/li.css">
-    <link rel="stylesheet" href="page/index.css">
+    <link rel="stylesheet" href="page/custom/index.css">
 
     <link rel="shortcut icon" href="page/favicon.ico">
 
@@ -4275,7 +4275,7 @@
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                             if (localStorage.getItem('currUsername') + "" !== "null") {
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
-                                document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
+                                document.getElementById("userIcon").src = localStorage.getItem('curPfp');
                                 document.getElementById("userText").href = localStorage.getItem('curRockstarUser');
                                 document.getElementById("userPfpALink").href = localStorage.getItem('curRockstarUser');
                             } else {
