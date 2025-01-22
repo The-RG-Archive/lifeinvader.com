@@ -42,3 +42,5 @@ Completely Working Pages:
 - https://www.lifeinvader.com/profile/jackhowitzer
 - https://www.lifeinvader.com/profile/alanmcclean
 - https://www.lifeinvader.com/profile/drray
+
+All rights to these pages to to Rockstar Games and Take Two Interactive.
