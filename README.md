@@ -6,7 +6,7 @@ Huge thanks to https://github.com/GreenSoupDeveloper he is the main developer at
 Also big thank you to "MGgames100" for providing us with copy's of all company websites and research to make this even possible.
 
 Notes:
-https://redsoupdev.github.io/lifeinvader.com/index.html and https://redsoupdev.github.io/lifeinvader.com/404.html IS NOT FROM R* it is a page we created to make the website more fun.
+Other folders that are not in the "profile" folder are not from Rockstar Games. They are pages we created to make the website more fun.
 
 
 List of known domains:
@@ -24,15 +24,12 @@ List of known domains:
 - https://www.lifeinvader.com/profile/alanmcclean
 - https://www.lifeinvader.com/profile/redwood_cigarettes
 
-Progress
-
-Missing pages:
-- https://www.lifeinvader.com/profile/drray
-- https://www.lifeinvader.com/profile/duaneearl
-
+Progress:
+All (Known) pages have been restored..
 
 Completely Working Pages:
 
+- https://www.lifeinvader.com/profile/duaneearl
 - https://www.lifeinvader.com/profile/redwood_cigarettes
 - https://www.lifeinvader.com/profile/elitas_travel
 - https://www.lifeinvader.com/profile/herr_kutz
@@ -44,3 +41,4 @@ Completely Working Pages:
 - https://www.lifeinvader.com/profile/karlkelly 
 - https://www.lifeinvader.com/profile/jackhowitzer
 - https://www.lifeinvader.com/profile/alanmcclean
+- https://www.lifeinvader.com/profile/drray
