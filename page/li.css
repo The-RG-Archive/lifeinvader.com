@@ -9616,3 +9616,27 @@ body.modal-open {
         text-align: right
     }
 }
+.scrollmenu {
+    width: 100%;
+    height: fit-content;
+    /**used to scroll text*/
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /**keep scrolling when
+*finger or cursor scrolling*/
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-card {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    float: none;
+    display: inline-block;
+}
+
+/*to hide the scrollbars*/
+::-webkit-scrollbar {
+    display: none;
+}
