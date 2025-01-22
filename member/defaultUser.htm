@@ -4279,8 +4279,11 @@ replace images and texts and stuff.
                         <div id="li-header" class="clearfix">
                             <div class="img">
                                 <!--user picture-->
-                                <img src="defaultUser/default.png" alt="Example Site" width="172" height="172">
+                                <img id="userPfpThinger"src="defaultUser/default.png" alt="Example Site" width="172" height="172">
                             </div>
+                            <script>
+                                document.getElementById('userPfpThinger').src = "../"+localStorage.getItem('curPfp');
+                            </script>
                             <div class="info">
                                 <h1>
                                     <span id="userNamering">Default User</span>
