@@ -4286,8 +4286,13 @@ replace images and texts and stuff.
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="sprunk"><i class="fa fa-plus"></i>
-                                        Stalk</button>
+             Stalk</button>
                                 </div>
+                                <script>
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    }
+                                </script>
                                 <div id="divStlk"></div>
                                 <p class="info-band">
                                     Ho Chi is my company. He understands me<br>

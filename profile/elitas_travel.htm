@@ -4235,7 +4235,8 @@
                     <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
                             <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                                <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
+                                <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
+                                    height="32" srcset="">
                             </a>
                             <a id="userText" href="https://redsoupdev.github.io/lifeinvader.com/member/defaultUser.htm"
                                 class="nav-user">Default User</a><a
@@ -4249,14 +4250,14 @@
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                             if (localStorage.getItem('currUsername') + "" !== "null") {
-        
+
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
-                                document.getElementById("userIcon").src = "../"+localStorage.getItem('curPfp');
-        
+                                document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
+
                             } else {
                                 document.getElementById("loggedInDiv").style.visibility = "hidden";
-        
-        
+
+
                             }
                         </script>
                     </div>
@@ -4283,13 +4284,24 @@
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="elitas_travel"><i class="fa fa-plus"></i>
-                                        Stalk</button>
+             Stalk</button>
                                 </div>
+                                <script>
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    }
+                                </script>
+                                <script>
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    }
+                                </script>
                                 <p class="info-band">
                                     Travel<br>
                                     There's first class and then there's Elitas <span class="info-likes">1811265
                                         Stalkers</span>
                                 </p>
+                               
                                 <div class="info-thumbs clearfix">
                                     <p>
 
@@ -4302,6 +4314,7 @@
                                             enabled="false">Photos</button> <span id="photoCount">6</span>
                                     </p>
                                 </div>
+
                             </div>
                         </div>
                     </div>

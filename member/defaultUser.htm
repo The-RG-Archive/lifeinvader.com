@@ -4291,8 +4291,13 @@ replace images and texts and stuff.
                                 <script>document.getElementById('userNamering').innerHTML = localStorage.getItem('currUsername') + "";</script>
                                 <!--<div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="defaultUser"><i class="fa fa-plus"></i>
-                                        Stalk</button>
-                                </div>-->
+             Stalk</button>
+                                </div>
+                                <script>
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    }
+                                </script>-->
                      
                                 <script>
                                     document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";

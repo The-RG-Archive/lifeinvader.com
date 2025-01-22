@@ -4283,8 +4283,13 @@
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="los_santos_customs"><i class="fa fa-plus"></i>
-                                        Stalk</button>
+             Stalk</button>
                                 </div>
+                                <script>
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    }
+                                </script>
                                 <p class="info-band">
                                     Auto Repairs<br>
                                     Since 1987. 24 Hour Auto Repairs and All Types of Customization. <span
