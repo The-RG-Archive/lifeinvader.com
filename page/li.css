@@ -9617,26 +9617,12 @@ body.modal-open {
     }
 }
 .scrollmenu {
-    width: 100%;
-    height: fit-content;
-    /**used to scroll text*/
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    /**keep scrolling when
-*finger or cursor scrolling*/
-    -webkit-overflow-scrolling: touch;
-}
-
-.product-card {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    float: none;
-    display: inline-block;
-}
-
-/*to hide the scrollbars*/
-::-webkit-scrollbar {
-    display: none;
+    padding: 5px;
+    background-color: #F7CFCF;
+    box-sizing: border-box; 
+            border: 2px solid gray; 
+    width: 720px;
+    height: 210px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
