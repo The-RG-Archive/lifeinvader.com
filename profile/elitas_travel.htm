@@ -4225,7 +4225,8 @@
                     </script>
                     <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
-                            <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
+                            <a id="userPfpALink" href="page/default.png" alt="Default Avatar Icon" width=" 32"
+                                height="32">
                                 <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
                                     height="32" srcset="">
                             </a>
@@ -4241,14 +4242,12 @@
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                             if (localStorage.getItem('currUsername') + "" !== "null") {
-
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
                                 document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
-
+                                document.getElementById("userText").href = localStorage.getItem('curRockstarUser');
+                                document.getElementById("userText").href = localStorage.getItem('userPfpALink');
                             } else {
                                 document.getElementById("loggedInDiv").style.visibility = "hidden";
-
-
                             }
                         </script>
                     </div>
