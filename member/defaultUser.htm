@@ -4236,10 +4236,11 @@ replace images and texts and stuff.
 
                     </script>
 
-                      <div id="li-nav-logged-in" class="pull-right">
+                    <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
                             <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                                <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
+                                <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
+                                    height="32" srcset="">
                             </a>
                             <a id="userText" href="https://redsoupdev.github.io/lifeinvader.com/member/defaultUser.htm"
                                 class="nav-user">Default User</a><a
@@ -4253,14 +4254,14 @@ replace images and texts and stuff.
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                             if (localStorage.getItem('currUsername') + "" !== "null") {
-        
+
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
-                                document.getElementById("userIcon").src = "../"+localStorage.getItem('curPfp');
-        
+                                document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
+
                             } else {
                                 document.getElementById("loggedInDiv").style.visibility = "hidden";
-        
-        
+
+
                             }
                         </script>
                     </div>
@@ -4279,10 +4280,11 @@ replace images and texts and stuff.
                         <div id="li-header" class="clearfix">
                             <div class="img">
                                 <!--user picture-->
-                                <img id="userPfpThinger"src="defaultUser/default.png" alt="Example Site" width="172" height="172">
+                                <img id="userPfpThinger" src="defaultUser/default.png" alt="Example Site" width="172"
+                                    height="172">
                             </div>
                             <script>
-                                document.getElementById('userPfpThinger').src = "../"+localStorage.getItem('curPfp');
+                                document.getElementById('userPfpThinger').src = "../" + localStorage.getItem('curPfp');
                             </script>
                             <div class="info">
                                 <h1>
@@ -4298,25 +4300,44 @@ replace images and texts and stuff.
                                         document.getElementById("divStlk").style.visibility = "hidden";
                                     }
                                 </script>-->
-                     
+
                                 <script>
                                     document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                                     if (localStorage.getItem('currUsername') + "" !== "null") {
-                
+
                                         document.getElementById("loggedOffDiv").style.visibility = "hidden";
-                
+
                                     } else {
                                         document.getElementById("loggedInDiv").style.visibility = "hidden";
-                
-                
+
+
                                     }
                                 </script>
-                                <p class="info-band">
+                                <p id="descTxt" class="info-band">
                                     <!--descriptioin-->
                                     Hi!<br>
                                     I'm a default user.<span class="info-likes">0
                                         Stalkers</span>
                                 </p>
+                                <script>
+                                    const fs = require('fs');
+
+                                    function gettext() {
+                                        fetch('text.txt')
+                                            .then(response => {
+                                                if (!response.ok) {
+                                                    throw new Error('Failed to load the file');
+                                                }
+                                                return response.text();
+                                            })
+                                            .then(data => {
+                                                let fileContent = data;
+                                                console.log(fileContent); // Outputs the content of the txt file
+                                            })
+                                            .catch(error => console.error('Error:', error));
+                                    }
+                                    document.getElementById('descTxt').innerHTML = gettext() + "";
+                                </script>
                                 <div class="info-thumbs clearfix">
                                     <p>
                                         <button class="resetButton modal-media" data-modalcontent="photos">
@@ -4368,8 +4389,7 @@ replace images and texts and stuff.
                     </h3>
                     <div class="ad">
                         <h5>
-                            <a id="ad1"
-                                href="profile/elitas_travel.htm">Elitas
+                            <a id="ad1" href="profile/elitas_travel.htm">Elitas
                                 Travel</a>
                         </h5>
                         <a id="adLink1" href="profile/elitas_travel.htm">
@@ -4385,12 +4405,10 @@ replace images and texts and stuff.
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a id="ad2"
-                                href="profile/redwood_cigarettes.htm">Redwood
+                            <a id="ad2" href="profile/redwood_cigarettes.htm">Redwood
                                 Cigarettes</a>
                         </h5>
-                        <a id="adLink2"
-                            href="profile/redwood_cigarettes.htm">
+                        <a id="adLink2" href="profile/redwood_cigarettes.htm">
                             <img id="adImg2" src="../page/ads/redwood.png" alt="Redwood Cigarettes" width="220"
                                 height="110">
                         </a>
@@ -4404,12 +4422,10 @@ replace images and texts and stuff.
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a id="ad3"
-                                href="profile/los_santos_customs.htm">Los
+                            <a id="ad3" href="profile/los_santos_customs.htm">Los
                                 Santos Customs</a>
                         </h5>
-                        <a id="adLink3"
-                            href="profile/los_santos_customs.htm">
+                        <a id="adLink3" href="profile/los_santos_customs.htm">
                             <img id="adImg3" src="../page/ads/lsc.png" alt="Los Santos Customs" width="220"
                                 height="110">
                         </a>
