@@ -4255,7 +4255,7 @@ replace images and texts and stuff.
                             if (localStorage.getItem('currUsername') + "" !== "null") {
         
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
-                                document.getElementById("userIcon").src = localStorage.getItem('curPfp');
+                                document.getElementById("userIcon").src = "../"+localStorage.getItem('curPfp');
         
                             } else {
                                 document.getElementById("loggedInDiv").style.visibility = "hidden";
