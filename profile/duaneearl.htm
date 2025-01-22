@@ -4238,8 +4238,8 @@ replace images and texts and stuff.
 
                       <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
-                            <a id="userIcon" href="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
-                                <img src="../page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
+                            <a href="page/default.png" alt="Default Avatar Icon" width=" 32" height="32">
+                                <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32" height="32" srcset="">
                             </a>
                             <a id="userText" href="https://redsoupdev.github.io/lifeinvader.com/member/defaultUser.htm"
                                 class="nav-user">Default User</a><a
@@ -4255,6 +4255,7 @@ replace images and texts and stuff.
                             if (localStorage.getItem('currUsername') + "" !== "null") {
         
                                 document.getElementById("loggedOffDiv").style.visibility = "hidden";
+                                document.getElementById("userIcon").src = localStorage.getItem('curPfp');
         
                             } else {
                                 document.getElementById("loggedInDiv").style.visibility = "hidden";
