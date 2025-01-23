@@ -4257,12 +4257,18 @@ replace images and texts and stuff.
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
                             if (localStorage.getItem('currUsername') + "" !== "null") {
-                                document.getElementById("loggedOffDiv").style.visibility = "hidden";
+                                let loggedOff =
+                                    document.getElementById("loggedOffDiv");
+                                loggedOff.parentNode.removeChild(loggedOff);
+
                                 document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
                                 document.getElementById("userText").href = localStorage.getItem('curRockstarUser');
                                 document.getElementById("userPfpALink").href = localStorage.getItem('curRockstarUser');
                             } else {
-                                document.getElementById("loggedInDiv").style.visibility = "hidden";
+                                let loggedIn =
+                                    document.getElementById("loggedInDiv");
+                                loggedIn.parentNode.removeChild(loggedIn);
+
                             }
                         </script>
                     </div>
@@ -4383,9 +4389,9 @@ replace images and texts and stuff.
                             </div>
                             <script>
                                 if (localStorage.getItem('currUsername') + "" === "null") {
-                                    let gfg_down =
+                                    let commentBox =
                                         document.getElementById("addCommentBox");
-                                    gfg_down.parentNode.removeChild(gfg_down);
+                                        commentBox.parentNode.removeChild(commentBox);
                                     document.getElementById("addCommentBox").style.visibility = "hidden";
                                 } else {
                                     document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
