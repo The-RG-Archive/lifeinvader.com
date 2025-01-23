@@ -147,7 +147,8 @@ function changeMainBg(){
     const bgArray = [
         "page/custom/backgrounds/bg1.png",
         "page/custom/backgrounds/bg2.png",
-        "page/custom/backgrounds/bg3.png"
+        "page/custom/backgrounds/bg3.png",
+        "page/custom/backgrounds/bg4.png"
     ]
     var i = Math.floor(Math.random() * (0 - bgArray.length)) + bgArray.length;
     let headingID = document.getElementsByTagName('body')[0];
