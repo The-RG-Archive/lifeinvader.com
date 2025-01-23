@@ -4239,21 +4239,20 @@ replace images and texts and stuff.
 
                     </script>
 
-                      <div id="li-nav-logged-in" class="pull-right">
+                    <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
                             <a id="userPfpALink" href="page/default.png" alt="Default Avatar Icon" width=" 32"
                                 height="32">
                                 <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
                                     height="32" srcset="">
                             </a>
-                            <a id="userText" href="../member/defaultUser.htm"
-                                class="nav-user">Default User</a><a
-                                href="../logoff.html"
-                                data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            <a id="userText" href="../member/defaultUser.htm" class="nav-user">Default User</a><a
+                                href="../logoff.html" data-rockstarid="15130174" class="nav-signout" id="signOut">sign
+                                out</a>
                         </div>
                         <div id="loggedOffDiv" class="pull-right">
-                            <a href="../login.html" data-rockstarid="15130174"
-                                class="nav-signout" style="color: white;" id="signOut">sign in</a>
+                            <a href="../login.html" data-rockstarid="15130174" class="nav-signout" style="color: white;"
+                                id="signOut">sign in</a>
                         </div>
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
@@ -4290,7 +4289,7 @@ replace images and texts and stuff.
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="example_site"><i class="fa fa-plus"></i>
-             Stalk</button>
+                                        Stalk</button>
                                 </div>
                                 <script>
                                     if (localStorage.getItem('currUsername') + "" === "null") {
@@ -4372,146 +4371,158 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
+                            <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a></div>
+                            <div class="meta"><a href="">aldi36</a>, <a href="">yo_mama69</a>, <a
+                                    href="">ambatukam911</a> & <a href="">420 others</a> are stalking this</div>
+                            <div id="addCommentBox" class="add-comment">
+                                <div class="avatar"> <img id="commentPfp" src="example_site/default.png"
+                                        alt="Example Site avatar" width="32" height="32"></img></div>
+                                     
+                                <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+                         
+                            </div>
+                            <script>
+                                if (localStorage.getItem('currUsername') + "" === "null") {
+                                    document.getElementById("addCommentBox").style.visibility = "hidden";
+                                }else{
+                                    document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ads bar -->
-            <div id="ads-col" class="span3">
-                <div id="li-adsbar">
-                    <h3>
-                        Sponsored
-                    </h3>
-                    <div class="ad">
-                        <h5>
-                            <a id="ad1"
-                                href="profile/elitas_travel.htm">Elitas
-                                Travel</a>
-                        </h5>
-                        <a id="adLink1" href="profile/elitas_travel.htm">
-                            <img id="adImg1" src="../page/ads/elitas.jpg" alt="Example Site" width="220" height="110">
-                        </a>
-                        <p id="desc1">
-                            10% off your next purchase.
-                        </p>
-                        <p id="stalkT1" class="meta">
-                            1811265 are stalking Example Site
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="ad">
-                        <h5>
-                            <a id="ad2"
-                                href="profile/redwood_cigarettes.htm">Redwood
-                                Cigarettes</a>
-                        </h5>
-                        <a id="adLink2"
-                            href="profile/redwood_cigarettes.htm">
-                            <img id="adImg2" src="../page/ads/redwood.png" alt="Redwood Cigarettes" width="220"
-                                height="110">
-                        </a>
-                        <p id="desc2">
-                            10% discount on your first hospital visit
-                        </p>
-                        <p id="stalkT2" class="meta">
-                            1357089 are stalking Redwood Cigarettes
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="ad">
-                        <h5>
-                            <a id="ad3"
-                                href="profile/los_santos_customs.htm">Los
-                                Santos Customs</a>
-                        </h5>
-                        <a id="adLink3"
-                            href="profile/los_santos_customs.htm">
-                            <img id="adImg3" src="../page/ads/lsc.png" alt="Los Santos Customs" width="220"
-                                height="110">
-                        </a>
-                        <p id="desc3">
-                            Get a free spray paint job.
-                        </p>
-                        <p id="stalkT3" class="meta">
-                            2178062 are stalking Los Santos Customs
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="ad">
-                        <h5>
-                            <a id="ad4" href="profile/herr_kutz.htm">Herr
-                                Kutz
-                                Barber</a>
-                        </h5>
-                        <a id="adLink4" href="profile/herr_kutz.htm">
-                            <img id="adImg4" src="../page/ads/herr_kutz.png" alt="Herr Kutz Barber" width="220"
-                                height="110">
-                        </a>
-                        <p id="desc4">
-                            First haircut free.
-                        </p>
-                        <p id="stalkT4" class="meta">
-                            1528629 are stalking Herr Kutz Barber
-                        </p>
-                    </div>
-                    <hr>
-                    <script>
-                        let arr = [0, 1, 2, 3, 4, 5, 6, 7]; // an array with 5 elements
-
-
-
-                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
-                        document.getElementById('desc1').innerHTML = getDescText(arr[i]);
-                        document.getElementById('ad1').innerHTML = getAdText(arr[i]);
-                        document.getElementById('stalkT1').innerHTML = getStalkText(arr[i]);
-                        document.getElementById("adImg1").src = getAdImg(arr[i]);
-                        document.getElementById('ad1').href = getAdLink(arr[i]);
-                        document.getElementById('adLink1').href = getAdLink(arr[i]);
-                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
-
-                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
-                        document.getElementById('desc2').innerHTML = getDescText(arr[i]);
-                        document.getElementById('ad2').innerHTML = getAdText(arr[i]);
-                        document.getElementById('stalkT2').innerHTML = getStalkText(arr[i]);
-                        document.getElementById("adImg2").src = getAdImg(arr[i]);
-                        document.getElementById('ad2').href = getAdLink(arr[i]);
-                        document.getElementById('adLink2').href = getAdLink(arr[i]);
-                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
-
-                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
-                        document.getElementById('desc3').innerHTML = getDescText(arr[i]);
-                        document.getElementById('ad3').innerHTML = getAdText(arr[i]);
-                        document.getElementById('stalkT3').innerHTML = getStalkText(arr[i]);
-                        document.getElementById("adImg3").src = getAdImg(arr[i]);
-                        document.getElementById('ad3').href = getAdLink(arr[i]);
-                        document.getElementById('adLink3').href = getAdLink(arr[i]);
-                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
-
-                        var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
-                        document.getElementById('desc4').innerHTML = getDescText(arr[i]);
-                        document.getElementById('ad4').innerHTML = getAdText(arr[i]);
-                        document.getElementById('stalkT4').innerHTML = getStalkText(arr[i]);
-                        document.getElementById("adImg4").src = getAdImg(arr[i]);
-                        document.getElementById('ad4').href = getAdLink(arr[i]);
-                        document.getElementById('adLink4').href = getAdLink(arr[i]);
-                        arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
-                    </script>
+        </div>
+        <!-- ads bar -->
+        <div id="ads-col" class="span3">
+            <div id="li-adsbar">
+                <h3>
+                    Sponsored
+                </h3>
+                <div class="ad">
+                    <h5>
+                        <a id="ad1" href="profile/elitas_travel.htm">Elitas
+                            Travel</a>
+                    </h5>
+                    <a id="adLink1" href="profile/elitas_travel.htm">
+                        <img id="adImg1" src="../page/ads/elitas.jpg" alt="Example Site" width="220" height="110">
+                    </a>
+                    <p id="desc1">
+                        10% off your next purchase.
+                    </p>
+                    <p id="stalkT1" class="meta">
+                        1811265 are stalking Example Site
+                    </p>
                 </div>
+                <hr>
+                <div class="ad">
+                    <h5>
+                        <a id="ad2" href="profile/redwood_cigarettes.htm">Redwood
+                            Cigarettes</a>
+                    </h5>
+                    <a id="adLink2" href="profile/redwood_cigarettes.htm">
+                        <img id="adImg2" src="../page/ads/redwood.png" alt="Redwood Cigarettes" width="220"
+                            height="110">
+                    </a>
+                    <p id="desc2">
+                        10% discount on your first hospital visit
+                    </p>
+                    <p id="stalkT2" class="meta">
+                        1357089 are stalking Redwood Cigarettes
+                    </p>
+                </div>
+                <hr>
+                <div class="ad">
+                    <h5>
+                        <a id="ad3" href="profile/los_santos_customs.htm">Los
+                            Santos Customs</a>
+                    </h5>
+                    <a id="adLink3" href="profile/los_santos_customs.htm">
+                        <img id="adImg3" src="../page/ads/lsc.png" alt="Los Santos Customs" width="220" height="110">
+                    </a>
+                    <p id="desc3">
+                        Get a free spray paint job.
+                    </p>
+                    <p id="stalkT3" class="meta">
+                        2178062 are stalking Los Santos Customs
+                    </p>
+                </div>
+                <hr>
+                <div class="ad">
+                    <h5>
+                        <a id="ad4" href="profile/herr_kutz.htm">Herr
+                            Kutz
+                            Barber</a>
+                    </h5>
+                    <a id="adLink4" href="profile/herr_kutz.htm">
+                        <img id="adImg4" src="../page/ads/herr_kutz.png" alt="Herr Kutz Barber" width="220"
+                            height="110">
+                    </a>
+                    <p id="desc4">
+                        First haircut free.
+                    </p>
+                    <p id="stalkT4" class="meta">
+                        1528629 are stalking Herr Kutz Barber
+                    </p>
+                </div>
+                <hr>
+                <script>
+                    let arr = [0, 1, 2, 3, 4, 5, 6, 7]; // an array with 5 elements
+
+
+
+                    var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                    document.getElementById('desc1').innerHTML = getDescText(arr[i]);
+                    document.getElementById('ad1').innerHTML = getAdText(arr[i]);
+                    document.getElementById('stalkT1').innerHTML = getStalkText(arr[i]);
+                    document.getElementById("adImg1").src = getAdImg(arr[i]);
+                    document.getElementById('ad1').href = getAdLink(arr[i]);
+                    document.getElementById('adLink1').href = getAdLink(arr[i]);
+                    arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                    var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                    document.getElementById('desc2').innerHTML = getDescText(arr[i]);
+                    document.getElementById('ad2').innerHTML = getAdText(arr[i]);
+                    document.getElementById('stalkT2').innerHTML = getStalkText(arr[i]);
+                    document.getElementById("adImg2").src = getAdImg(arr[i]);
+                    document.getElementById('ad2').href = getAdLink(arr[i]);
+                    document.getElementById('adLink2').href = getAdLink(arr[i]);
+                    arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                    var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                    document.getElementById('desc3').innerHTML = getDescText(arr[i]);
+                    document.getElementById('ad3').innerHTML = getAdText(arr[i]);
+                    document.getElementById('stalkT3').innerHTML = getStalkText(arr[i]);
+                    document.getElementById("adImg3").src = getAdImg(arr[i]);
+                    document.getElementById('ad3').href = getAdLink(arr[i]);
+                    document.getElementById('adLink3').href = getAdLink(arr[i]);
+                    arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+
+                    var i = Math.floor(Math.random() * (0 - arr.length)) + arr.length;
+                    document.getElementById('desc4').innerHTML = getDescText(arr[i]);
+                    document.getElementById('ad4').innerHTML = getAdText(arr[i]);
+                    document.getElementById('stalkT4').innerHTML = getStalkText(arr[i]);
+                    document.getElementById("adImg4").src = getAdImg(arr[i]);
+                    document.getElementById('ad4').href = getAdLink(arr[i]);
+                    document.getElementById('adLink4').href = getAdLink(arr[i]);
+                    arr.splice(i, 1); // remove 1 element at index 2 (value: 3)
+                </script>
             </div>
         </div>
+    </div>
 
-        <hr>
-        <footer>
-            <span>© Rockstar 2025</span>
-            <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
-            <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
-            <span class="footer-dot">·</span>
+    <hr>
+    <footer>
+        <span>© Rockstar 2025</span>
+        <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
+        <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
+        <span class="footer-dot">·</span>
 
-            <button id="footer-cookies-button" class="footer-button resetButton">Cookies</button>
+        <button id="footer-cookies-button" class="footer-button resetButton">Cookies</button>
 
-            <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
-                Information</a>
-        </footer>
+        <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
+            Information</a>
+    </footer>
     </div>
 
 

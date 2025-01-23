@@ -7553,12 +7553,6 @@ textarea:focus {
     display: block
 }
 
-#li-feed .post .add-comment textarea {
-    height: 15px;
-    line-height: 15px;
-    margin: 3px 0 0 0;
-    resize: none
-}
 
 #li-feed .post .load-more {
     margin-top: 5px;
@@ -9616,13 +9610,21 @@ body.modal-open {
         text-align: right
     }
 }
+
 .scrollmenu {
     padding: 5px;
     background-color: #F7CFCF;
-    box-sizing: border-box; 
-            border: 2px solid gray; 
+    box-sizing: border-box;
+    border: 2px solid gray;
     width: 720px;
     height: 210px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.boxerer {
+    border-top: 1px solid #eee;
+    margin-top: 5px;
+    padding: 5px 5px 0 5px;
+    background-color: red;
 }
