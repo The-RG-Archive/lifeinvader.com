@@ -4298,9 +4298,9 @@ replace images and texts and stuff.
                                         Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
-                                        document.getElementById("divStlk");
+                                            document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
@@ -4365,6 +4365,18 @@ replace images and texts and stuff.
                                         height="263">
                                 </button>
                                 <div class="annotation">Look at my truck! :)</div>
+                                <div id="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <div class="meta">No one are stalking this</div>
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img id="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -4380,31 +4392,32 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
                             <div id="socialBoxDiv">
-                            <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a></div>
-                            <div class="meta"><a href="">aldi36</a>, <a href="">yo_mama69</a>, <a
-                                    href="">ambatukam911</a> & <a href="">420 others</a> are stalking this</div>
-                            <div id="addCommentBox" class="add-comment">
-                                <div class="avatar"> <img id="commentPfp" src="example_site/default.png"
-                                        alt="Example Site avatar" width="32" height="32"></img></div>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                </div>
+                                <div class="meta">No one are stalking this</div>
+                                <div id="addCommentBox" class="add-comment">
+                                    <div class="avatar"> <img id="commentPfp" src="example_site/default.png"
+                                            alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+                                    <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
 
+                                </div>
                             </div>
-                        </div>
-                            <script>
-                                if (localStorage.getItem('currUsername') + "" === "null") {
-                                    let commentBox =
-                                        document.getElementById("socialBoxDiv");
-                                        commentBox.parentNode.removeChild(commentBox);
-                                   
-                                } else {
-                                    document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
-                                }
-                            </script>
+                           
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                if (localStorage.getItem('currUsername') + "" === "null") {
+                    let commentBox =
+                        document.getElementById("socialBoxDiv");
+                    commentBox.parentNode.removeChild(commentBox);
+
+                } else {
+                    document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
+                }
+            </script>
 
             <!-- ads bar -->
             <div id="ads-col" class="span3">
