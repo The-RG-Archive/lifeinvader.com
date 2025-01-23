@@ -4298,8 +4298,10 @@ replace images and texts and stuff.
                                         Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
-                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                        let divStlk =
+                                        document.getElementById("divStlk");
+                                        divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
                                 <p class="info-band">
@@ -4377,6 +4379,7 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
+                            <div id="socialBoxDiv">
                             <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a></div>
                             <div class="meta"><a href="">aldi36</a>, <a href="">yo_mama69</a>, <a
                                     href="">ambatukam911</a> & <a href="">420 others</a> are stalking this</div>
@@ -4387,12 +4390,13 @@ replace images and texts and stuff.
                                 <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
 
                             </div>
+                        </div>
                             <script>
                                 if (localStorage.getItem('currUsername') + "" === "null") {
                                     let commentBox =
-                                        document.getElementById("addCommentBox");
+                                        document.getElementById("socialBoxDiv");
                                         commentBox.parentNode.removeChild(commentBox);
-                                    document.getElementById("addCommentBox").style.visibility = "hidden";
+                                   
                                 } else {
                                     document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
                                 }

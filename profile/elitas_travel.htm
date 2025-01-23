@@ -4295,15 +4295,13 @@
              Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
-                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                        let divStlk =
+                                        document.getElementById("divStlk");
+                                        divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
-                                <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
-                                        document.getElementById("divStlk").style.visibility = "hidden";
-                                    }
-                                </script>
+                               
                                 <p class="info-band">
                                     Travel<br>
                                     There's first class and then there's Elitas <span class="info-likes">1811265

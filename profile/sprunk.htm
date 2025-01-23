@@ -4295,8 +4295,10 @@
              Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
-                                        document.getElementById("divStlk").style.visibility = "hidden";
+                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                        let divStlk =
+                                        document.getElementById("divStlk");
+                                        divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
                                 <p class="info-band">
