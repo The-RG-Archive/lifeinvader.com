@@ -155,13 +155,3 @@ function changeMainBg(){
     document.body.style.backgroundImage = "url('"+bgArray[i]+"')"; 
     }
 
-    function loadCommentBox(){
-        if (localStorage.getItem('currUsername') + "" === "null") {
-            let commentBox =
-                document.getElementById("socialBoxDiv");
-            commentBox.parentNode.removeChild(commentBox);
-
-        } else {
-            document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
-        }
-    }

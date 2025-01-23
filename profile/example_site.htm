@@ -4365,20 +4365,29 @@ replace images and texts and stuff.
                                         height="263">
                                 </button>
                                 <div class="annotation">Look at my truck! :)</div>
-                                <div id="socialBoxDiv">
-                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div id="socialBoxDiv1">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
                                     <div class="meta">No one are stalking this</div>
                                     <div id="addCommentBox" class="add-comment">
                                         <div class="avatar"> <img id="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
-    
-                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
-    
+
+                                        <input type="text" style="width: 407px;"
+                                            placeholder="Write a comment..."></input>
+
                                     </div>
                                 </div>
                                 <script>
-                                    loadCommentBox();
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                        let commentBox =
+                                            document.getElementById("socialBoxDiv1");
+                                        commentBox.parentNode.removeChild(commentBox);
+
+                                    } else {
+                                        document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
+                                    }
                                 </script>
                             </div>
                         </div>
@@ -4394,7 +4403,7 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
-                            <div id="socialBoxDiv">
+                            <div id="socialBoxDiv2">
                                 <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
                                 </div>
                                 <div class="meta">No one are stalking this</div>
@@ -4407,14 +4416,21 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <script>
-                                loadCommentBox();
+                                if (localStorage.getItem('currUsername') + "" === "null") {
+                                    let commentBox =
+                                        document.getElementById("socialBoxDiv2");
+                                    commentBox.parentNode.removeChild(commentBox);
+
+                                } else {
+                                    document.getElementById("commentPfp").src = "../" + localStorage.getItem('curPfp');
+                                }
                             </script>
-                           
+
                         </div>
                     </div>
                 </div>
             </div>
-         
+
 
             <!-- ads bar -->
             <div id="ads-col" class="span3">
