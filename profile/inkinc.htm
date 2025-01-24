@@ -4368,6 +4368,18 @@
                                 </button>
                                 <div class="annotation">Look at that craftsmanship! It’s a permanent badge of how cool
                                     and unique you are. You’ll love and hate it forever.</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                         <div class="post">
@@ -4384,6 +4396,18 @@
                                 <img src="inkinc/468x263_002.jpg" alt="Stalk us here on LifeInvader" width="468"
                                     height="263">
                                 <div class="annotation">Stalk us here on LifeInvader and get that first tat free!</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -4404,7 +4428,46 @@
                                 </button>
                                 <div class="annotation">The lucky 13 Dragon drawn by Steve and now available. The dragon
                                     and vaguely Asian lettering have deep spiritual meaning.</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
+                            <script>
+                                if (localStorage.getItem('currUsername') + "" === "null") {
+                                    var socialBoxes = document.getElementsByName("socialBoxDiv");
+                                    console.log("user not loged in, " + socialBoxes.length + " posts");
+    
+                                    for (let i = socialBoxes.length - 1; i > -1; i--) {
+    
+                                        console.log("page thinged " + i);
+                                        socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+    
+                                    }
+    
+    
+                                } else {
+                                    var commentPfps = document.getElementsByName("commentPfp");
+                                    console.log("user loged in, " + commentPfps.length + " posts");
+    
+                                    for (let i = commentPfps.length - 1; i > -1; i--) {
+    
+                                        console.log("page thinged " + i);
+                                        commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+    
+                                    }
+    
+                                }
+    
+                            </script>
                         </div>
                         <div class="loadPosts"></div>
                     </div>
