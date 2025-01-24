@@ -4239,21 +4239,20 @@ replace images and texts and stuff.
 
                     </script>
 
-                      <div id="li-nav-logged-in" class="pull-right">
+                    <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
                             <a id="userPfpALink" href="page/default.png" alt="Default Avatar Icon" width=" 32"
                                 height="32">
                                 <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
                                     height="32" srcset="">
                             </a>
-                            <a id="userText" href="../member/defaultUser.htm"
-                                class="nav-user">Default User</a><a
-                                href="../logoff.html"
-                                data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            <a id="userText" href="../member/defaultUser.htm" class="nav-user">Default User</a><a
+                                href="../logoff.html" data-rockstarid="15130174" class="nav-signout" id="signOut">sign
+                                out</a>
                         </div>
                         <div id="loggedOffDiv" class="pull-right">
-                            <a href="../login.html" data-rockstarid="15130174"
-                                class="nav-signout" style="color: white;" id="signOut">sign in</a>
+                            <a href="../login.html" data-rockstarid="15130174" class="nav-signout" style="color: white;"
+                                id="signOut">sign in</a>
                         </div>
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
@@ -4296,12 +4295,12 @@ replace images and texts and stuff.
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="example_site"><i class="fa fa-plus"></i>
-             Stalk</button>
+                                        Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
-                                        document.getElementById("divStlk");
+                                            document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
@@ -4391,37 +4390,68 @@ replace images and texts and stuff.
                         <div class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
-                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32"
-                                        height="32">
+                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32" height="32">
                                 </div>
                                 <div class="type-info">
                                     <strong>Duane Earl-Host of Beyond Insemination</strong>
                                     posted a status update
                                 </div>
                             </div>
-                            <div class="text">You will be delighted, dear reader, to leam that the fine I received for my recent broadcast has been waived. When I was milking that sow live on air and gently encouraging it to embark in a mating ritual, I was doing so out of educational purposes only. Sure, genetics are fun. Sure, when two creatures are cominced to find that passion down deep inside them that makes the bacon, it's exciting But I provide an educational senice. And that's the truth.</div>
+                            <div class="text">You will be delighted, dear reader, to leam that the fine I received for
+                                my recent broadcast has been waived. When I was milking that sow live on air and gently
+                                encouraging it to embark in a mating ritual, I was doing so out of educational purposes
+                                only. Sure, genetics are fun. Sure, when two creatures are cominced to find that passion
+                                down deep inside them that makes the bacon, it's exciting But I provide an educational
+                                senice. And that's the truth.</div>
+                            <div name="socialBoxDiv">
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                </div>
+
+                                <div id="addCommentBox" class="add-comment">
+                                    <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                            alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                    <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+
+                                </div>
+                            </div>
                         </div>
 
                         <div class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
-                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32"
-                                        height="32">
+                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32" height="32">
                                 </div>
                                 <div class="type-info">
                                     <strong>Duane Earl-Host of Beyond Insemination</strong>
                                     posted a status update
                                 </div>
                             </div>
-                            <div class="text">This mp3 player I acquired off of a gentlemen looking for directions has rock power ballads that take Duane Earl back to high school. I had a powerful mullet perm, a comb in my back pocket, a mustache, and ladies would ride it- as in every cheerleader in school. That's how Duane Earl rolls. Or rolled. Now I focus my attention to other matters at hand, like tending the herd. From one herd of beautiful hefers to another.</div>
+                            <div class="text">This mp3 player I acquired off of a gentlemen looking for directions has
+                                rock power ballads that take Duane Earl back to high school. I had a powerful mullet
+                                perm, a comb in my back pocket, a mustache, and ladies would ride it- as in every
+                                cheerleader in school. That's how Duane Earl rolls. Or rolled. Now I focus my attention
+                                to other matters at hand, like tending the herd. From one herd of beautiful hefers to
+                                another.</div>
+                            <div name="socialBoxDiv">
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                </div>
+
+                                <div id="addCommentBox" class="add-comment">
+                                    <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                            alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                    <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+
+                                </div>
+                            </div>
                         </div>
 
 
                         <div class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
-                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32"
-                                        height="32">
+                                    <img src="duaneearl/user.jpg" alt="Duane Earl avatar" width="32" height="32">
                                 </div>
                                 <div class="type-info">
                                     <strong>Duane Earl-Host of Beyond Insemination</strong>
@@ -4432,14 +4462,59 @@ replace images and texts and stuff.
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
                                     <img src="duaneearl/image01.jpeg"
-                                        alt="Distinguish yourself from others with Duane Earl" width="468"
-                                        height="263">
+                                        alt="Distinguish yourself from others with Duane Earl" width="468" height="263">
                                 </button>
-                                <div class="annotation">Whoooooo Weeeeeeee. Sh*t got real last night. I am particularly interested in the classic films of the legendary Mr Jock Cranley and hell if we didn't have us a movie marathon and took out Timbo's truck and shot roman candles off the top like they were rocket launchers and we were fighting our way out of a prison camp in 'Nam. Woke up and we were in 'Nam and Timbo's truck was burnt all to hell upside down For reals. Honestly. Hell Yes!</div>
+                                <div class="annotation">Whoooooo Weeeeeeee. Sh*t got real last night. I am particularly
+                                    interested in the classic films of the legendary Mr Jock Cranley and hell if we
+                                    didn't have us a movie marathon and took out Timbo's truck and shot roman candles
+                                    off the top like they were rocket launchers and we were fighting our way out of a
+                                    prison camp in 'Nam. Woke up and we were in 'Nam and Timbo's truck was burnt all to
+                                    hell upside down For reals. Honestly. Hell Yes!</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
+                                    </div>
+
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" style="width: 407px;"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      
+
                     </div>
+                    <script>
+                        if (localStorage.getItem('currUsername') + "" === "null") {
+                            var socialBoxes = document.getElementsByName("socialBoxDiv");
+                            console.log("user not loged in, " + socialBoxes.length + " posts");
+
+                            for (let i = socialBoxes.length - 1; i > -1; i--) {
+
+                                console.log("page thinged " + i);
+                                socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+
+                            }
+
+
+                        } else {
+                            var commentPfps = document.getElementsByName("commentPfp");
+                            console.log("user loged in, " + commentPfps.length + " posts");
+
+                            for (let i = commentPfps.length - 1; i > -1; i--) {
+
+                                console.log("page thinged " + i);
+                                commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+
+                            }
+
+                        }
+
+                    </script>
                 </div>
             </div>
             <!-- ads bar -->
