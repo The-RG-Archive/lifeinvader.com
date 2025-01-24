@@ -4403,6 +4403,18 @@ replace images and texts and stuff.
                                         height="263">
                                 </button>
                                 <div class="annotation">Got a new phone dammit</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -4425,6 +4437,18 @@ replace images and texts and stuff.
                                 </button>
                                 <div class="annotation">Drinking whiskey hanging off side of boat taking pics of self
                                     hope don't drop ph</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
                         </div>
 
@@ -4447,8 +4471,47 @@ replace images and texts and stuff.
                                 </button>
                                 <div class="annotation">My book is #1! Ha Ha! Parenting books are easy to right when you
                                     re-purpose what you learned in the Marines about what breaks a man</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
                         </div>
+                        <script>
+                            if (localStorage.getItem('currUsername') + "" === "null") {
+                                var socialBoxes = document.getElementsByName("socialBoxDiv");
+                                console.log("user not loged in, " + socialBoxes.length + " posts");
+
+                                for (let i = socialBoxes.length - 1; i > -1; i--) {
+
+                                    console.log("page thinged " + i);
+                                    socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+
+                                }
+
+
+                            } else {
+                                var commentPfps = document.getElementsByName("commentPfp");
+                                console.log("user loged in, " + commentPfps.length + " posts");
+
+                                for (let i = commentPfps.length - 1; i > -1; i--) {
+
+                                    console.log("page thinged " + i);
+                                    commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+
+                                }
+
+                            }
+
+                        </script>
 
                     </div>
                 </div>
