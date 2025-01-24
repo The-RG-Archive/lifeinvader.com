@@ -47,7 +47,7 @@ Broken Stalk button:
 - How it is if pressed: https://imgur.com/XH53vjp 
 - How it should be https://imgur.com/KxayObr 
 
-## What is fronm Rockstar Games and what was added by us?
+## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **Exept the example page** it is used to show how you could create your own custom pages and for testing of new features.
 - Index.html is **NOT** from Rockstar Game it is made by us to make the website more user friendly the original index would just load a random page.
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable social club features like profile pictures and names the pictures have been grabbed from social club.
