@@ -4379,7 +4379,7 @@ replace images and texts and stuff.
 
                                     </div>
                                 </div>
-                                <script>
+                               <!-- <script>
                                     if (localStorage.getItem('currUsername') + "" === "null") {
                                         let commentBox =
                                             document.getElementById("socialBoxDiv1");
@@ -4388,7 +4388,7 @@ replace images and texts and stuff.
                                     } else {
                                         document.getElementById("commentPfp1").src = "../" + localStorage.getItem('curPfp');
                                     }
-                                </script>
+                                </script>-->
                             </div>
                         </div>
                         <div class="post">
@@ -4415,18 +4415,22 @@ replace images and texts and stuff.
 
                                 </div>
                             </div>
-                            <script>
-                                if (localStorage.getItem('currUsername') + "" === "null") {
-                                    let commentBox =
-                                        document.getElementById("socialBoxDiv2");
-                                    commentBox.parentNode.removeChild(commentBox);
-
-                                } else {
-                                    document.getElementById("commentPfp2").src = "../" + localStorage.getItem('curPfp');
-                                }
-                            </script>
+                           
 
                         </div>
+                        <script>
+                            if (localStorage.getItem('currUsername') + "" === "null") {
+                                for (let i = 1; i < document.getElementById("socialBoxDiv2").length + 1; i++) {
+                                    let commentBox =
+                                        document.getElementById("socialBoxDiv" + i);
+                                    commentBox.parentNode.removeChild(commentBox);
+                                }
+
+
+                            } else {
+                                document.getElementById("commentPfp2").src = "../" + localStorage.getItem('curPfp');
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
