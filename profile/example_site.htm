@@ -4371,7 +4371,7 @@ replace images and texts and stuff.
                                     </div>
                                     <div class="meta">No one are stalking this</div>
                                     <div id="addCommentBox" class="add-comment">
-                                        <div class="avatar"> <img id="commentPfp1" src="example_site/default.png"
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
                                         <input type="text" style="width: 407px;"
@@ -4399,7 +4399,7 @@ replace images and texts and stuff.
                                 </div>
                                 <div class="meta">No one are stalking this</div>
                                 <div id="addCommentBox" class="add-comment">
-                                    <div class="avatar"> <img id="commentPfp2" src="example_site/default.png"
+                                    <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                             alt="Example Site avatar" width="32" height="32"></img></div>
 
                                     <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
@@ -4411,22 +4411,8 @@ replace images and texts and stuff.
                         </div>
 
                         <script>
+                            analizePosts();
 
-                            if (localStorage.getItem('currUsername') + "" === "null") {
-                                var up_names = document.getElementsByName("socialBoxDiv");
-                                console.log("user not loged in, " + up_names.length + " posts");
-
-                                for (let i = up_names.length - 1; i > -1; i--) {
-
-                                    console.log("page thinged " + i);
-                                    up_names[i].parentNode.removeChild(up_names[i]);
-
-                                }
-
-
-                            } else {
-                                document.getElementById("commentPfp2").src = "../" + localStorage.getItem('curPfp');
-                            }
                         </script>
                     </div>
                 </div>

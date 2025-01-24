@@ -155,3 +155,29 @@ function changeMainBg(){
     document.body.style.backgroundImage = "url('"+bgArray[i]+"')"; 
     }
 
+function analizePosts(){
+    if (localStorage.getItem('currUsername') + "" === "null") {
+        var socialBoxes = document.getElementsByName("socialBoxDiv");
+        console.log("user not loged in, " + socialBoxes.length + " posts");
+
+        for (let i = socialBoxes.length - 1; i > -1; i--) {
+
+            console.log("page thinged " + i);
+            socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+
+        }
+
+
+    } else {
+        var commentPfps = document.getElementsByName("commentPfp");
+        console.log("user loged in, " + commentPfps.length + " posts");
+
+        for (let i = commentPfps.length - 1; i > -1; i--) {
+
+            console.log("page thinged " + i);
+            commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+
+        }
+        
+    }
+}
