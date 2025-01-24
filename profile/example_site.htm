@@ -4365,7 +4365,7 @@ replace images and texts and stuff.
                                         height="263">
                                 </button>
                                 <div class="annotation">Look at my truck! :)</div>
-                                <div id="socialBoxDiv1">
+                                <div id="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
                                             href="">Share</a>
                                     </div>
@@ -4403,7 +4403,7 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
-                            <div id="socialBoxDiv2">
+                            <div id="socialBoxDiv">
                                 <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
                                 </div>
                                 <div class="meta">No one are stalking this</div>
@@ -4420,10 +4420,10 @@ replace images and texts and stuff.
                         </div>
                         <script>
                             if (localStorage.getItem('currUsername') + "" === "null") {
-                                for (let i = 1; i < document.getElementById("socialBoxDiv2").length + 1; i++) {
-                                    let commentBox =
-                                        document.getElementById("socialBoxDiv" + i);
-                                    commentBox.parentNode.removeChild(commentBox);
+                                const up_names = document.getElementsByName("socialBoxDiv");
+                                for (let i = 0; i < up_names.length + 1; i++) {
+                                  
+                                    commentBox.parentNode.removeChild(up_names[i]);
                                 }
 
 
