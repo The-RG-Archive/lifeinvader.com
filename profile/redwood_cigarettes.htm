@@ -4366,6 +4366,18 @@
                                 </div>
                             </div>
                             <div class="text">Stalk if you still remember your first REDWOOD JUNIOR</div>
+                            <div name="socialBoxDiv">
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                </div>
+                                <!--<div class="meta">No one are stalking this</div>-->
+                                <div id="addCommentBox" class="add-comment">
+                                    <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                            alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                    <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+
+                                </div>
+                            </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4388,6 +4400,18 @@
                                 <div class="annotation">Submitted by Stalker Andy Hamilton of Sandy Shores: <br>“Smoking
                                     Redwoods taught me that I don’t have to fit in but I can if I want to.”
                                     #RedwoodPleasures</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                         <div class="post">
@@ -4404,6 +4428,18 @@
                             <div class="media">
                                 <img src="redwood_cigarettes/468x263.png" alt="Redwood cares" width="468" height="263">
                                 <div class="annotation">#REDWOODCARES. Log In to Lifeinvader, Stalk this page and save!
+                                </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -4427,6 +4463,18 @@
                                 <div class="annotation">Submitted by Stalker Madison Wolf of Hawick: <br>“Waking
                                     up on a beach in different clothes with no memory of the last 6 hours
                                     and smoking a Redwood. It doesn’t get any better.” #RedwoodPleasures.</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                         <div class="post">
@@ -4453,7 +4501,46 @@
                                     It may not be a conventional endorsement but we’ll certainly take it.
                                     Thanks Poppy! 50 Cartons of your apparently preferred brand are being
                                     crated and shipped to your door this week!</div>
+                                    <div name="socialBoxDiv">
+                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                        </div>
+                                        <!--<div class="meta">No one are stalking this</div>-->
+                                        <div id="addCommentBox" class="add-comment">
+                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                    alt="Example Site avatar" width="32" height="32"></img></div>
+        
+                                            <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+        
+                                        </div>
+                                    </div>
                             </div>
+                            <script>
+                                if (localStorage.getItem('currUsername') + "" === "null") {
+                                    var socialBoxes = document.getElementsByName("socialBoxDiv");
+                                    console.log("user not loged in, " + socialBoxes.length + " posts");
+    
+                                    for (let i = socialBoxes.length - 1; i > -1; i--) {
+    
+                                        console.log("page thinged " + i);
+                                        socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+    
+                                    }
+    
+    
+                                } else {
+                                    var commentPfps = document.getElementsByName("commentPfp");
+                                    console.log("user loged in, " + commentPfps.length + " posts");
+    
+                                    for (let i = commentPfps.length - 1; i > -1; i--) {
+    
+                                        console.log("page thinged " + i);
+                                        commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+    
+                                    }
+    
+                                }
+    
+                            </script>
                         </div>
                         <div class="loadPosts"></div>
                     </div>
