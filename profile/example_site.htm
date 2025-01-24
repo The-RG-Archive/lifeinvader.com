@@ -4365,7 +4365,7 @@ replace images and texts and stuff.
                                         height="263">
                                 </button>
                                 <div class="annotation">Look at my truck! :)</div>
-                                <div id="socialBoxDiv">
+                                <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
                                             href="">Share</a>
                                     </div>
@@ -4379,16 +4379,7 @@ replace images and texts and stuff.
 
                                     </div>
                                 </div>
-                               <!-- <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
-                                        let commentBox =
-                                            document.getElementById("socialBoxDiv1");
-                                        commentBox.parentNode.removeChild(commentBox);
 
-                                    } else {
-                                        document.getElementById("commentPfp1").src = "../" + localStorage.getItem('curPfp');
-                                    }
-                                </script>-->
                             </div>
                         </div>
                         <div class="post">
@@ -4403,7 +4394,7 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="text">Test test test testing.. Does this work?</div>
-                            <div id="socialBoxDiv">
+                            <div name="socialBoxDiv">
                                 <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
                                 </div>
                                 <div class="meta">No one are stalking this</div>
@@ -4415,15 +4406,21 @@ replace images and texts and stuff.
 
                                 </div>
                             </div>
-                           
+
 
                         </div>
+
                         <script>
+
                             if (localStorage.getItem('currUsername') + "" === "null") {
-                                const up_names = document.getElementsByName("socialBoxDiv");
-                                for (let i = 0; i < up_names.length + 1; i++) {
-                                  
-                                    commentBox.parentNode.removeChild(up_names[i]);
+                                var up_names = document.getElementsByName("socialBoxDiv");
+                                console.log("user not loged in, " + up_names.length + " posts");
+
+                                for (let i = up_names.length - 1; i > -1; i--) {
+
+                                    console.log("page thinged " + i);
+                                    up_names[i].parentNode.removeChild(up_names[i]);
+
                                 }
 
 
