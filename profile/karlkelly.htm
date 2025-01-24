@@ -4395,6 +4395,18 @@ replace images and texts and stuff.
                                 month! I'll teach you all the overly-complex financial jargon you need to fool
                                 people into thinking you actually understand how the stock market works. It's got me
                                 this far!</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4408,6 +4420,18 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">When it comes to the stock market, don't overthink it. Buy my book
                                 Mounting Bulls and Riding Bears. I predicted the financial crisis.</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4422,6 +4446,18 @@ replace images and texts and stuff.
                             <div class="text">In many ways, wives are like stocks. You get them while they're
                                 vulnerable, ride them till they peak, then dump them for a volatile young start-up.
                                 No hard feelings, Cynthia.</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4435,6 +4471,18 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">It takes a special kind of integrity for a man to be both a newsmaker
                                 and a marketmaker without it becoming a conflict of interest.</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4448,6 +4496,18 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">To the idiot who keeps spraying anticapitalist propaganda on my car,
                                 my middle name does not begin with K</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
                         <div class="post">
                             <div class="type clearfix">
@@ -4461,9 +4521,48 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">For the right angle on world events, look to Weazel News. Let's get
                                 big business back on its feet!</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+    
+                                        <input type="text" style="width: 407px;" placeholder="Write a comment..."></input>
+    
+                                    </div>
+                                </div>
                         </div>
 
                     </div>
+                    <script>
+                        if (localStorage.getItem('currUsername') + "" === "null") {
+                            var socialBoxes = document.getElementsByName("socialBoxDiv");
+                            console.log("user not loged in, " + socialBoxes.length + " posts");
+
+                            for (let i = socialBoxes.length - 1; i > -1; i--) {
+
+                                console.log("page thinged " + i);
+                                socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+
+                            }
+
+
+                        } else {
+                            var commentPfps = document.getElementsByName("commentPfp");
+                            console.log("user loged in, " + commentPfps.length + " posts");
+
+                            for (let i = commentPfps.length - 1; i > -1; i--) {
+
+                                console.log("page thinged " + i);
+                                commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+
+                            }
+
+                        }
+
+                    </script>
                     <div class="loadPosts"></div>
 
                 </div>
