@@ -46,6 +46,10 @@ Missing function Comment/Share/Stalk bar https://imgur.com/8BL8CHx
 Missing stalk button on warstock post: https://imgur.com/PIGnbU6 
   - There may be more on other posts needs to be researched
 
+Cookies link on the bottom is broken on all pages
+
+Add "vanilla like website "guide to readme
+
 Broken Stalk button:
 - How it is if pressed: https://imgur.com/XH53vjp 
 - How it should be https://imgur.com/KxayObr 
