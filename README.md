@@ -1,5 +1,5 @@
 # lifeinvader.com
-A backup of the lifeinvader.com hosted by Rockstar Games that got shut down in 2024.
+A backup of the lifeinvader.com a promotional website hosted by Rockstar Games that got shut down in 2024.
 
 Huge thanks to https://github.com/GreenSoupDeveloper he is the main developer at this point i am just gathering information.
 
