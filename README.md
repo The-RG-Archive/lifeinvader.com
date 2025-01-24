@@ -54,6 +54,6 @@ Broken Stalk button:
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable social club features like profile pictures and names the pictures have been grabbed from social club.
 - 404.html and page404.html are **NOT** from Rockstar Games they where made for the github website.
 - The page/custom folder is **NOT** from Rockstar Games it contains files for the 404.html, page404.html, Logoff.html, Login.html, Index.html
-- Some scripts inside the "page" folder contain code for our custom pages and to reenable features.
+- The "main.js" inside the "page" folder contains custom code for the 404.html, page404.html, Logoff.html, Login.html, Index.html under line 135.
 
 All rights to these pages to to Rockstar Games and Take Two Interactive.
