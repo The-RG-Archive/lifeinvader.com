@@ -1,5 +1,5 @@
 # lifeinvader.com
-A backup of the lifeinvader.com hosted by rockstar games that got shut down
+A backup of the lifeinvader.com hosted by rockstar games that got shut down in 2024
 
 Huge thanks to https://github.com/GreenSoupDeveloper he is the main developer at this point i am just gathering information.
 
@@ -10,6 +10,7 @@ Other folders that are not in the "profile" folder are not from Rockstar Games. 
 
 
 List of known domains:
+All of these have been restored at this point
 - https://www.lifeinvader.com/profile/elitas_travel
 - https://www.lifeinvader.com/profile/herr_kutz
 - https://www.lifeinvader.com/profile/inkinc
@@ -25,22 +26,25 @@ List of known domains:
 - https://www.lifeinvader.com/profile/redwood_cigarettes
 
 Progress:
-All (Known) pages have been restored..
+- All (Known) pages have been restored..
+- Index (custom made)
+- Added Sign In and logos (custom to restore features)
+- Fixed and added a lot of missing/broken features of the page
+- Localized all files and links
+- Readded disabled code (Comment - Share - Stalk Bar under posts)
 
-Completely Working Pages:
+Current bug report:
 
-- https://www.lifeinvader.com/profile/duaneearl
-- https://www.lifeinvader.com/profile/redwood_cigarettes
-- https://www.lifeinvader.com/profile/elitas_travel
-- https://www.lifeinvader.com/profile/herr_kutz
-- https://www.lifeinvader.com/profile/inkinc
-- https://www.lifeinvader.com/profile/legendary_motorsport
-- https://www.lifeinvader.com/profile/los_santos_customs
-- https://www.lifeinvader.com/profile/sprunk
-- https://www.lifeinvader.com/profile/warstock_cache_n_carry
-- https://www.lifeinvader.com/profile/karlkelly 
-- https://www.lifeinvader.com/profile/jackhowitzer
-- https://www.lifeinvader.com/profile/alanmcclean
-- https://www.lifeinvader.com/profile/drray
+Missing view picture feature: https://imgur.com/a/iSAnKyy
+
+Missing function Comment/Share/Stalk bar https://imgur.com/8BL8CHx 
+- Bar has been fully implemented the buttons do not work jet (unkown what exactly they did)
+
+Missing stalk button on warstock post: https://imgur.com/PIGnbU6 
+  - There may be more on other posts needs to be researched
+
+Broken Stalk button:
+- How it is if pressed: https://imgur.com/XH53vjp 
+- How it should be https://imgur.com/KxayObr 
 
 All rights to these pages to to Rockstar Games and Take Two Interactive.
