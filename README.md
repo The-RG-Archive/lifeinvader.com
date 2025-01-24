@@ -5,6 +5,8 @@ Huge thanks to https://github.com/GreenSoupDeveloper he is the main developer at
 
 Also big thank you to "MGgames100" for providing us with copy's of all company websites and research to make this even possible.
 
+Thank you to **EVERYONE** ho made video on this page or even just uploaded a picture of a post this helped us a lot puzzeling the pieces together.
+
 ## About this project:
 This website was remade on the base of "MGgames100" copy's of all company websites, Wayback Machine code, Wiki pages, and most important Youtube Videos exploring the website and its pages.
 
