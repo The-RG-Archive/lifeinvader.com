@@ -28,7 +28,7 @@ All of these have been restored at this point
 Progress:
 - All (Known) pages have been restored..
 - Index (custom made)
-- Added Sign In and logos (custom to restore features)
+- Added Sign In/Out and logos (custom to restore features)
 - Fixed and added a lot of missing/broken features of the page
 - Localized all files and links
 - Readded disabled code (Comment - Share - Stalk Bar under posts)
