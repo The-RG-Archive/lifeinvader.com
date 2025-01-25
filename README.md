@@ -63,7 +63,8 @@ Logged off: https://imgur.com/CpHopWq
 Logged in: https://imgur.com/OvAlvEZ  
 
 - User icons under some posts are too big (inconsistent; on some they work, on some they don't. I think the placement of div is the problem):  
-https://imgur.com/x1gwJBs  
+https://imgur.com/x1gwJBs
+  - Size got fixed but position still broken  
 
 - Our custom index page does not support mobile (only this one; the login page works):  
 https://imgur.com/CN6yniW  
