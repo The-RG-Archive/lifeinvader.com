@@ -7189,11 +7189,7 @@ textarea:focus {
     width: 275px
 }
 
-#userPopover .popover-content .avatar {
-    float: left;
-    height: 100px;
-    width: 100px
-}
+
 
 #userPopover .popover-content .info {
     color: #4c4c4c;
