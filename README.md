@@ -38,6 +38,7 @@ All of these have been restored at this point:
 - Fixed and added a lot of missing/broken features of the page
 - Localized all files and links
 - Re-added disabled code (Comment - Share - Stalk Bar under posts)
+- Cleaned code removed trackers and cookies
 
 ## Current bug report:
 
