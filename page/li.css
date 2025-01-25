@@ -6913,7 +6913,7 @@ footer {
 
 .btn-li {
     background-color: #da4f49;
-    *background-color: #bd362f;
+   
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
     background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
     background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
@@ -6928,19 +6928,20 @@ footer {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
 }
 
+
 .btn-li.active,
 .btn-li.disabled,
 .btn-li:active,
 .btn-li:hover,
 .btn-li[disabled] {
     background-color: #bd362f;
-    *background-color: #a9302a;
     color: #fff
 }
 
+
 .btn-li.active,
 .btn-li:active {
-    background-color: #942a25\9
+    background-color: #942a25;
 }
 
 .btn-li.selected {
@@ -7505,11 +7506,7 @@ textarea:focus {
     padding-left: 5px;
     padding-bottom: 5px;
 }
-.stlkAnnotation {
-    line-height: 1.15;
-    margin-top: 8px;
-    padding-left: 5px;
-}
+
 #li-feed .post .likes,
 #li-feed .post .meta {
     background-color: #fbf2f2;
@@ -8035,9 +8032,14 @@ body.modal-open {
     padding: 0 5px
 }
 .stalkClaim {
-    padding-left: 5px;
-    padding-top: 6px;
+    padding-left: 4px;
+    padding-top: 3px;
  
+}
+.stlkAnnotation {
+    line-height: 1.15;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 
 
