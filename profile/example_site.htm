@@ -145,14 +145,15 @@ replace images and texts and stuff.
                                 <h1>
                                     <span>Example User</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button onclick="stalk('hi')" class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="example_site"><i class="fa fa-plus"></i>
+                                <div id="divStlk" aria-live="polite"><button onclick="stalk('hi')"
+                                        class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
+                                        data-profile="example_site"><i class="fa fa-plus"></i>
                                         Stalk</button>
                                 </div>
                                 <script>
-                                  
-                                        document.getElementById("stlkBtn").click();
-                                    
+
+                                    document.getElementById("stlkBtn").click();
+
                                     if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
                                             document.getElementById("divStlk");
@@ -200,6 +201,8 @@ replace images and texts and stuff.
                         </div>
                     </div>
                     <div id="li-feed">
+                       
+                      
                         <div class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
@@ -213,26 +216,26 @@ replace images and texts and stuff.
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-mediasource="&lt;img width='660' height='373' src='https://prod.cloud.rockstargames.com/global/LifeInvader/Posts/-PbHHr6n9k6GAVb98qJJNA/Images/660x373.jpg' alt='Distinguish yourself from others with Example Site'&gt;&lt;/button&gt;"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="SPdie2RCIU6OUPgoF0uVPA" data-mediacaption="">
                                     <img class="image" src="example_site/image01.jpeg"
-                                        alt="Distinguish yourself from others with Example Site" width="468"
+                                       width="468"
                                         height="263">
                                 </button>
                                 <div class="annotation">Look at my truck! :)</div>
                                 <div name="socialBoxDiv">
-                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
-    
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-    
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="post">
@@ -246,7 +249,7 @@ replace images and texts and stuff.
                                     posted a status update
                                 </div>
                             </div>
-                            <div class="text">Test test test testing.. Does this work?</div>
+                            <div class="text">Test test testing.. Does this work?</div>
                             <div name="socialBoxDiv">
                                 <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
                                 </div>
@@ -255,37 +258,45 @@ replace images and texts and stuff.
                                     <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                             alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                     <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                    <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
 
                                 </div>
                             </div>
-
-
                         </div>
-
                        
+                       
+                        <div class="loadPosts"></div>
+                        <script>
+                            if (localStorage.getItem('currUsername') + "" === "null") {
+                                var socialBoxes = document.getElementsByName("socialBoxDiv");
+                                console.log("user not loged in, " + socialBoxes.length + " posts");
+
+                                for (let i = socialBoxes.length - 1; i > -1; i--) {
+
+                                    console.log("page thinged " + i);
+                                    socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
+
+                                }
+
+
+                            } else {
+                                var commentPfps = document.getElementsByName("commentPfp");
+                                console.log("user loged in, " + commentPfps.length + " posts");
+
+                                for (let i = commentPfps.length - 1; i > -1; i--) {
+
+                                    console.log("page thinged " + i);
+                                    commentPfps[i].src = "../" + localStorage.getItem('curPfp');
+
+                                }
+
+                            }
+
+                        </script>
                     </div>
-                    <script>
-                        document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
-                        if (localStorage.getItem('currUsername') + "" !== "null") {
-                            let loggedOff =
-                                document.getElementById("loggedOffDiv");
-                            loggedOff.parentNode.removeChild(loggedOff);
-
-                            document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
-                            document.getElementById("userText").href = localStorage.getItem('curRockstarUser');
-                            document.getElementById("userPfpALink").href = localStorage.getItem('curRockstarUser');
-                        } else {
-                            let loggedIn =
-                                document.getElementById("loggedInDiv");
-                            loggedIn.parentNode.removeChild(loggedIn);
-
-                        }
-                    </script>
                 </div>
+
             </div>
-
-
             <!-- ads bar -->
             <div id="ads-col" class="span3">
                 <div id="li-adsbar">
@@ -410,14 +421,14 @@ replace images and texts and stuff.
             <span>© Rockstar 2025</span>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
-           
+
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
                 Information</a>
         </footer>
     </div>
 
 
-   
+
 </body>
 
 </html>
