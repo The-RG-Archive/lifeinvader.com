@@ -8359,8 +8359,8 @@ body.modal-open {
 
 @media (max-width:525px) {
 
-    #li-feed .media,
-    #li-feed .media img {
+   
+    #li-feed .media .image {
         width: 100%
     }
 }
