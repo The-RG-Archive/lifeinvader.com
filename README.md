@@ -77,4 +77,26 @@ https://imgur.com/CN6yniW
 - The page/custom folder is **NOT** from Rockstar Games it contains files for the 404.html, page404.html, Logoff.html, Login.html, Index.html
 - The "main.js" inside the "page" folder contains custom code for the 404.html, page404.html, Logoff.html, Login.html, Index.html under line 135.
 
+## How to remove our editions and only use Rockstar Games code.
+- Get this index.html: 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" href="page/favicon.ico">
+   <script src="page/main.js"></script>
+</head>
+<body>
+   <script>
+      // Automatically redirects to a random page when this script runs
+      randomPage();
+   </script>
+</body>
+</html>
+```
+- Delte all files from root exept your new "index.html", "login.html", "logoff.html".
+- Delte the "member" folder from root.
+- In the "example_site" folder and the "example_site.htm" file.
+This gives you the website like it was hosted by R* the only non rockstar page will be "login.html", "logoff.html" but these are required to accsess all content.
+
 All rights to these pages to to Rockstar Games and Take Two Interactive.
