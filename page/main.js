@@ -39,8 +39,11 @@ function randomTinyText() {
     ];
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
-
+    if (localStorage.getItem('currUsername') + "" !== "null") {
     return phraseArray[i];
+    }else{
+        return "";
+    }
 }
 
 function getAdLink(index) {
