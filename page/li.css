@@ -8367,17 +8367,11 @@ body.modal-open {
         width: 100%
     }
     .inputCommentBox{
-        width: 100px;
+        width: 130px;
     }
 }
 
-@media (min-width:526px) {
-    #li-feed .post .add-comment textarea {
-        max-width: 407px;
-        min-width: 407px;
-        width: 407px
-    }
-}
+
 
 @media (min-width:768px) {
     #li-feed .loadPosts {

@@ -33,7 +33,7 @@ function randomTinyText() {
         "Excite Your Life Online",
         "Amplify your personality",
         "putting your personal life in the public domain",
-        "where your personal information becomes a marketing profile",
+        "where your personal information becomes a marketing profile (that we can sell)",
         "make friends with strangers",
         "social self respect"
     ];
