@@ -42,6 +42,7 @@ All of these have been restored at this point:
 ## Current bug report:
 
 Missing view picture feature: https://imgur.com/a/iSAnKyy
+- You could press on arrows to switch pictures too
 
 Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
 - Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
