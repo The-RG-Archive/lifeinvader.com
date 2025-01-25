@@ -62,7 +62,7 @@
 
 
     <script src="../page/otBannerSdk.js" async="" type="text/javascript"></script>
-  
+
 </head>
 
 <body>
@@ -89,21 +89,20 @@
 
                     </script>
 
-                      <div id="li-nav-logged-in" class="pull-right">
+                    <div id="li-nav-logged-in" class="pull-right">
                         <div id="loggedInDiv" class="pull-right">
                             <a id="userPfpALink" href="page/default.png" alt="Default Avatar Icon" width=" 32"
                                 height="32">
                                 <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
                                     height="32" srcset="">
                             </a>
-                            <a id="userText" href="../member/defaultUser.htm"
-                                class="nav-user">Default User</a><a
-                                href="../logoff.html"
-                                data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            <a id="userText" href="../member/defaultUser.htm" class="nav-user">Default User</a><a
+                                href="../logoff.html" data-rockstarid="15130174" class="nav-signout" id="signOut">sign
+                                out</a>
                         </div>
                         <div id="loggedOffDiv" class="pull-right">
-                            <a href="../login.html" data-rockstarid="15130174"
-                                class="nav-signout" style="color: white;" id="signOut">sign in</a>
+                            <a href="../login.html" data-rockstarid="15130174" class="nav-signout" style="color: white;"
+                                id="signOut">sign in</a>
                         </div>
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
@@ -146,12 +145,12 @@
                                 </h1>
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="redwood_cigarettes"><i class="fa fa-plus"></i>
-             Stalk</button>
+                                        Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
-                                        document.getElementById("divStlk");
+                                            document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
@@ -226,7 +225,7 @@
                                     <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                             alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                      <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                    <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
 
                                 </div>
                             </div>
@@ -252,18 +251,20 @@
                                 <div class="annotation">Submitted by Stalker Andy Hamilton of Sandy Shores: <br>“Smoking
                                     Redwoods taught me that I don’t have to fit in but I can if I want to.”
                                     #RedwoodPleasures</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -274,23 +275,29 @@
                                 </div>
                                 <div class="type-info">
                                     <strong>Redwood Cigarettes</strong>
-                                    shared a promotion
+                                    shared an image
                                 </div>
                             </div>
                             <div class="media">
-                                <img src="redwood_cigarettes/468x263.png" alt="Redwood cares" width="468" height="263">
+                                <button class="resetButton modal-media" data-modalcontent="single"
+                                    data-contentid="wJMd7A9udE-fFYpHRHd8ww" data-mediacaption="">
+                                    <img class="image" src="redwood_cigarettes/468x263.png" alt="Redwood Cares"
+                                        width="468" height="263">
+                                </button>
                                 <div class="annotation">#REDWOODCARES. Log In to Lifeinvader, Stalk this page and save!
                                 </div>
                                 <div name="socialBoxDiv">
-                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
-    
-                                          <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-    
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
                                     </div>
                                 </div>
                             </div>
@@ -315,18 +322,20 @@
                                 <div class="annotation">Submitted by Stalker Madison Wolf of Hawick: <br>“Waking
                                     up on a beach in different clothes with no memory of the last 6 hours
                                     and smoking a Redwood. It doesn’t get any better.” #RedwoodPleasures.</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -343,8 +352,8 @@
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="qDSa2ffmNUGVX78o3yrvOw" data-mediacaption="">
-                                    <img class="image" src="redwood_cigarettes/468x263_002.jpg" alt="Celebrity endorser of the week"
-                                        width="468" height="263">
+                                    <img class="image" src="redwood_cigarettes/468x263_002.jpg"
+                                        alt="Celebrity endorser of the week" width="468" height="263">
                                 </button>
                                 <div class="annotation">#CELEBRITYENDORSEROFTHEWEEK:
                                     Famous starlet of both television and screen, Poppy Mitchell’s recent
@@ -353,47 +362,23 @@
                                     It may not be a conventional endorsement but we’ll certainly take it.
                                     Thanks Poppy! 50 Cartons of your apparently preferred brand are being
                                     crated and shipped to your door this week!</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
-                            <script>
-                                if (localStorage.getItem('currUsername') + "" === "null") {
-                                    var socialBoxes = document.getElementsByName("socialBoxDiv");
-                                    console.log("user not loged in, " + socialBoxes.length + " posts");
-    
-                                    for (let i = socialBoxes.length - 1; i > -1; i--) {
-    
-                                        console.log("page thinged " + i);
-                                        socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
-    
-                                    }
-    
-    
-                                } else {
-                                    var commentPfps = document.getElementsByName("commentPfp");
-                                    console.log("user loged in, " + commentPfps.length + " posts");
-    
-                                    for (let i = commentPfps.length - 1; i > -1; i--) {
-    
-                                        console.log("page thinged " + i);
-                                        commentPfps[i].src = "../" + localStorage.getItem('curPfp');
-    
-                                    }
-    
-                                }
-    
-                            </script>
                         </div>
+
                         <div class="loadPosts"></div>
                     </div>
                 </div>
@@ -407,12 +392,12 @@
                     </h3>
                     <div class="ad">
                         <h5>
-                            <a id="ad1"
-                                href="profile/elitas_travel.htm">Elitas
+                            <a id="ad1" href="profile/elitas_travel.htm">Elitas
                                 Travel</a>
                         </h5>
                         <a id="adLink1" href="profile/elitas_travel.htm">
-                            <img id="adImg1" src="../page/ads/elitas.jpg" alt="Redwood Cigarettes" width="220" height="110">
+                            <img id="adImg1" src="../page/ads/elitas.jpg" alt="Redwood Cigarettes" width="220"
+                                height="110">
                         </a>
                         <p id="desc1">
                             10% off your next purchase.
@@ -424,12 +409,10 @@
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a id="ad2"
-                                href="profile/redwood_cigarettes.htm">Redwood
+                            <a id="ad2" href="profile/redwood_cigarettes.htm">Redwood
                                 Cigarettes</a>
                         </h5>
-                        <a id="adLink2"
-                            href="profile/redwood_cigarettes.htm">
+                        <a id="adLink2" href="profile/redwood_cigarettes.htm">
                             <img id="adImg2" src="../page/ads/redwood.png" alt="Redwood Cigarettes" width="220"
                                 height="110">
                         </a>
@@ -443,12 +426,10 @@
                     <hr>
                     <div class="ad">
                         <h5>
-                            <a id="ad3"
-                                href="profile/los_santos_customs.htm">Los
+                            <a id="ad3" href="profile/los_santos_customs.htm">Los
                                 Santos Customs</a>
                         </h5>
-                        <a id="adLink3"
-                            href="profile/los_santos_customs.htm">
+                        <a id="adLink3" href="profile/los_santos_customs.htm">
                             <img id="adImg3" src="../page/ads/lsc.png" alt="Los Santos Customs" width="220"
                                 height="110">
                         </a>
@@ -528,14 +509,14 @@
             <span>© Rockstar 2025</span>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
-           
+
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
                 Information</a>
         </footer>
     </div>
 
 
-  
+
 </body>
 
 </html>
