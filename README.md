@@ -47,9 +47,6 @@ Missing view picture feature: https://imgur.com/a/iSAnKyy
 Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
 - Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
 
-Missing stalk button on Warstock post: https://imgur.com/PIGnbU6  
-  - There may be more on other posts; needs to be researched.
-
 Cookies link on the bottom is broken on all pages.
 
 Broken Stalk button:  
