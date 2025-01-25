@@ -66,32 +66,6 @@
 </head>
 
 <body onload="changeMainBg()">
-    <center>
-
-
-        <div id="indexBg" class="indexBg">
-            <center>
-
-
-                <br><br>
-                <h1 id="loggingoff" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Logging off..
-                </h1>
-                <p>Logging off your account..</p>
-                <br>
-                <script>
-                    document.getElementById('loggingoff').innerHTML =  "Logging off '"+localStorage.getItem('currUsername') + "'...";
-                    localStorage.clear();
-                   window.location.href = "index.html";
-                </script>
-              
-
-
-
-            </center>
-
-        </div>
-        </div>
-    </center>
 
 
     <!--[if lt IE 7]>
@@ -123,6 +97,32 @@
             </div>
         </div>
     </div>
+    <center>
+
+
+        <div id="indexBg" class="indexBg">
+            <center>
+
+
+                <br><br>
+                <h1 id="loggingoff" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Logging off..
+                </h1>
+                <p>Logging off your account..</p>
+                <br>
+                <script>
+                    document.getElementById('loggingoff').innerHTML =  "Logging off '"+localStorage.getItem('currUsername') + "'...";
+                    localStorage.clear();
+                   window.location.href = "index.html";
+                </script>
+              
+
+
+
+            </center>
+
+        </div>
+        </div>
+    </center>
 
 
 </body>
