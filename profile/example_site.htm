@@ -267,6 +267,23 @@ replace images and texts and stuff.
 
                        
                     </div>
+                    <script>
+                        document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
+                        if (localStorage.getItem('currUsername') + "" !== "null") {
+                            let loggedOff =
+                                document.getElementById("loggedOffDiv");
+                            loggedOff.parentNode.removeChild(loggedOff);
+
+                            document.getElementById("userIcon").src = "../" + localStorage.getItem('curPfp');
+                            document.getElementById("userText").href = localStorage.getItem('curRockstarUser');
+                            document.getElementById("userPfpALink").href = localStorage.getItem('curRockstarUser');
+                        } else {
+                            let loggedIn =
+                                document.getElementById("loggedInDiv");
+                            loggedIn.parentNode.removeChild(loggedIn);
+
+                        }
+                    </script>
                 </div>
             </div>
 
