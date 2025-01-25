@@ -1,3 +1,5 @@
+![Icon](/page/custom/banner.png)
+
 # lifeinvader.com
 A backup of the lifeinvader.com a promotional website hosted by Rockstar Games that got shut down in 2024.
 
