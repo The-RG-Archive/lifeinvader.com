@@ -13,6 +13,7 @@ Thank you to **EVERYONE** ho made videos on this page or even just uploaded a pi
 
 ## About this project:
 This website was remade on the base of "MGgames100" copy's of all company websites, Wayback Machine code, Wiki pages, and most important Youtube Videos exploring the website and its pages.
+This website also works on mobile like the original but it still has some bugs.
 
 ## List of known domains:
 All of these have been restored at this point
@@ -55,6 +56,18 @@ Add "vanilla like website "guide to readme
 Broken Stalk button:
 - How it is if pressed: https://imgur.com/XH53vjp 
 - How it should be https://imgur.com/KxayObr 
+
+**Bugs on mobile** 
+
+- If logged in page scales wrong
+Logged off: https://imgur.com/CpHopWq
+Logged in: https://imgur.com/OvAlvEZ
+
+- user icons under some posts are to big (inconsistent on some they work on some don't i think the placement of div is the problem)
+https://imgur.com/x1gwJBs
+
+- our custom index page does not support mobile (only this one the login page works)
+https://imgur.com/CN6yniW
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **Exept the example page** it is used to show how you could create your own custom pages and for testing of new features.
