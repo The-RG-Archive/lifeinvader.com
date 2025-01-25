@@ -54,6 +54,8 @@ Broken Stalk button:
 
 **Bugs on mobile**  
 
+**We are currently working on fixing these issues, so the problems may vary.**
+
 - If logged in, page scales wrong:  
 Logged off: https://imgur.com/CpHopWq  
 Logged in: https://imgur.com/OvAlvEZ  
