@@ -38,6 +38,7 @@ All of these have been restored at this point:
 - Fixed and added a lot of missing/broken features of the page
 - Localized all files and links
 - Re-added disabled code (Comment - Share - Stalk Bar under posts)
+- Cleaned code removed trackers and cookies
 
 ## Current bug report:
 
@@ -46,11 +47,6 @@ Missing view picture feature: https://imgur.com/a/iSAnKyy
 
 Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
 - Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
-
-Missing stalk button on Warstock post: https://imgur.com/PIGnbU6  
-  - There may be more on other posts; needs to be researched.
-
-Cookies link on the bottom is broken on all pages.
 
 Broken Stalk button:  
 - How it is if pressed: https://imgur.com/XH53vjp  
@@ -63,7 +59,8 @@ Logged off: https://imgur.com/CpHopWq
 Logged in: https://imgur.com/OvAlvEZ  
 
 - User icons under some posts are too big (inconsistent; on some they work, on some they don't. I think the placement of div is the problem):  
-https://imgur.com/x1gwJBs  
+https://imgur.com/x1gwJBs
+  - Size got fixed but position still broken  
 
 - Our custom index page does not support mobile (only this one; the login page works):  
 https://imgur.com/CN6yniW  
