@@ -40,8 +40,8 @@ function randomTinyText() {
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
     if (localStorage.getItem('currUsername') + "" !== "null") {
-    return phraseArray[i];
-    }else{
+        return phraseArray[i];
+    } else {
         return "";
     }
 }
@@ -146,7 +146,7 @@ function changeBackgroundImage() {
     let headingID = document.getElementById("GFG");
     headingID.style.backgroundImage = bgArray[i];
 }
-function changeMainBg(){
+function changeMainBg() {
     const bgArray = [
         "page/custom/backgrounds/bg1.png",
         "page/custom/backgrounds/bg2.png",
@@ -155,10 +155,10 @@ function changeMainBg(){
     ]
     var i = Math.floor(Math.random() * (0 - bgArray.length)) + bgArray.length;
     let headingID = document.getElementsByTagName('body')[0];
-    document.body.style.backgroundImage = "url('"+bgArray[i]+"')"; 
-    }
+    document.body.style.backgroundImage = "url('" + bgArray[i] + "')";
+}
 
-function analizePosts(){
+function analizePosts() {
     if (localStorage.getItem('currUsername') + "" === "null") {
         var socialBoxes = document.getElementsByName("socialBoxDiv");
         console.log("user not loged in, " + socialBoxes.length + " posts");
@@ -181,14 +181,14 @@ function analizePosts(){
             commentPfps[i].src = "../" + localStorage.getItem('curPfp');
 
         }
-        
+
     }
 }
-function stalk(){
-   
+function stalk() {
+
 
     document.cookie = "true";
-    
+
 }
 function deleteAllCookies() {
     document.cookie.split(';').forEach(cookie => {

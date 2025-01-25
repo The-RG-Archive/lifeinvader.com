@@ -19,3 +19,14 @@ body {
 
     
 }
+@media (max-width:525px) {
+
+    #indexBg {
+        width: 100%
+    }
+    .lfLogo{
+        width: 100%;
+    }
+   
+}
+
