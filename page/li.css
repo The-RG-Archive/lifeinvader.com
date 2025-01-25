@@ -8363,6 +8363,9 @@ body.modal-open {
     #li-feed .media .image {
         width: 100%
     }
+    .inputCommentBox{
+        width: 20px;
+    }
 }
 
 @media (min-width:526px) {
