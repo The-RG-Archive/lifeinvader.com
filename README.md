@@ -51,8 +51,6 @@ Missing stalk button on Warstock post: https://imgur.com/PIGnbU6
 
 Cookies link on the bottom is broken on all pages.
 
-Add "vanilla-like website" guide to readme.
-
 Broken Stalk button:  
 - How it is if pressed: https://imgur.com/XH53vjp  
 - How it should be: https://imgur.com/KxayObr  
