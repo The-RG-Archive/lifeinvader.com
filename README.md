@@ -40,6 +40,7 @@ All of these have been restored at this point:
 - Re-added disabled code (Comment - Share - Stalk Bar under posts)
 - Cleaned code removed trackers and cookies
 - Fully working mobile page
+- Restored original 404 page
 
 ## Current bug report:
 
@@ -58,30 +59,12 @@ Broken Stalk button:
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
 - Index.html is **NOT** from Rockstar Games. It is made by us to make the website more user-friendly. The original index would just load a random page.
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable Social Club features like profile pictures and names. The pictures have been grabbed from Social Club.
-- 404.html and page404.html are **NOT** from Rockstar Games. They were made for the GitHub website.
+- 404.html is **NOT** from Rockstar Games. They were made for the GitHub website.
+- The page404 is based on the r* one but it has a backgorund that is not from R*
 - The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html, Login.html, and Index.html.
 - The "main.js" inside the "page" folder contains custom code for the 404.html, page404.html, Logoff.html, Login.html, and Index.html under line 135.
 
 ## How to remove our additions and only use Rockstar Games code:
-- Get this index.html:  
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <link rel="shortcut icon" href="page/favicon.ico">
-   <script src="page/main.js"></script>
-</head>
-<body>
-   <script>
-      // Automatically redirects to a random page when this script runs
-      randomPage();
-   </script>
-</body>
-</html>
-```
-- Delete all files from root except your new "index.html", "login.html", and "logoff.html".
-- Delete the "member" folder from root.
-- Delete the "example_site" folder and the "example_site.htm" file.  
-This gives you the website like it was hosted by R*. The only non-Rockstar pages will be "login.html" and "logoff.html", but these are required to access all content.
+WIP
 
 All rights to these pages belong to Rockstar Games and Take-Two Interactive.
