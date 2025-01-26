@@ -182,6 +182,8 @@ replace images and texts and stuff.
                                             const newButton = document.createElement('button');
                                             newButton.textContent = '✔ Stalking';
                                             newButton.className = "btn btn-small btn-stlk-li";
+                                            newButton.onclick = function() {stalkedBtns(vars)};
+                                            newButton.id = "stlkedBtn";
 
                                             stlk.parentNode.appendChild(newButton);
                                             stlk.parentNode.removeChild(stlk);
@@ -193,6 +195,8 @@ replace images and texts and stuff.
                                             const newButton = document.createElement('button');
                                             newButton.innerHTML = '<i class="fa fa-plus"></i> Stalk';
                                             newButton.className = "btn btn-small btn-li";
+                                            newButton.onclick = function() {stalkedBtns(vars)};
+                                            newButton.id = "stlkBtn";
 
                                             stlked.parentNode.appendChild(newButton);
                                             stlked.parentNode.removeChild(stlked);
