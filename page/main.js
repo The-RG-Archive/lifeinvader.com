@@ -17,9 +17,9 @@ function randomTinyText() {
     ];
 
     var i = Math.floor(Math.random() * (0 - phraseArray.length)) + phraseArray.length;
- 
-        return phraseArray[i];
-  
+
+    return phraseArray[i];
+
 }
 
 function getAdLink(index) {
@@ -161,9 +161,13 @@ function analizePosts() {
     }
 }
 function stalk() {
+    if (localStorage.getItem("alanmccleanStlk") + "" == "true") {
+        localStorage.setItem("alanmccleanStlk", "null");
+    } else {
+        localStorage.setItem("alanmccleanStlk", "true");
+    }
 
 
-    document.cookie = "true";
 
 }
 function deleteAllCookies() {
@@ -175,21 +179,21 @@ function deleteAllCookies() {
 }
 
 function getNumberOfDaysSinceUpload(uplDate) {
-   
-     let uploadDate = new Date(uplDate);
-     let currDate = new Date();
+
+    let uploadDate = new Date(uplDate);
+    let currDate = new Date();
 
 
-     let Difference_In_Time =
-     currDate.getTime() - uploadDate.getTime();
+    let Difference_In_Time =
+        currDate.getTime() - uploadDate.getTime();
 
-   
-     let Difference_In_Days =
-         Math.round
-             (Difference_In_Time / (1000 * 3600 * 24));
 
-   
-         
+    let Difference_In_Days =
+        Math.round
+            (Difference_In_Time / (1000 * 3600 * 24));
 
-     return Difference_In_Days  + " days ago";
+
+
+
+    return Difference_In_Days + " days ago";
 }

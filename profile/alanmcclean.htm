@@ -145,16 +145,65 @@ replace images and texts and stuff.
                                 <h1>
                                     <span>Alan McClean</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="alanmcclean"><i class="fa fa-plus"></i>
+                                <div id="divStlk" aria-live="polite">
+                                    <button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
+                                        onclick="stalkedBtns('alanmccleanStlk')" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
                                         Stalk</button>
+                                    <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
+                                        onclick="stalkedBtns('alanmccleanStlk')" data-profile="alanmcclean">&#10004;
+                                        Stalking</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {
+                                    if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                        let stlk =
+                                            document.getElementById("stlkBtn");
+                                        stlk.parentNode.removeChild(stlk);
+
+
+
+                                    } else {
+                                        let stlked =
+                                            document.getElementById("stlkedBtn");
+                                        stlked.parentNode.removeChild(stlked);
+                                    }
+                                    /*if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
                                             document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
+                                    }*/
+
+                                    function stalkedBtns(vars) {
+                                        stalk(vars)
+                                        if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                            let stlk =
+                                                document.getElementById("stlkBtn");
+
+                                            const newButton = document.createElement('button');
+                                            newButton.textContent = '✔ Stalking';
+                                            newButton.className = "btn btn-small btn-stlk-li";
+
+                                            stlk.parentNode.appendChild(newButton);
+                                            stlk.parentNode.removeChild(stlk);
+
+                                        } else {
+                                            let stlked =
+                                                document.getElementById("stlkedBtn");
+                                            
+                                            const newButton = document.createElement('button');
+                                            newButton.innerHTML = '<i class="fa fa-plus"></i> Stalk';
+                                            newButton.className = "btn btn-small btn-li";
+
+                                            stlked.parentNode.appendChild(newButton);
+                                            stlked.parentNode.removeChild(stlked);
+                                        }
+
+
+
+
+
                                     }
+
                                 </script>
                                 <p class="info-band">
                                     <!--descriptioin-->
