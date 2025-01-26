@@ -4306,7 +4306,8 @@ replace images and texts and stuff.
              Stalk</button>
                                 </div>
                                <script>
-                                    if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                    var tag = "alanmccleanStlk";
+                                    if (localStorage.getItem(tag) + "" != "null") {
                                         let stlk =
                                             document.getElementById("stlkBtn");
                                         stlk.parentNode.removeChild(stlk);
@@ -4320,9 +4321,9 @@ replace images and texts and stuff.
                                             document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
-                                    function stalkedBtns(vars) {
-                                        stalk(vars)
-                                        if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                    function stalkedBtns() {
+                                        stalk(tag)
+                                        if (localStorage.getItem(tag) + "" != "null") {
                                             let stlk =
                                                 document.getElementById("stlkBtn");
 

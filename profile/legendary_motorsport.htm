@@ -144,15 +144,17 @@
 
                                 </h1>
 
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
-                                        data-stalk="true" data-profile="karl_kelly"><i class="fa fa-plus"></i>
-                                        Stalk</button>
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
+                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                        class="fa fa-plus"></i>
+                                    Stalk</button>
                                         <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
-                                        onclick="stalkedBtns('alanmccleanStlk')" data-profile="alanmcclean">&#10004;
+                                        onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
                                         Stalking</button>
                                 </div>
                                  <script>
-                                    if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                    var tag = "legendary_motorsportStlk";
+                                    if (localStorage.getItem(tag) + "" != "null") {
                                         let stlk =
                                             document.getElementById("stlkBtn");
                                         stlk.parentNode.removeChild(stlk);
@@ -166,9 +168,9 @@
                                             document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
-                                    function stalkedBtns(vars) {
-                                        stalk(vars)
-                                        if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                    function stalkedBtns() {
+                                        stalk(tag)
+                                        if (localStorage.getItem(tag) + "" != "null") {
                                             let stlk =
                                                 document.getElementById("stlkBtn");
 
