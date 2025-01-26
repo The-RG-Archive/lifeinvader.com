@@ -43,8 +43,6 @@ All of these have been restored at this point:
 
 ## Current bug report:
 
-Mini text borken when logged off
-
 Missing view picture feature: https://imgur.com/a/iSAnKyy
 - You could press on arrows to switch pictures too
 
