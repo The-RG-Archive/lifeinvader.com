@@ -159,20 +159,16 @@ replace images and texts and stuff.
                                         let stlk =
                                             document.getElementById("stlkBtn");
                                         stlk.parentNode.removeChild(stlk);
-
-
-
                                     } else {
                                         let stlked =
                                             document.getElementById("stlkedBtn");
                                         stlked.parentNode.removeChild(stlked);
                                     }
-                                    /*if (localStorage.getItem('currUsername') + "" === "null") {
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
                                             document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
-                                    }*/
-
+                                    }
                                     function stalkedBtns(vars) {
                                         stalk(vars)
                                         if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
@@ -182,7 +178,7 @@ replace images and texts and stuff.
                                             const newButton = document.createElement('button');
                                             newButton.textContent = '✔ Stalking';
                                             newButton.className = "btn btn-small btn-stlk-li";
-                                            newButton.onclick = function() {stalkedBtns(vars)};
+                                            newButton.onclick = function () { stalkedBtns(vars) };
                                             newButton.id = "stlkedBtn";
 
                                             stlk.parentNode.appendChild(newButton);
@@ -191,23 +187,17 @@ replace images and texts and stuff.
                                         } else {
                                             let stlked =
                                                 document.getElementById("stlkedBtn");
-                                            
+
                                             const newButton = document.createElement('button');
                                             newButton.innerHTML = '<i class="fa fa-plus"></i> Stalk';
                                             newButton.className = "btn btn-small btn-li";
-                                            newButton.onclick = function() {stalkedBtns(vars)};
+                                            newButton.onclick = function () { stalkedBtns(vars) };
                                             newButton.id = "stlkBtn";
 
                                             stlked.parentNode.appendChild(newButton);
                                             stlked.parentNode.removeChild(stlked);
                                         }
-
-
-
-
-
                                     }
-
                                 </script>
                                 <p class="info-band">
                                     <!--descriptioin-->

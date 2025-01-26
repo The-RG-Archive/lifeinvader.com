@@ -144,12 +144,53 @@
                                 <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
                                         data-stalk="true" data-profile="elitas_travel"><i class="fa fa-plus"></i>
                                         Stalk</button>
+                                        <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
+                                        onclick="stalkedBtns('alanmccleanStlk')" data-profile="alanmcclean">&#10004;
+                                        Stalking</button>
                                 </div>
-                                <script>
+                                 <script>
+                                    if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                        let stlk =
+                                            document.getElementById("stlkBtn");
+                                        stlk.parentNode.removeChild(stlk);
+                                    } else {
+                                        let stlked =
+                                            document.getElementById("stlkedBtn");
+                                        stlked.parentNode.removeChild(stlked);
+                                    }
                                     if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
                                             document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
+                                    }
+                                    function stalkedBtns(vars) {
+                                        stalk(vars)
+                                        if (localStorage.getItem("alanmccleanStlk") + "" != "null") {
+                                            let stlk =
+                                                document.getElementById("stlkBtn");
+
+                                            const newButton = document.createElement('button');
+                                            newButton.textContent = '✔ Stalking';
+                                            newButton.className = "btn btn-small btn-stlk-li";
+                                            newButton.onclick = function () { stalkedBtns(vars) };
+                                            newButton.id = "stlkedBtn";
+
+                                            stlk.parentNode.appendChild(newButton);
+                                            stlk.parentNode.removeChild(stlk);
+
+                                        } else {
+                                            let stlked =
+                                                document.getElementById("stlkedBtn");
+
+                                            const newButton = document.createElement('button');
+                                            newButton.innerHTML = '<i class="fa fa-plus"></i> Stalk';
+                                            newButton.className = "btn btn-small btn-li";
+                                            newButton.onclick = function () { stalkedBtns(vars) };
+                                            newButton.id = "stlkBtn";
+
+                                            stlked.parentNode.appendChild(newButton);
+                                            stlked.parentNode.removeChild(stlked);
+                                        }
                                     }
                                 </script>
 
