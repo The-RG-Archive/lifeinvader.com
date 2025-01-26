@@ -175,17 +175,15 @@ function deleteAllCookies() {
 }
 
 function getNumberOfDaysSinceUpload(uplDate) {
-     //let uploadDate = new Date("09/09/2013");
+   
      let uploadDate = new Date(uplDate);
      let currDate = new Date();
 
-     // Calculating the time difference
-     // of two dates
+
      let Difference_In_Time =
      currDate.getTime() - uploadDate.getTime();
 
-     // Calculating the no. of days between
-     // two dates
+   
      let Difference_In_Days =
          Math.round
              (Difference_In_Time / (1000 * 3600 * 24));
