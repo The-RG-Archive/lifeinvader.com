@@ -64,7 +64,7 @@ replace images and texts and stuff.
 
 
     <script src="../page/otBannerSdk.js" async="" type="text/javascript"></script>
-   
+
 </head>
 
 <body>
@@ -98,14 +98,13 @@ replace images and texts and stuff.
                                 <img id="userIcon" src="page/default.png" alt="Default Avatar Icon" width=" 32"
                                     height="32" srcset="">
                             </a>
-                            <a id="userText" href="../member/defaultUser.htm"
-                                class="nav-user">Default User</a><a
-                                href="../logoff.html"
-                                data-rockstarid="15130174" class="nav-signout" id="signOut">sign out</a>
+                            <a id="userText" href="../member/defaultUser.htm" class="nav-user">Default User</a><a
+                                href="../logoff.html" data-rockstarid="15130174" class="nav-signout" id="signOut">sign
+                                out</a>
                         </div>
                         <div id="loggedOffDiv" class="pull-right">
-                            <a href="../login.html" data-rockstarid="15130174"
-                                class="nav-signout" style="color: white;" id="signOut">sign in</a>
+                            <a href="../login.html" data-rockstarid="15130174" class="nav-signout" style="color: white;"
+                                id="signOut">sign in</a>
                         </div>
                         <script>
                             document.getElementById('userText').innerHTML = localStorage.getItem('currUsername') + "";
@@ -151,9 +150,9 @@ replace images and texts and stuff.
                                         Stalk</button>
                                 </div>
                                 <script>
-                                    if (localStorage.getItem('currUsername') + "" === "null") {  
+                                    if (localStorage.getItem('currUsername') + "" === "null") {
                                         let divStlk =
-                                        document.getElementById("divStlk");
+                                            document.getElementById("divStlk");
                                         divStlk.parentNode.removeChild(divStlk);
                                     }
                                 </script>
@@ -244,23 +243,29 @@ replace images and texts and stuff.
                                 <div class="type-info">
                                     <strong>Alan McClean</strong>
                                     posted a status update
+                                    <div class="date" id="dateTextDays1">
+                                        <script>document.getElementById("dateTextDays1").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                    </div>
                                 </div>
+
                             </div>
                             <div class="media">
                                 </button>
                                 <div class="annotation">Sue Murry. You're messing with the wrong parenting expert.</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -271,23 +276,29 @@ replace images and texts and stuff.
                                 <div class="type-info">
                                     <strong>Alan McClean</strong>
                                     posted a status update
+                                    <div class="date" id="dateTextDays2">
+                                        <script>document.getElementById("dateTextDays2").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                    </div>
                                 </div>
                             </div>
                             <div class="media">
                                 </button>
-                                <div class="annotation">If that shrew Sue Murry badmouths my book one more time in the press you're going to see Alan McClean come unhinged. Believe that.</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div class="annotation">If that shrew Sue Murry badmouths my book one more time in the
+                                    press you're going to see Alan McClean come unhinged. Believe that.</div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -299,9 +310,12 @@ replace images and texts and stuff.
                                 <div class="type-info">
                                     <strong>Alan McClean</strong>
                                     shared an image
+                                    <div class="date" id="dateTextDays3">
+                                        <script>document.getElementById("dateTextDays3").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                    </div>
                                 </div>
                             </div>
-                             <div class="media">
+                            <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
                                     <img class="image" src="alanmcclean/image01.webp"
@@ -310,15 +324,17 @@ replace images and texts and stuff.
                                 </button>
                                 <div class="annotation">Got a new phone dammit</div>
                                 <div name="socialBoxDiv">
-                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
-    
-                                          <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-    
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
                                     </div>
                                 </div>
                             </div>
@@ -332,9 +348,12 @@ replace images and texts and stuff.
                                 <div class="type-info">
                                     <strong>Alan McClean</strong>
                                     shared an image
+                                    <div class="date" id="dateTextDays4">
+                                        <script>document.getElementById("dateTextDays4").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                    </div>
                                 </div>
                             </div>
-                             <div class="media">
+                            <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
                                     <img class="image" src="alanmcclean/image02.png"
@@ -343,18 +362,20 @@ replace images and texts and stuff.
                                 </button>
                                 <div class="annotation">Drinking whiskey hanging off side of boat taking pics of self
                                     hope don't drop ph</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -366,9 +387,12 @@ replace images and texts and stuff.
                                 <div class="type-info">
                                     <strong>Alan McClean</strong>
                                     shared an image
+                                    <div class="date" id="dateTextDays5">
+                                        <script>document.getElementById("dateTextDays5").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                    </div>
                                 </div>
                             </div>
-                             <div class="media">
+                            <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
                                     <img class="image" src="alanmcclean/image03.png"
@@ -377,18 +401,20 @@ replace images and texts and stuff.
                                 </button>
                                 <div class="annotation">My book is #1! Ha Ha! Parenting books are easy to right when you
                                     re-purpose what you learned in the Marines about what breaks a man</div>
-                                    <div name="socialBoxDiv">
-                                        <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
-                                        </div>
-                                        <!--<div class="meta">No one are stalking this</div>-->
-                                        <div id="addCommentBox" class="add-comment">
-                                            <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
-                                                    alt="Example Site avatar" width="32" height="32"></img></div>
-        
-                                              <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
-        
-                                        </div>
+                                <div name="socialBoxDiv">
+                                    <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
+                                            href="">Share</a>
                                     </div>
+                                    <!--<div class="meta">No one are stalking this</div>-->
+                                    <div id="addCommentBox" class="add-comment">
+                                        <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"></img></div>
+
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <script>
@@ -546,14 +572,14 @@ replace images and texts and stuff.
             <span>© Rockstar 2025</span>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
-           
+
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
                 Information</a>
         </footer>
     </div>
 
 
-  
+
 </body>
 
 </html>
