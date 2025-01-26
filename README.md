@@ -60,6 +60,7 @@ Broken Stalk button:
 - Index.html is **NOT** from Rockstar Games. It is made by us to make the website more user-friendly. The original index would just load a random page.
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable Social Club features like profile pictures and names. The pictures have been grabbed from Social Club.
 - 404.html is **NOT** from Rockstar Games. They were made for the GitHub website.
+- The page404 is based on the r* one but it has a backgorund that is not from R*
 - The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html, Login.html, and Index.html.
 - The "main.js" inside the "page" folder contains custom code for the 404.html, page404.html, Logoff.html, Login.html, and Index.html under line 135.
 
