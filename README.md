@@ -39,8 +39,11 @@ All of these have been restored at this point:
 - Localized all files and links
 - Re-added disabled code (Comment - Share - Stalk Bar under posts)
 - Cleaned code removed trackers and cookies
+- Fully working mobile page
 
 ## Current bug report:
+
+Mini text borken when logged off
 
 Missing view picture feature: https://imgur.com/a/iSAnKyy
 - You could press on arrows to switch pictures too
@@ -52,12 +55,6 @@ Broken Stalk button:
 - How it is if pressed: https://imgur.com/XH53vjp  
 - How it should be: https://imgur.com/KxayObr  
 
-**Bugs on mobile**  
-
-**We are currently working on fixing these issues, so the problems may vary.**
-
-- Our custom index page does not support mobile (only this one; the login page works):  
-https://imgur.com/CN6yniW  
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
