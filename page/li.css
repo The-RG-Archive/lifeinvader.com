@@ -8356,6 +8356,11 @@ body.modal-open {
         width: 50%
     }
 }
+@media only screen and (max-width: 50000px) {
+    .inputCommentBox{
+        width: 400px;
+    }
+}
 
 
 @media (max-width:525px) {
@@ -8365,7 +8370,7 @@ body.modal-open {
         width: 100%
     }
     .inputCommentBox{
-        width: 310px;
+        width: 300px;
     }
 }
 
