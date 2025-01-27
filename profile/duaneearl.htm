@@ -395,9 +395,7 @@ replace images and texts and stuff.
                         if (localStorage.getItem('currUsername') + "" === "null") {
                             var socialBoxes = document.getElementsByName("socialBoxDiv");
                          
-                            let stalkclaim =
-                                    document.getElementById("claimTxt");
-                                    stalkclaim.parentNode.removeChild(stalkclaim);
+                            document.getElementById("claimTxt").disabled = true;
                          
                             console.log("user not loged in, " + socialBoxes.length + " posts");
 

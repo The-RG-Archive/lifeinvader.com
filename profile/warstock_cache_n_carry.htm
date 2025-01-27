@@ -372,7 +372,7 @@
                             <div class="media">
                                 <img class="image" src="warstock_cache_n_carry/468x263_004.jpg"
                                     alt="COMING SOON TO OUR INVENTORY" width="468" height="263"></img>
-                                <div id="claimTxt" class="stalkClaim" aria-live="polite">
+                                <div id="claimDiver" class="stalkClaim" aria-live="polite">
                                     <table>
                                         <tr>
                                             <td><button class="btn btn-small btn-li" id="claimTxt" data-stalk="true"
@@ -546,9 +546,7 @@
                         <script>
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
-                            let stalkclaim =
-                                    document.getElementById("claimTxt");
-                                    stalkclaim.parentNode.removeChild(stalkclaim);
+                            document.getElementById("claimTxt").disabled = true;
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
 
                                 for (let i = socialBoxes.length - 1; i > -1; i--) {
