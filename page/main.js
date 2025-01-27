@@ -160,11 +160,11 @@ function analizePosts() {
 
     }
 }
-function stalk() {
-    if (localStorage.getItem("alanmccleanStlk") + "" == "true") {
-        localStorage.setItem("alanmccleanStlk", "null");
+function stalk(stringer) {
+    if (localStorage.getItem(stringer) + "" == "true") {
+        localStorage.setItem(stringer, "null");
     } else {
-        localStorage.setItem("alanmccleanStlk", "true");
+        localStorage.setItem(stringer, "true");
     }
 
 
