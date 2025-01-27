@@ -431,6 +431,9 @@
                         <script>
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
+                            let stalkclaim =
+                                    document.getElementById("claimTxt");
+                                    stalkclaim.parentNode.removeChild(stalkclaim);
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
 
                                 for (let i = socialBoxes.length - 1; i > -1; i--) {
