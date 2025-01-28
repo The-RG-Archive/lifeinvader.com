@@ -9656,7 +9656,7 @@ body.modal-open {
 }
 /*post preview thinger*/
 .black_overlay {
-    /*display: none;*/
+    display: none;
     position: fixed;
     top: 0%;
     left: 0%;
@@ -9670,7 +9670,7 @@ body.modal-open {
 }
 
 .postPreviewBox {
-    /*display: none;*/
+    display: none;
     background-color: black;
     position: fixed;
     top: 10%;

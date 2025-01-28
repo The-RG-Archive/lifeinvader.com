@@ -280,13 +280,12 @@ replace images and texts and stuff.
 
 
 
-                    <p>This is the main content. To display a lightbox click <a href="javascript:void(0)"
-                            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>
-                    </p>
+                    
 
                     <div id="light" class="postPreviewBox">
 
-                        <img class="postPreviewPicture" src="alanmcclean/image02.png" alt="" srcset="">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="alanmcclean/image02.png" alt=""
+                            srcset="">
 
                         <div class="previewInformationBoxBg">
 
@@ -297,7 +296,8 @@ replace images and texts and stuff.
                                         <tr>
                                             <td> <img src="alanmcclean/user.webp" alt="Alan McClean avatar" width="64"
                                                     height="64"></td>
-                                            <td> <strong class="previewUserText">Alan McClean</strong>
+                                            <td> <strong id="postPreviewUsername" class="previewUserText">Alan
+                                                    McClean</strong>
                                                 <p class="previewDateText" id="postPreviewDateText">
 
                                                 </p>
@@ -447,7 +447,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="" onclick="postPreviewSet('09/11/2013','alanmcclean/image01.webp','Alan McClean','Got a new phone dammit')">
                                     <img class="image" src="alanmcclean/image01.webp"
                                         alt="Distinguish yourself from others with Alan McClean" width="468"
                                         height="263">
@@ -485,7 +485,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="" onclick="postPreviewSet('09/11/2013','alanmcclean/image02.png','Alan McClean','Drinking whiskey hanging off side of boat taking pics of self hope dont drop ph')">
                                     <img class="image" src="alanmcclean/image02.png"
                                         alt="Distinguish yourself from others with Alan McClean" width="468"
                                         height="263">
@@ -524,7 +524,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="" onclick="postPreviewSet('09/09/2013','alanmcclean/image03.png','Alan McClean','My book is #1! Ha Ha! Parenting books are easy to right when you re-purpose what you learned in the Marines about what breaks a man')">
                                     <img class="image" src="alanmcclean/image03.png"
                                         alt="Distinguish yourself from others with Alan McClean" width="468"
                                         height="263">
@@ -548,8 +548,16 @@ replace images and texts and stuff.
                             </div>
                         </div>
                         <script>
-                            document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");
-                            document.getElementById("postPreviewTextBox").innerHTML = "#CELEBRITYENDORSEROFTHEWEEK: Famous starlet of both television and screen, Poppy Mitchell’s recent cellphone-hacked viral video sensation shows her proudly making smoke rings with our extended Redwood 120’s in the most creative way possible. It may not be a conventional endorsement but we’ll certainly take it. Thanks Poppy! 50 Cartons of your apparently preferred brand are being crated and shipped to your door this week!";
+
+                            function postPreviewSet(date, img, username, text) {
+                                document.getElementById('light').style.display='block';
+                                document.getElementById('fade').style.display='block';
+
+                                document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
+                                document.getElementById("postPreviewImg").src = img;
+                                document.getElementById("postPreviewUsername").innerHTML = username;
+                                document.getElementById("postPreviewTextBox").innerHTML = text;
+                            }
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
                                 document.getElementById("claimTxt").disabled = true;
