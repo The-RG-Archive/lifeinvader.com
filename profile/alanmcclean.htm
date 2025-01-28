@@ -147,8 +147,7 @@ replace images and texts and stuff.
                                 </h1>
                                 <div id="divStlk" aria-live="polite">
                                     <button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                        onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                            class="fa fa-plus"></i>
+                                        onclick="stalkedBtns()" data-profile="alanmcclean"><i class="fa fa-plus"></i>
                                         Stalk</button>
                                     <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
@@ -278,6 +277,93 @@ replace images and texts and stuff.
                             </div>
                         </div>
                     </div>
+
+
+
+                    <p>This is the main content. To display a lightbox click <a href="javascript:void(0)"
+                            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>
+                    </p>
+
+                    <div id="light" class="postPreviewBox">
+
+                        <img class="postPreviewPicture" src="alanmcclean/image02.png" alt="" srcset="">
+
+                        <div class="previewInformationBoxBg">
+
+
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td> <img src="alanmcclean/user.webp" alt="Alan McClean avatar" width="64"
+                                                    height="64"></td>
+                                            <td> <strong class="previewUserText">Alan McClean</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">
+
+                                                </p>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="postPreviewText" id="postPreviewTextBox">
+
+                                #CELEBRITYENDORSEROFTHEWEEK:
+                                Famous starlet of both television and screen, Poppy Mitchell’s recent
+                                cellphone-hacked viral video sensation shows her proudly making smoke
+                                rings with our extended Redwood 120’s in the most creative way possible.
+                                It may not be a conventional endorsement but we’ll certainly take it.
+                                Thanks Poppy! 50 Cartons of your apparently preferred brand are being
+                                crated and shipped to your door this week!
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+
+                                    <tr>
+
+                                        <td>
+                                            <img name="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+
+                                    </tr>
+
+                                </table>
+
+
+
+
+                            </div>
+
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
+
+
+
+
+
                     <div id="li-feed">
                         <div class="post">
                             <div class="type clearfix">
@@ -462,9 +548,11 @@ replace images and texts and stuff.
                             </div>
                         </div>
                         <script>
+                            document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");
+                            document.getElementById("postPreviewTextBox").innerHTML = "#CELEBRITYENDORSEROFTHEWEEK: Famous starlet of both television and screen, Poppy Mitchell’s recent cellphone-hacked viral video sensation shows her proudly making smoke rings with our extended Redwood 120’s in the most creative way possible. It may not be a conventional endorsement but we’ll certainly take it. Thanks Poppy! 50 Cartons of your apparently preferred brand are being crated and shipped to your door this week!";
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
-                            document.getElementById("claimTxt").disabled = true;
+                                document.getElementById("claimTxt").disabled = true;
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
 
                                 for (let i = socialBoxes.length - 1; i > -1; i--) {
@@ -478,6 +566,7 @@ replace images and texts and stuff.
                             } else {
                                 var commentPfps = document.getElementsByName("commentPfp");
                                 console.log("user loged in, " + commentPfps.length + " posts");
+                                document.getElementById("commentPfpPreview").src = "../" + localStorage.getItem('curPfp');
 
                                 for (let i = commentPfps.length - 1; i > -1; i--) {
 
@@ -611,6 +700,7 @@ replace images and texts and stuff.
                 </div>
             </div>
         </div>
+
 
         <hr>
         <footer>
