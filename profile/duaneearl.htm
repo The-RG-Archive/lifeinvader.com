@@ -281,6 +281,51 @@ replace images and texts and stuff.
                             </div>
                         </div>
                     </div>
+
+                    <div id="light" class="postPreviewBox">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="duaneearl/user.jpg" alt=""
+                            srcset="">
+                        <div class="previewInformationBoxBg">
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td><img src="duaneearl/user.jpg" alt="Alan McClean avatar" width="64"
+                                                    height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example guy</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="postPreviewText" id="postPreviewTextBox">
+                                previewtext
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img name="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
                     <div id="li-feed">
                         <div class="post">
                             <div class="type clearfix">
@@ -364,7 +409,7 @@ replace images and texts and stuff.
                             </div>
                              <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="" onclick="postPreviewSet('09/09/2013','duaneearl/image01.jpeg','Duane Earl','Whoooooo Weeeeeeee. Sh*t got real last night. I am particularly interested in the classic films of the legendary Mr Jock Cranley and hell if we didnt have us a movie marathon and took out Timbo s truck and shot roman candles off the top like they were rocket launchers and we were fighting our way out of a  prison camp in Nam. Woke up and we were in Nam and Timbo s truck was burnt all to hell upside down For reals. Honestly. Hell Yes!')">
                                     <img class="image" src="duaneearl/image01.jpeg"
                                         alt="Distinguish yourself from others with Duane Earl" width="468" height="263">
                                 </button>

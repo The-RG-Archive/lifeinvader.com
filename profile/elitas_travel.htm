@@ -141,15 +141,15 @@
                                 <h1>
                                     <span>Elitas Travel</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                        class="fa fa-plus"></i>
-                                    Stalk</button>
-                                        <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
+                                        Stalk</button>
+                                    <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
                                         Stalking</button>
                                 </div>
-                                 <script>
+                                <script>
                                     var tag = "elitas_travelStlk";
                                     if (localStorage.getItem(tag) + "" != "null") {
                                         let stlk =
@@ -248,6 +248,52 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div id="light" class="postPreviewBox">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="duaneearl/user.jpg" alt="" srcset="">
+                        <div class="previewInformationBoxBg">
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td><img src="elitas_travel/elitas_travel_002.jpeg"
+                                                    alt="Alan McClean avatar" width="64" height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example
+                                                    guy</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="postPreviewText" id="postPreviewTextBox">
+                                previewtext
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img name="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
                     <div id="li-feed">
                         <div class="post">
                             <div class="type clearfix">
@@ -263,9 +309,10 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="media">
+                            <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption="">
+                                    data-contentid="-PbHHr6n9k6GAVb98qJJNA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/13/2013','elitas_travel/468x263_007.jpg','Elitas Travel','Distinguish yourself from the single-figure millionaires with a private jet from ElitasTravel.com. Take OWNERSHIP of the skies.')">
                                     <img class="image" src="elitas_travel/468x263_007.jpg"
                                         alt="Distinguish yourself from others with Elitas Travel" width="468"
                                         height="263">
@@ -281,7 +328,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -311,7 +359,7 @@
                                     <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                             alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                      <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                    <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
 
                                 </div>
                             </div>
@@ -332,8 +380,9 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="kDNAYtSu0Eu0qJjm_-CZjQ" data-mediacaption="">
-                                    <img  class="image" src="elitas_travel/468x263_006.jpg"
+                                    data-contentid="kDNAYtSu0Eu0qJjm_-CZjQ" data-mediacaption=""
+                                    onclick="postPreviewSet('09/11/2013','elitas_travel/468x263_006.jpg','Elitas Travel','Just delivered to another satisfied customer at LSX Airports private hangar facility. Own the skies.')">
+                                    <img class="image" src="elitas_travel/468x263_006.jpg"
                                         alt="Just delivered to another satisfied customer at LSX Airport’s private hangar facility"
                                         width="468" height="263">
                                 </button>
@@ -348,7 +397,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -369,23 +419,27 @@
                                 </div>
                             </div>
                             <div class="media">
-                                <img class="image" src="elitas_travel/468x263_004.jpg"
-                                    alt="Expired tax cuts got you down? Elitas Travel has you covered." width="468"
-                                    height="263">
-                                    <div id="claimDiver" class="stalkClaim" aria-live="polite">
-                                        <table>
-                                            <tr>
-                                                <td><button class="btn btn-small btn-li" id="claimTxt" data-stalk="true"
-                                                        data-profile="warstock_cache_n_carry"><i class="fa fa-plus"></i>
-                                                        Stalk</button>
-                                                </td>
-                                                <td>
-                                                    <p class="stlkAnnotation">Stalk <a href="">Elitas Travel</a> to
-                                                        claim this discount!</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                                <button class="resetButton modal-media" data-modalcontent="single"
+                                    data-contentid="kDNAYtSu0Eu0qJjm_-CZjQ" data-mediacaption=""
+                                    onclick="postPreviewSet('09/11/2013','elitas_travel/468x263_004.jpg','Elitas Travel','Expired tax cuts got you down? Elitas Travel has you covered. Now the 1% can get 10% off their first purchase through ElitasTravel.com. Simply click STALK this page above. Must own your own hangar in the Los Santos area for delivery.')">
+                                    <img class="image" src="elitas_travel/468x263_004.jpg"
+                                        alt="Expired tax cuts got you down? Elitas Travel has you covered." width="468"
+                                        height="263">
+                                </button>
+                                <div id="claimDiver" class="stalkClaim" aria-live="polite">
+                                    <table>
+                                        <tr>
+                                            <td><button class="btn btn-small btn-li" id="claimTxt" data-stalk="true"
+                                                    data-profile="warstock_cache_n_carry"><i class="fa fa-plus"></i>
+                                                    Stalk</button>
+                                            </td>
+                                            <td>
+                                                <p class="stlkAnnotation">Stalk <a href="">Elitas Travel</a> to
+                                                    claim this discount!</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                                 <div class="annotation">Expired tax cuts got you
                                     down? Elitas Travel has you covered. Now the 1% can get 10% off their
                                     first purchase through ElitasTravel.com. Simply click STALK this page
@@ -399,7 +453,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -421,9 +476,9 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="tXHLu-b1Ski8TQbzNrcBvg" data-mediacaption="">
-                                    <img  class="image"src="elitas_travel/468x263.jpg" alt="Celebrity client MC Clip" width="468"
-                                        height="263">
+                                    data-contentid="tXHLu-b1Ski8TQbzNrcBvg" data-mediacaption="" onclick="postPreviewSet('09/10/2013','elitas_travel/468x263.jpg','Elitas Travel','Celebrity client MC Clip would like to remind everyone that his personal flight crew is NOT included with purchase.')">
+                                    <img class="image" src="elitas_travel/468x263.jpg" alt="Celebrity client MC Clip"
+                                        width="468" height="263">
                                 </button>
                                 <div class="annotation">Celebrity client MC Clip would like to remind everyone that his
                                     personal flight crew is NOT included with purchase.</div>
@@ -436,7 +491,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -458,9 +514,9 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="g_HXumZKfEu6xWTU2O4vuw" data-mediacaption="">
-                                    <img class="image" src="elitas_travel/468x263_003.jpg" alt="Pilot your new or pre-own Frogger"
-                                        width="468" height="263">
+                                    data-contentid="g_HXumZKfEu6xWTU2O4vuw" data-mediacaption="" onclick="postPreviewSet('09/08/2013','elitas_travel/468x263_003.jpg','Elitas Travel','Pilot your new or pre-owned Frogger high over the Blaine County skies… One of the quietest helicopters on the market today. Sneak up on your significant other and conduct surveillance in style.')">
+                                    <img class="image" src="elitas_travel/468x263_003.jpg"
+                                        alt="Pilot your new or pre-own Frogger" width="468" height="263">
                                 </button>
                                 <div class="annotation">Pilot your new or pre-owned
                                     Frogger high over the Blaine County skies… One of the quietest
@@ -475,7 +531,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -497,9 +554,9 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="-1mf9FiMdUqU4kLCedFDTg" data-mediacaption="">
-                                    <img class="image" src="elitas_travel/468x263_002.jpg" alt="Commercial Airline Problem"
-                                        width="468" height="263">
+                                    data-contentid="-1mf9FiMdUqU4kLCedFDTg" data-mediacaption="" onclick="postPreviewSet('09/08/2013','elitas_travel/468x263_002.jpg','Elitas Travel','#CommercialAirlineProblems')">
+                                    <img class="image" src="elitas_travel/468x263_002.jpg"
+                                        alt="Commercial Airline Problem" width="468" height="263">
                                 </button>
                                 <div class="annotation">#CommercialAirlineProblems</div>
                                 <div name="socialBoxDiv">
@@ -511,7 +568,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -533,9 +591,9 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="7LKiawthvkuohiFPApGXzA" data-mediacaption="">
-                                    <img class="image" src="elitas_travel/468x263_005.jpg" alt="Why fly private?" width="468"
-                                        height="263">
+                                    data-contentid="7LKiawthvkuohiFPApGXzA" data-mediacaption="" onclick="postPreviewSet('09/07/2013','elitas_travel/468x263_005.jpg','Elitas Travel','Why fly private? Reason #15: Gourmet catering. Have you seen the slop that people who fly commercial have to eat?')">
+                                    <img class="image" src="elitas_travel/468x263_005.jpg" alt="Why fly private?"
+                                        width="468" height="263">
                                 </button>
                                 <div class="annotation">Why fly private? Reason #15: Gourmet catering. Have you seen the
                                     slop that people who fly commercial have to eat?</div>
@@ -548,7 +606,8 @@
                                         <div class="avatar"> <img name="commentPfp" src="example_site/default.png"
                                                 alt="Example Site avatar" width="32" height="32"></img></div>
 
-                                         <input type="text" class="inputCommentBox" placeholder="Write a comment..."></input>
+                                        <input type="text" class="inputCommentBox"
+                                            placeholder="Write a comment..."></input>
 
                                     </div>
                                 </div>
@@ -556,8 +615,8 @@
                         </div>
                         <script>
                             function postPreviewSet(date, img, username, text) {
-                                document.getElementById('light').style.display='block';
-                                document.getElementById('fade').style.display='block';
+                                document.getElementById('light').style.display = 'block';
+                                document.getElementById('fade').style.display = 'block';
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                 document.getElementById("postPreviewImg").src = img;
@@ -712,14 +771,14 @@
             <span>© Rockstar 2025</span>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
-           
+
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/ccpa">Do Not Sell My Personal
                 Information</a>
         </footer>
     </div>
 
 
-   
+
 </body>
 
 </html>
