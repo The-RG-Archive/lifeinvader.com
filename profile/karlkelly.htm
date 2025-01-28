@@ -450,32 +450,33 @@ replace images and texts and stuff.
 
                     </div>
                     <script>
+                        function postPreviewSet(date, img, username, text) {
+                            document.getElementById('light').style.display='block';
+                            document.getElementById('fade').style.display='block';
+
+                            document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
+                            document.getElementById("postPreviewImg").src = img;
+                            document.getElementById("postPreviewUsername").innerHTML = username;
+                            document.getElementById("postPreviewTextBox").innerHTML = text;
+                        }
                         if (localStorage.getItem('currUsername') + "" === "null") {
                             var socialBoxes = document.getElementsByName("socialBoxDiv");
                             document.getElementById("claimTxt").disabled = true;
                             console.log("user not loged in, " + socialBoxes.length + " posts");
-
                             for (let i = socialBoxes.length - 1; i > -1; i--) {
-
                                 console.log("page thinged " + i);
                                 socialBoxes[i].parentNode.removeChild(socialBoxes[i]);
-
                             }
-
-
                         } else {
                             var commentPfps = document.getElementsByName("commentPfp");
                             console.log("user loged in, " + commentPfps.length + " posts");
-
+                            document.getElementById("commentPfpPreview").src = "../" + localStorage.getItem('curPfp');
                             for (let i = commentPfps.length - 1; i > -1; i--) {
 
                                 console.log("page thinged " + i);
                                 commentPfps[i].src = "../" + localStorage.getItem('curPfp');
-
                             }
-
                         }
-
                     </script>
                     <div class="loadPosts"></div>
 
