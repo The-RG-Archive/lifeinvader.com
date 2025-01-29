@@ -41,6 +41,7 @@ All of these have been restored at this point:
 - Cleaned code removed trackers and cookies
 - Fully working mobile page
 - Restored original 404 page
+- Partly restores view picture feature
 
 ## Current bug report:
 
