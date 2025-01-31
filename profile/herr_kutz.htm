@@ -234,6 +234,51 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div id="light" class="postPreviewBox">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="duaneearl/user.jpg" alt=""
+                            srcset="">
+                        <div class="previewInformationBoxBg">
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td><img src="herr_kutz/herr_kutz_002.jpeg" alt="Alan McClean avatar" width="64"
+                                                    height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example guy</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="postPreviewText" id="postPreviewTextBox">
+                                previewtext
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img name="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
                     <div id="li-feed">
                         <div class="post">
                             <div class="type clearfix">
@@ -251,7 +296,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="xujd8RjMBUGmX71XRn2YcA" data-mediacaption="">
+                                    data-contentid="xujd8RjMBUGmX71XRn2YcA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/09/2013','herr_kutz/468x263.jpg','Herr Kutz','Before and after. Another satisfied customer!')">
                                     <img class="image" src="herr_kutz/468x263.jpg" alt="Another satisfied customer!"
                                         width="468" height="263">
                                 </button>
@@ -304,6 +350,7 @@
                         <div class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
+                                     
                                     <img src="herr_kutz/herr_kutz.jpeg" alt="Herr Kutz Barber avatar" width="32"
                                         height="32">
                                 </div>
@@ -316,6 +363,9 @@
                                 </div>
                             </div>
                             <div class="media">
+                                <button class="resetButton modal-media" data-modalcontent="single"
+                                    data-contentid="xujd8RjMBUGmX71XRn2YcA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/09/2013','herr_kutz/468x263_002.jpg','Herr Kutz','Get your first cut free! Click STALK on our page above.')">
                                 <img class="image" src="herr_kutz/468x263_002.jpg" alt="Get your first cut free!"
                                     width="468" height="263">
                                     <div id="claimDiver" class="stalkClaim" aria-live="polite">
@@ -332,6 +382,7 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    </button>
                                 <div class="annotation">Get your first cut free! Click STALK on our page above.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
@@ -365,7 +416,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="SPdie2RCIU6OUPgoF0uVPA" data-mediacaption="">
+                                    data-contentid="SPdie2RCIU6OUPgoF0uVPA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/09/2013','herr_kutz/468x263.png','Herr Kutz','A trip to Herr Kutz is like stepping back in time. We’d modernize but then the hipsters would stop coming in.')">
                                     <img class="image" src="herr_kutz/468x263.png"
                                         alt="A trip to Herr Kutz is like stepping back in time" width="468"
                                         height="263">
@@ -404,7 +456,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="fi5Hi0iNFki-XA0fKDfRew" data-mediacaption="">
+                                    data-contentid="fi5Hi0iNFki-XA0fKDfRew" data-mediacaption=""
+                                    onclick="postPreviewSet('09/08/2013','herr_kutz/468x263_003.jpg','Herr Kutz','Tramlines? Shutters? Berms? Whatever you need, our barber Donna will hook you up. She can’t see very well but she’s fast!')">
                                     <img class="image" src="herr_kutz/468x263_003.jpg" alt="Tramlines? Shutters? Berm"
                                         width="468" height="263">
                                 </button>
