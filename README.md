@@ -45,15 +45,19 @@ All of these have been restored at this point:
 
 ## Current bug report:
 
-Missing view picture feature: https://imgur.com/a/iSAnKyy
+View picture feature WIP : https://imgur.com/a/iSAnKyy
 - You could press on arrows to switch pictures too
+- Not on all profiles
+- Wierd scaling and size/position off picture
+- If pressed on photos at the top of the profile it would also show up
 
 Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
 - Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
 
 Broken Stalk button:  
-- How it is if pressed: https://imgur.com/XH53vjp  
-- How it should be: https://imgur.com/KxayObr  
+ - Still not completely working 
+
+Sometimes the mini profile pic under posts does not disapear when logged off or the picture does not load when logged in
 
 
 ## What is from Rockstar Games and what was added by us?
