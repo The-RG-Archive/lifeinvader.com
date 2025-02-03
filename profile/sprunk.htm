@@ -238,6 +238,51 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div id="light" class="postPreviewBox">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="duaneearl/user.jpg" alt=""
+                            srcset="">
+                        <div class="previewInformationBoxBg">
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td><img src="sprunk/sprunk_002.jpeg" alt="Sprunk avatar" width="64"
+                                                    height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example guy</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="postPreviewText" id="postPreviewTextBox">
+                                previewtext
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img id="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
                     <div id="li-feed">
                         <div class="post">
                             <div class="type clearfix">
@@ -282,7 +327,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="Jugy7Ny91kiMVgW6VVu9xg" data-mediacaption="">
+                                    data-contentid="Jugy7Ny91kiMVgW6VVu9xg" data-mediacaption=""
+                                    onclick="postPreviewSet('09/13/2013','sprunk/468x263_006.jpg','Sprunk','It’s the #Sprunk stunt flyers in our official Sprunked up Mallard. Extreme!')">
                                     <img class="image" src="sprunk/468x263_006.jpg"
                                         alt="It’s the Sprunk stunt flyers in our official Sprunked up Mallard"
                                         width="468" height="263">
@@ -320,7 +366,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="wz24WW5tskGBQJCtuJ0GRA" data-mediacaption="">
+                                    data-contentid="wz24WW5tskGBQJCtuJ0GRA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/12/2013','sprunk/468x263.jpg','Sprunk','Looks like someone’s ready for Sprunk! Are you? STALK our page here on LifeInvader and get one free!')">
                                     <img class="image" src="sprunk/468x263.jpg"
                                         alt="Looks like someone’s ready for Sprunk!" width="468" height="263">
                                 </button>
@@ -356,10 +403,13 @@
                                 </div>
                             </div>
                             <div class="media">
-                           
+                                <button class="resetButton modal-media" data-modalcontent="single"
+                                data-contentid="wz24WW5tskGBQJCtuJ0GRA" data-mediacaption=""
+                                onclick="postPreviewSet('09/11/2013','sprunk/468x263.png','Sprunk','Sprunk You. Stalk us and get a free can of #Sprunk from any participating vending machine!')">
                                     <img class="image" src="sprunk/468x263.png"
-                                        alt="It’s the Sprunk stunt flyers in our official Sprunked up Mallard"
+                                        alt="Sprunk You."
                                         width="468" height="263">
+                                        </button>
                                 
                                 <div id="claimDiver" class="stalkClaim" aria-live="polite">
                                     <table>
@@ -408,9 +458,10 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="Jugy7Ny91kiMVgW6VVu9xg" data-mediacaption="">
+                                    data-contentid="Jugy7Ny91kiMVgW6VVu9xg" data-mediacaption=""
+                                    onclick="postPreviewSet('09/11/2013','sprunk/468x263_003.jpg','Sprunk','How much do you love Sprunk? Tell us!')">
                                     <img class="image" src="sprunk/468x263_003.jpg"
-                                        alt="It’s the Sprunk stunt flyers in our official Sprunked up Mallard"
+                                        alt="How much do you love Sprunk? Tell us!"
                                         width="468" height="263">
                                 </button>
                                 <div class="annotation">How much do you love Sprunk? Tell us!</div>
@@ -445,7 +496,7 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single" data-contentid="bXkMWiNFkkqxFm5OmvzmyQ"
-                                    data-mediacaption="">
+                                    data-mediacaption="" onclick="postPreviewSet('09/11/2013','sprunk/468x263_002.jpg','Sprunk','Wow! Check out this awesome customized Sprunk bike, courtesy of celebrity car customization shop Los Santos Customs!')">
                                     <img class="image" src="sprunk/468x263_002.jpg" alt="Check out this awesome customized Sprunk bike"
                                         width="468" height="263">
                                 </button>
@@ -482,7 +533,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single" data-contentid="mkJhYCyR1kCi6OuPHrCy6Q"
-                                    data-mediacaption="">
+                                    data-mediacaption=""
+                                    onclick="postPreviewSet('09/09/2013','sprunk/468x263_004.jpg','Sprunk','Remember kids. IT’S YOUR SPRUNK! Don’t let your parents or your teacher or your doctor tell you what you can and can’t put in your body. We understand you. And we understand that 44 ounces is not enough!')">
                                     <img class="image" src="sprunk/468x263_004.jpg" alt="Remember kids.  IT’S YOUR SPRUNK!" width="468"
                                         height="263">
                                 </button>
@@ -519,7 +571,7 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single" data-contentid="-J-a1npcfkyGcTIPN5YP0w"
-                                    data-mediacaption="">
+                                    data-mediacaption="" onclick="postPreviewSet('09/08/2013','sprunk/468x263_005.jpg','Sprunk','Proud to announce that Sprunk is gluten free! And now with less mercury.')">
                                     <img class="image" src="sprunk/468x263_005.jpg" alt="Proud to announce that Sprunk is gluten free!"
                                         width="468" height="263">
                                 </button>
