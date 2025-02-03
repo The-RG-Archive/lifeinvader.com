@@ -585,7 +585,7 @@ replace images and texts and stuff.
                             }
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
-                                document.getElementById("claimTxt").disabled = true;
+                                
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
                                 for (let i = socialBoxes.length - 1; i > -1; i--) {
                                     console.log("page thinged " + i);
