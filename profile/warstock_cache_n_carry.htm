@@ -143,11 +143,11 @@
                                 <h1>
                                     <span>Warstock Cache &amp; Carry</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                        class="fa fa-plus"></i>
-                                    Stalk</button>
-                                            <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
+                                        Stalk</button>
+                                    <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
                                         Stalking</button>
                                 </div>
@@ -247,6 +247,51 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="light" class="postPreviewBox">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="duaneearl/user.jpg" alt="" srcset="">
+                        <div class="previewInformationBoxBg">
+                            <div class="postPreviewUser">
+                                <div class="previewAvatar">
+                                    <table>
+                                        <tr>
+                                            <td><img src="warstock_cache_n_carry/warstock_cache_n_carry_002.jpeg"
+                                                    alt="Warstock Cache And Carry avatar" width="64" height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example
+                                                    guy</strong>
+                                                <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="postPreviewText" id="postPreviewTextBox">
+                                previewtext
+                            </div>
+                            <div id="addCommentBox" class="add-post-comment">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img id="commentPfpPreview" src="example_site/default.png"
+                                                alt="Example Site avatar" width="32" height="32"
+                                                style="padding-right: 3px;"></img>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="inputPostCommentBox"
+                                                placeholder="Write a comment..."></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"
+                                class="closePreviewIcon"><i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="fade" class="black_overlay"></div>
+
+
                     <div id="li-feed">
 
                         <div class="post">
@@ -259,13 +304,14 @@
                                     <strong>Warstock Cache &amp; Carry</strong>
                                     shared an image
                                     <div class="date" id="dateTextDays1">
-                                        <script>document.getElementById("dateTextDays1").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                        <script>document.getElementById("dateTextDays1").innerHTML = getNumberOfDaysSinceUpload("09/14/2013");</script>
                                     </div>
                                 </div>
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="TRHWx0WPcEOxypcxJVdlrQ" data-mediacaption="">
+                                    data-contentid="TRHWx0WPcEOxypcxJVdlrQ" data-mediacaption=""
+                                    onclick="postPreviewSet('09/14/2013','warstock_cache_n_carry/468x263_005.jpg','Warstock Cache & Carry','COMING SOON TO OUR INVENTORY - Tuned for operations in the desert. Perfect for romantic tours of duty up the Del Perro coastline.')">
                                     <img class="image" src="warstock_cache_n_carry/468x263_005.jpg"
                                         alt="COMING SOON TO OUR INVENTORY" width="468" height="263">
                                 </button>
@@ -298,13 +344,14 @@
                                     <strong>Warstock Cache &amp; Carry</strong>
                                     shared an image
                                     <div class="date" id="dateTextDays2">
-                                        <script>document.getElementById("dateTextDays2").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                        <script>document.getElementById("dateTextDays2").innerHTML = getNumberOfDaysSinceUpload("09/13/2013");</script>
                                     </div>
                                 </div>
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="_qrznMG-EUaIa03oHAXUmw" data-mediacaption="">
+                                    data-contentid="_qrznMG-EUaIa03oHAXUmw" data-mediacaption=""
+                                    onclick="postPreviewSet('09/13/2013','warstock_cache_n_carry/468x263_003.jpg','Warstock Cache & Carry','COMING SOON TO OUR INVENTORY – lightly used utility vehicle.')">
                                     <img class="image" src="warstock_cache_n_carry/468x263_003.jpg"
                                         alt="COMING SOON TO OUR INVENTORY" width="468" height="263">
                                 </button>
@@ -336,7 +383,7 @@
                                     <strong>Warstock Cache &amp; Carry</strong>
                                     posted a status update
                                     <div class="date" id="dateTextDays3">
-                                        <script>document.getElementById("dateTextDays3").innerHTML = getNumberOfDaysSinceUpload("09/09/2013");</script>
+                                        <script>document.getElementById("dateTextDays3").innerHTML = getNumberOfDaysSinceUpload("09/12/2013");</script>
                                     </div>
                                 </div>
                             </div>
@@ -370,8 +417,13 @@
                                 </div>
                             </div>
                             <div class="media">
-                                <img class="image" src="warstock_cache_n_carry/468x263_004.jpg"
-                                    alt="COMING SOON TO OUR INVENTORY" width="468" height="263"></img>
+                                <button class="resetButton modal-media" data-modalcontent="single"
+                                    data-contentid="_qrznMG-EUaIa03oHAXUmw" data-mediacaption=""
+                                    onclick="postPreviewSet('09/11/2013','warstock_cache_n_carry/468x263_004.jpg','Warstock Cache & Carry','Log in to LifeInvader, click the Stalk button on our page, and SAVE!')">
+                                    <img class="image" src="warstock_cache_n_carry/468x263_004.jpg"
+                                        alt="COMING SOON TO OUR INVENTORY" width="468" height="263"></img>
+                                </button>
+
                                 <div id="claimDiver" class="stalkClaim" aria-live="polite">
                                     <table>
                                         <tr>
@@ -422,7 +474,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="7wsqopOg4EqbmlXmc9lysw" data-mediacaption="">
+                                    data-contentid="7wsqopOg4EqbmlXmc9lysw" data-mediacaption=""
+                                    onclick="postPreviewSet('09/10/2013','warstock_cache_n_carry/468x263.jpg','Warstock Cache & Carry','COMING SOON TO OUR INVENTORY – 20 tons of fun')">
                                     <img class="image" src="warstock_cache_n_carry/468x263.jpg"
                                         alt="COMING SOON TO OUR INVENTORY" width="468" height="263">
                                 </button>
@@ -487,7 +540,8 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                    data-contentid="Q7ZsnGrKCkON4a8xlhB7sA" data-mediacaption="">
+                                    data-contentid="Q7ZsnGrKCkON4a8xlhB7sA" data-mediacaption=""
+                                    onclick="postPreviewSet('09/08/2013','warstock_cache_n_carry/468x263_002.jpg','Warstock Cache & Carry','Lovingly and meticulously restored and ready for civilian use.')">
                                     <img class="image" src="warstock_cache_n_carry/468x263_002.jpg"
                                         alt="Lovingly and meticulously restored and ready for civilian use" width="468"
                                         height="263">
@@ -545,8 +599,8 @@
 
                         <script>
                             function postPreviewSet(date, img, username, text) {
-                                document.getElementById('light').style.display='block';
-                                document.getElementById('fade').style.display='block';
+                                document.getElementById('light').style.display = 'block';
+                                document.getElementById('fade').style.display = 'block';
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                 document.getElementById("postPreviewImg").src = img;
