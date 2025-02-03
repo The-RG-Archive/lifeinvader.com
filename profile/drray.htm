@@ -143,10 +143,10 @@ replace images and texts and stuff.
                                 <h1>
                                     <span>Dr. Ray De Angelo Harris</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                        class="fa fa-plus"></i>
-                                    Stalk</button>
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
+                                        Stalk</button>
                                     <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="drray">&#10004;
                                         Stalking</button>
@@ -282,8 +282,8 @@ replace images and texts and stuff.
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div id="li-feed">
 
                         <div class="post">
@@ -300,7 +300,7 @@ replace images and texts and stuff.
                                 </div>
                             </div>
                             <div class="media">
-                                </button>
+
                                 <div class="annotation">Thanks to everyone who came out for my weekend seminar. I Know
                                     some of you pulled the fire alarm in a panic. But we all came togehter and learned
                                     what slepp deprivation, extreme temperatures and yoga can do to you. Only you can
@@ -325,8 +325,8 @@ replace images and texts and stuff.
                         </div>
                         <script>
                             function postPreviewSet(date, img, username, text) {
-                                document.getElementById('light').style.display='block';
-                                document.getElementById('fade').style.display='block';
+                                document.getElementById('light').style.display = 'block';
+                                document.getElementById('fade').style.display = 'block';
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                 document.getElementById("postPreviewImg").src = img;
@@ -335,7 +335,7 @@ replace images and texts and stuff.
                             }
                             if (localStorage.getItem('currUsername') + "" === "null") {
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
-                                document.getElementById("claimTxt").disabled = true;
+                                
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
                                 for (let i = socialBoxes.length - 1; i > -1; i--) {
                                     console.log("page thinged " + i);
@@ -352,6 +352,9 @@ replace images and texts and stuff.
                                 }
                             }
                         </script>
+                        <div class="loadPosts"></div>
+
+                       
                     </div>
                 </div>
             </div>
