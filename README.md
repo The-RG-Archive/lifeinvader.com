@@ -45,25 +45,30 @@ All of these have been restored at this point:
 
 ## Current bug report:
 
-Missing view picture feature: https://imgur.com/a/iSAnKyy
+View picture feature WIP : https://imgur.com/a/iSAnKyy
 - You could press on arrows to switch pictures too
+- Not on all profiles
+- Wierd scaling and size/position off picture
+- If pressed on photos at the top of the profile it would also show up
 
 Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
 - Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
 
 Broken Stalk button:  
-- How it is if pressed: https://imgur.com/XH53vjp  
-- How it should be: https://imgur.com/KxayObr  
+ - Still not completely working 
+
+Sometimes the mini profile pic under posts does not disapear when logged off or the picture does not load when logged in
+
+As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
 
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
-- Index.html is **NOT** from Rockstar Games. It is made by us to make the website more user-friendly. The original index would just load a random page.
+- welcome.html is **NOT** from Rockstar Games. It is made by us to make the website more user-friendly.
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable Social Club features like profile pictures and names. The pictures have been grabbed from Social Club.
 - 404.html is **NOT** from Rockstar Games. They were made for the GitHub website.
-- The page404 is based on the r* one but it has a backgorund that is not from R*
 - The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html, Login.html, and Index.html.
-- The "main.js" inside the "page" folder contains custom code for the 404.html, page404.html, Logoff.html, Login.html, and Index.html under line 135.
+- The "main.js" inside the "page" folder contains custom code for the Logoff.html, Login.html, and welcome.html under line 135.
 
 ## How to remove our additions and only use Rockstar Games code:
 WIP
