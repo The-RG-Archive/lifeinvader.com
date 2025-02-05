@@ -1,9 +1,10 @@
 ![Icon](/page/custom/hdlogo.png)
 
 # lifeinvader.com
-A backup of lifeinvader.com, a promotional website hosted by Rockstar Games that was shut down in 2024.
+A backup and recreation of 'lifeinvader.com', a promotional website hosted by Rockstar Games that was shut down in 2024.
 
-Huge thanks to https://github.com/GreenSoupDeveloper; he is the main developer. At this point, I am just gathering information.
+Huge thanks to https://github.com/GreenSoupDeveloper 
+He is the main developer. At this point, I am just gathering information.
 
 Also, big thank you to "MGgames100" for providing us with copies of all company websites and research to make this even possible.
 
