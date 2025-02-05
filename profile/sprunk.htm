@@ -632,10 +632,15 @@
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
                             }
-                            function sharePostToClipboard(url) {
+var timeout;
+function sharePostToClipboard(url) {
                                 console.log(window.location.href + "#" + url)
                                 navigator.clipboard.writeText(window.location.href + "#" + url);
                                 document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
+                                clearTimeout(timeout);
+                                timeout = setTimeout(function () {
+                                    document.getElementById("shareBtn" + url).innerHTML = "Share";
+                                }, 3000);
                             }
 
                         </script>
