@@ -487,7 +487,8 @@
                                 document.getElementById('fade').style.display='block';
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
-                                document.getElementById("postPreviewImg").src = img;
+                                document.getElementById("postPreviewImg").src = "../page/custom/loadingPlaceholder.jpg";
+document.getElementById("postPreviewImg").src = img;
                                 document.getElementById("postPreviewUsername").innerHTML = username;
                                 document.getElementById("postPreviewTextBox").innerHTML = text;
                             }
