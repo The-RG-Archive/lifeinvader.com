@@ -9741,7 +9741,7 @@ body.modal-open {
 }
 .inputPostCommentBox {
    
-    width: 190px;
+    width: 100%;
 }
 .add-post-comment {
    
@@ -9781,5 +9781,9 @@ body.modal-open {
         padding-top: 0%;
         width:100%;
        
+    }
+    .inputPostCommentBox {
+   
+        width: 95%;
     }
 }
