@@ -611,7 +611,7 @@
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                 document.getElementById("postPreviewImg").src = "../page/custom/loadingPlaceholder.jpg";
-document.getElementById("postPreviewImg").src = img;
+                                document.getElementById("postPreviewImg").src = img;
                                 document.getElementById("postPreviewUsername").innerHTML = username;
                                 document.getElementById("postPreviewTextBox").innerHTML = text;
                             }
@@ -633,8 +633,8 @@ document.getElementById("postPreviewImg").src = img;
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
                             }
-var timeout;
-function sharePostToClipboard(url) {
+                            var timeout;
+                            function sharePostToClipboard(url) {
                                 console.log(window.location.href + "#" + url)
                                 navigator.clipboard.writeText(window.location.href.split('#')[0] + "#" + url);
                                 document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";

@@ -141,15 +141,15 @@
                                 <h1>
                                     <span>Herr Kutz Barber</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                        class="fa fa-plus"></i>
-                                    Stalk</button>
-                                        <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
+                                        Stalk</button>
+                                    <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
                                         Stalking</button>
                                 </div>
-                                 <script>
+                                <script>
                                     var tag = "herr_kutzStlk";
                                     if (localStorage.getItem(tag) + "" != "null") {
                                         let stlk =
@@ -234,18 +234,19 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="light" class="postPreviewBox">
-                        <img id="postPreviewImg" class="postPreviewPicture" src="../page/custom/loadingPlaceholder.jpg" alt=""
-                            srcset="">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="../page/custom/loadingPlaceholder.jpg"
+                            alt="" srcset="">
                         <div class="previewInformationBoxBg">
                             <div class="postPreviewUser">
                                 <div class="previewAvatar">
                                     <table>
                                         <tr>
-                                            <td><img src="herr_kutz/herr_kutz_002.jpeg" alt="Herr Kutz avatar" width="64"
-                                                    height="64"></td>
-                                            <td><strong id="postPreviewUsername" class="previewUserText">example guy</strong>
+                                            <td><img src="herr_kutz/herr_kutz_002.jpeg" alt="Herr Kutz avatar"
+                                                    width="64" height="64"></td>
+                                            <td><strong id="postPreviewUsername" class="previewUserText">example
+                                                    guy</strong>
                                                 <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
                                             </td>
                                         </tr>
@@ -335,7 +336,8 @@
                             <div class="text">Only 3 puncture wounds this month. It’s a step in the right direction.
                                 Come in today, currently no wait.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost04" onclick="sharePostToClipboard('post04')">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost04"
+                                        onclick="sharePostToClipboard('post04')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -350,7 +352,7 @@
                         <div id="post03" class="post">
                             <div class="type clearfix">
                                 <div class="avatar">
-                                     
+
                                     <img src="herr_kutz/herr_kutz.jpeg" alt="Herr Kutz Barber avatar" width="32"
                                         height="32">
                                 </div>
@@ -366,8 +368,8 @@
                                 <button class="resetButton modal-media" data-modalcontent="single"
                                     data-contentid="xujd8RjMBUGmX71XRn2YcA" data-mediacaption=""
                                     onclick="postPreviewSet('09/09/2013','herr_kutz/468x263_002.jpg','Herr Kutz','Get your first cut free! Click STALK on our page above.')">
-                                <img class="image" src="herr_kutz/468x263_002.jpg" alt="Get your first cut free!"
-                                    width="468" height="263">
+                                    <img class="image" src="herr_kutz/468x263_002.jpg" alt="Get your first cut free!"
+                                        width="468" height="263">
                                     <div id="claimDiver" class="stalkClaim" aria-live="polite">
                                         <table>
                                             <tr>
@@ -382,7 +384,7 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    </button>
+                                </button>
                                 <div class="annotation">Get your first cut free! Click STALK on our page above.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
@@ -483,12 +485,12 @@
                         <div class="loadPosts"></div>
                         <script>
                             function postPreviewSet(date, img, username, text) {
-                                document.getElementById('light').style.display='block';
-                                document.getElementById('fade').style.display='block';
+                                document.getElementById('light').style.display = 'block';
+                                document.getElementById('fade').style.display = 'block';
 
                                 document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                 document.getElementById("postPreviewImg").src = "../page/custom/loadingPlaceholder.jpg";
-document.getElementById("postPreviewImg").src = img;
+                                document.getElementById("postPreviewImg").src = img;
                                 document.getElementById("postPreviewUsername").innerHTML = username;
                                 document.getElementById("postPreviewTextBox").innerHTML = text;
                             }
@@ -510,8 +512,8 @@ document.getElementById("postPreviewImg").src = img;
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
                             }
-var timeout;
-function sharePostToClipboard(url) {
+                            var timeout;
+                            function sharePostToClipboard(url) {
                                 console.log(window.location.href + "#" + url)
                                 navigator.clipboard.writeText(window.location.href.split('#')[0] + "#" + url);
                                 document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";

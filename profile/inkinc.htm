@@ -141,10 +141,10 @@
                                 <h1>
                                     <span>InkInc.</span>
                                 </h1>
-                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn" data-stalk="true"
-                                    onclick="stalkedBtns()" data-profile="alanmcclean"><i
-                                        class="fa fa-plus"></i>
-                                    Stalk</button>
+                                <div id="divStlk" aria-live="polite"><button class="btn btn-small btn-li" id="stlkBtn"
+                                        data-stalk="true" onclick="stalkedBtns()" data-profile="alanmcclean"><i
+                                            class="fa fa-plus"></i>
+                                        Stalk</button>
                                     <button class="btn btn-small btn-stlk-li" id="stlkedBtn" data-stalk="true"
                                         onclick="stalkedBtns()" data-profile="alanmcclean">&#10004;
                                         Stalking</button>
@@ -243,17 +243,18 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <div id="light" class="postPreviewBox">
-                        <img id="postPreviewImg" class="postPreviewPicture" src="../page/custom/loadingPlaceholder.jpg" alt="" srcset="">
+                        <img id="postPreviewImg" class="postPreviewPicture" src="../page/custom/loadingPlaceholder.jpg"
+                            alt="" srcset="">
                         <div class="previewInformationBoxBg">
                             <div class="postPreviewUser">
                                 <div class="previewAvatar">
                                     <table>
                                         <tr>
-                                            <td><img src="inkinc/inkinc_002.jpeg"
-                                                    alt="InkInc. avatar" width="64" height="64"></td>
+                                            <td><img src="inkinc/inkinc_002.jpeg" alt="InkInc. avatar" width="64"
+                                                    height="64"></td>
                                             <td><strong id="postPreviewUsername" class="previewUserText">example
                                                     guy</strong>
                                                 <p class="previewDateText" id="postPreviewDateText">420 days ago</p>
@@ -346,11 +347,11 @@
                             </div>
                             <div class="media">
                                 <button class="resetButton modal-media" data-modalcontent="single"
-                                data-contentid="csHmOC0L8U-4bZaHJFaETw" data-mediacaption=""
-                                onclick="postPreviewSet('09/09/2013','inkinc/468x263_002.jpg','InkInc.','Stalk us here on LifeInvader and get that first tat free!')">
-                                <img class="image" src="inkinc/468x263_002.jpg" alt="Stalk us here on LifeInvader"
-                                    width="468" height="263">
-                                    </button>
+                                    data-contentid="csHmOC0L8U-4bZaHJFaETw" data-mediacaption=""
+                                    onclick="postPreviewSet('09/09/2013','inkinc/468x263_002.jpg','InkInc.','Stalk us here on LifeInvader and get that first tat free!')">
+                                    <img class="image" src="inkinc/468x263_002.jpg" alt="Stalk us here on LifeInvader"
+                                        width="468" height="263">
+                                </button>
                                 <div id="claimDiver" class="stalkClaim" aria-live="polite">
                                     <table>
                                         <tr>
@@ -421,12 +422,12 @@
                             </div>
                             <script>
                                 function postPreviewSet(date, img, username, text) {
-                                    document.getElementById('light').style.display='block';
-                                    document.getElementById('fade').style.display='block';
-    
+                                    document.getElementById('light').style.display = 'block';
+                                    document.getElementById('fade').style.display = 'block';
+
                                     document.getElementById("postPreviewDateText").innerHTML = getNumberOfDaysSinceUpload(date);
                                     document.getElementById("postPreviewImg").src = "../page/custom/loadingPlaceholder.jpg";
-document.getElementById("postPreviewImg").src = img;
+                                    document.getElementById("postPreviewImg").src = img;
                                     document.getElementById("postPreviewUsername").innerHTML = username;
                                     document.getElementById("postPreviewTextBox").innerHTML = text;
                                 }
@@ -443,21 +444,21 @@ document.getElementById("postPreviewImg").src = img;
                                     console.log("user loged in, " + commentPfps.length + " posts");
                                     document.getElementById("commentPfpPreview").src = "../" + localStorage.getItem('curPfp');
                                     for (let i = commentPfps.length - 1; i > -1; i--) {
-    
+
                                         console.log("page thinged " + i);
                                         commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                     }
                                 }
                                 var timeout;
-function sharePostToClipboard(url) {
-                                console.log(window.location.href + "#" + url)
-                                navigator.clipboard.writeText(window.location.href.split('#')[0] + "#" + url);
-                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
-                                clearTimeout(timeout);
-                                timeout = setTimeout(function () {
-                                    document.getElementById("shareBtn" + url).innerHTML = "Share";
-                                }, 1200);
-                            }
+                                function sharePostToClipboard(url) {
+                                    console.log(window.location.href + "#" + url)
+                                    navigator.clipboard.writeText(window.location.href.split('#')[0] + "#" + url);
+                                    document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
+                                    clearTimeout(timeout);
+                                    timeout = setTimeout(function () {
+                                        document.getElementById("shareBtn" + url).innerHTML = "Share";
+                                    }, 1200);
+                                }
                             </script>
                         </div>
                         <div class="loadPosts"></div>
