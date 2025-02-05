@@ -320,7 +320,7 @@
                                     duty up the Del Perro coastline.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -359,7 +359,7 @@
                                 </div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -390,7 +390,7 @@
                             <div class="text">Our forefathers fought for your right to own a fully loaded Buzzard
                                 Assault Helicopter!</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -444,7 +444,7 @@
                                     and SAVE!</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -482,7 +482,7 @@
                                 <div class="annotation">COMING SOON TO OUR INVENTORY – 20 tons of fun</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -512,7 +512,7 @@
                             </div>
                             <div class="text">Camo is the new black.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -551,7 +551,7 @@
                                 </div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -584,7 +584,7 @@
                                 of history. You can still smell the scent of the men who served in
                                 these. Remember, no background checks!</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -625,6 +625,11 @@
                                     console.log("page thinged " + i);
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
+                            }
+function sharePostToClipboard(url) {
+                                console.log(window.location.href + "#" + url)
+                                navigator.clipboard.writeText(window.location.href + "#" + url);
+                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
                             }
                         </script>
                         <div class="loadPosts"></div>

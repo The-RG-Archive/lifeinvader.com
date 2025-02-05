@@ -308,7 +308,7 @@
                                 lewdness and solicitation ticket from the LSPD. What a headache. Come
                                 see us about custom tinted windows!</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -345,7 +345,7 @@
                                 </div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -385,7 +385,7 @@
                                     heat for the street – whoa! #LSCustoms</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -441,7 +441,7 @@
                                     job!</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -482,7 +482,7 @@
                                     up Infernus.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -513,7 +513,7 @@
                             <div class="text">Buy a turbo boost to cut your commute in half. #NoPromises #LSTrafficSucks
                             </div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -550,7 +550,7 @@
                                     Rusty Brown.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -589,7 +589,7 @@
                                     kitted out! Finally women look at me again with something other than disgust. </div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -635,7 +635,7 @@
                                     with their personal investment strategy.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -677,6 +677,11 @@
                                     console.log("page thinged " + i);
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
+                            }
+function sharePostToClipboard(url) {
+                                console.log(window.location.href + "#" + url)
+                                navigator.clipboard.writeText(window.location.href + "#" + url);
+                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
                             }
                         </script>
                     </div>

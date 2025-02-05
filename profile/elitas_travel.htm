@@ -321,7 +321,7 @@
                                     private jet from ElitasTravel.com. Take OWNERSHIP of the skies.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -352,7 +352,7 @@
                             <div class="text">Why fly private? Reason #16: You can avoid personal contact with all other
                                 human beings – which are often covered in germs.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -390,7 +390,7 @@
                                     private hangar facility. Own the skies.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -446,7 +446,7 @@
                                     above. Must own your own hangar in the Los Santos area for delivery.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -484,7 +484,7 @@
                                     personal flight crew is NOT included with purchase.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -524,7 +524,7 @@
                                     conduct surveillance in style.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -561,7 +561,7 @@
                                 <div class="annotation">#CommercialAirlineProblems</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -599,7 +599,7 @@
                                     slop that people who fly commercial have to eat?</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -640,6 +640,11 @@
                                     console.log("page thinged " + i);
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
+                            }
+function sharePostToClipboard(url) {
+                                console.log(window.location.href + "#" + url)
+                                navigator.clipboard.writeText(window.location.href + "#" + url);
+                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
                             }
                         </script>
                         <div class="loadPosts"></div>

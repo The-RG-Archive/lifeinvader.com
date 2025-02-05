@@ -347,7 +347,7 @@ replace images and texts and stuff.
                                 down deep inside them that makes the bacon, it's exciting But I provide an educational
                                 senice. And that's the truth.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
 
                                 <div id="addCommentBox" class="add-comment">
@@ -380,7 +380,7 @@ replace images and texts and stuff.
                                 to other matters at hand, like tending the herd. From one herd of beautiful hefers to
                                 another.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
 
                                 <div id="addCommentBox" class="add-comment">
@@ -421,7 +421,7 @@ replace images and texts and stuff.
                                     hell upside down For reals. Honestly. Hell Yes!</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
 
                                     <div id="addCommentBox" class="add-comment">
@@ -463,6 +463,11 @@ replace images and texts and stuff.
                                     console.log("page thinged " + i);
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
+                            }
+function sharePostToClipboard(url) {
+                                console.log(window.location.href + "#" + url)
+                                navigator.clipboard.writeText(window.location.href + "#" + url);
+                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
                             }
                         </script>
                 </div>

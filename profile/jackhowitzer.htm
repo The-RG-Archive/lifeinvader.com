@@ -341,7 +341,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">Rufus, is my password HoChi?</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -369,7 +369,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">Rufus why don't you answer me</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -406,7 +406,7 @@ replace images and texts and stuff.
                                 <div class="annotation">I'm still the complete package.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -446,7 +446,7 @@ replace images and texts and stuff.
                                     necks.</div>
                                 <div name="socialBoxDiv">
                                     <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a
-                                            href="">Share</a>
+                                            id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                     </div>
                                     <!--<div class="meta">No one are stalking this</div>-->
                                     <div id="addCommentBox" class="add-comment">
@@ -475,7 +475,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">That was a joke.</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -503,7 +503,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">That girl looks really hot running down that street on fire</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -531,7 +531,7 @@ replace images and texts and stuff.
                             </div>
                             <div class="text">I have a virus</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -560,7 +560,7 @@ replace images and texts and stuff.
                             <div class="text">Ok fans I set up Lifeinvader page with rufus he says I need to become
                                 popular.<br>Rufus where do i find the videos of girls you talked about?</div>
                             <div name="socialBoxDiv">
-                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a href="">Share</a>
+                                <div class="meta"><a href="">Stalk</a> - <a href="">Comment</a> - <a id="shareBtnpost01" onclick="sharePostToClipboard('post01')">Share</a>
                                 </div>
                                 <!--<div class="meta">No one are stalking this</div>-->
                                 <div id="addCommentBox" class="add-comment">
@@ -600,6 +600,11 @@ replace images and texts and stuff.
                                     console.log("page thinged " + i);
                                     commentPfps[i].src = "../" + localStorage.getItem('curPfp');
                                 }
+                            }
+function sharePostToClipboard(url) {
+                                console.log(window.location.href + "#" + url)
+                                navigator.clipboard.writeText(window.location.href + "#" + url);
+                                document.getElementById("shareBtn" + url).innerHTML = "Link Copied!";
                             }
                         </script>
 
