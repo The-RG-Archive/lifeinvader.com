@@ -268,7 +268,7 @@
                             <div class="postPreviewText" id="postPreviewTextBox">
                                 previewtext
                             </div>
-                            <div id="addCommentBox" class="add-post-comment">
+                            <div name="socialBoxDiv" class="add-post-comment">
                                 <table>
                                     <tr>
                                         <td>
@@ -608,6 +608,7 @@
                                 document.getElementById("postPreviewTextBox").innerHTML = text;
                             }
                             if (localStorage.getItem('currUsername') + "" === "null") {
+                                document.getElementById("claimTxt").disabled = true;
                                 var socialBoxes = document.getElementsByName("socialBoxDiv");
                                 document.getElementById("claimTxt").disabled = true;
                                 console.log("user not loged in, " + socialBoxes.length + " posts");
