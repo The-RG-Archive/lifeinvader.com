@@ -9693,17 +9693,17 @@ body.modal-open {
 }
 
 .postPreviewText {
-    margin-left: auto;
-    margin-right: 15px;
-    margin-top: 97px;
-    width: 255px;
+    margin-right: 0px;
+    margin-left: 21px;
+    margin-top: 7px;
+    width: 85%;
     font-size: 12px;
     line-height: 1.2;
-   
+    
 }
 .postPreviewUser {
-    float: right;
-    margin-right: 20px;
+    margin-right: 0px;
+    margin-left: 20px;
     margin-top: 5px;
     width: 250px;
     padding-top: 14px;
