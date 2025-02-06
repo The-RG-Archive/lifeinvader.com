@@ -8365,13 +8365,18 @@ body.modal-open {
         width: 400px;
     }
 }
+#li-feed .media .image {
+    background:transparent url("../page/custom/loadingPlaceholder.jpg") center center no-repeat;
+    width: 100%;
+}
 
 
 @media (max-width:525px) {
 
     #li-feed .media,
     #li-feed .media .image {
-        width: 100%
+        background:transparent url("../page/custom/loadingPlaceholder.jpg") center center no-repeat;
+        width: 100%;
     }
 
     .inputCommentBox {
