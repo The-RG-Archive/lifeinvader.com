@@ -8366,7 +8366,6 @@ body.modal-open {
     }
 }
 #li-feed .media .image {
-    align-self: center;
     background:transparent url("../page/loadring.gif") center center no-repeat;
     width: 100%;
 }
@@ -8376,7 +8375,6 @@ body.modal-open {
 
     #li-feed .media,
     #li-feed .media .image {
-        align-self: center;
         background:transparent url("../page/loadring.gif") center center no-repeat;
         width: 100%;
     }
