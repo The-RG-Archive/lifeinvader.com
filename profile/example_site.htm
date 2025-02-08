@@ -535,7 +535,10 @@ replace images and texts and stuff.
 
         <hr>
         <footer>
-            <span>© Rockstar 2025</span>
+            <span>© Rockstar <span id="worldYear"></span></span>
+            <script>
+                document.getElementById("worldYear").innerHTML = new Date().getFullYear();
+            </script>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/privacy">Privacy Policy</a>
             <span class="footer-dot">·</span><a href="https://www.rockstargames.com/legal">Legal</a>
 
