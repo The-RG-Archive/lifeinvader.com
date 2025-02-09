@@ -46,22 +46,10 @@ All of these have been restored at this point:
 
 ## Current bug report:
 
-View picture feature WIP : https://imgur.com/a/iSAnKyy
+View picture feature
 - You could press on arrows to switch pictures too
-- Not on all profiles
-- Wierd scaling and size/position off picture
 - If pressed on photos at the top of the profile it would also show up
-
-Missing function Comment/Share/Stalk bar: https://imgur.com/8BL8CHx  
-- Bar has been fully implemented; the buttons do not work yet (unknown what exactly they did).
-
-Broken Stalk button:  
- - Still not completely working 
-
-Sometimes the mini profile pic under posts does not disapear when logged off or the picture does not load when logged in
-
 As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
-
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
