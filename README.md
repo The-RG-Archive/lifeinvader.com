@@ -69,7 +69,4 @@ As a bonus we should add loading animations if the pictures do not load fast lik
 - The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html and Login.html.
 - The "main.js" inside the "page" folder contains custom code for the Logoff.html, Login.html, and welcome.html under line 135.
 
-## How to remove our additions and only use Rockstar Games code:
-WIP
-
 All rights to these pages belong to Rockstar Games and Take-Two Interactive.
