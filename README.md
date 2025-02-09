@@ -54,7 +54,7 @@ View picture feature
 Warstock sign in button broken
 
 
-Remove non r* stuff from main.js and move to custom
+Remove none r* stuff from main.js and move to custom
 
 
 Check all post dates
