@@ -49,9 +49,17 @@ All of these have been restored at this point:
 View picture feature
 - You could press on arrows to switch pictures too
 - If pressed on photos at the top of the profile it would also show up
+
+
 Warstock sign in button broken
+
+
 Remove non r* stuff from main.js and move to custom
+
+
 Check all post dates
+
+
 As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
 
 ## What is from Rockstar Games and what was added by us?
