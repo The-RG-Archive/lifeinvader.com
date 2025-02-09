@@ -49,7 +49,7 @@ All of these have been restored at this point:
 View picture feature
 - You could press on arrows to switch pictures too
 - If pressed on photos at the top of the profile it would also show up
-As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
+- As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
