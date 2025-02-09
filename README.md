@@ -47,7 +47,6 @@ All of these have been restored at this point:
 ## Current bug report:
 
 View picture feature
-- You could press on arrows to switch pictures too
 - If pressed on photos at the top of the profile it would also show up
 
 
