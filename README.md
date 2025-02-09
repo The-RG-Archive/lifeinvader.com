@@ -66,7 +66,7 @@ As a bonus we should add loading animations if the pictures do not load fast lik
 - welcome.html is **NOT** from Rockstar Games. It is made by us to make the website more user-friendly.
 - Login.html and Logoff.html are **NOT** from Rockstar Games but from us to enable Social Club features like profile pictures and names. The pictures have been grabbed from Social Club.
 - 404.html is **NOT** from Rockstar Games. They were made for the GitHub website.
-- The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html, Login.html, and Index.html.
+- The page/custom folder is **NOT** from Rockstar Games. It contains files for the 404.html, page404.html, Logoff.html and Login.html.
 - The "main.js" inside the "page" folder contains custom code for the Logoff.html, Login.html, and welcome.html under line 135.
 
 ## How to remove our additions and only use Rockstar Games code:
