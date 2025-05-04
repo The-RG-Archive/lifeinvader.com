@@ -24,14 +24,14 @@ function randomTinyText() {
 
 function getAdLink(index) {
     const phraseArray = [
-        "../profile/elitas_travel.htm",
-        "../profile/herr_kutz.htm",
-        "../profile/inkinc.htm",
-        "../profile/legendary_motorsport.htm",
-        "../profile/los_santos_customs.htm",
-        "../profile/redwood_cigarettes.htm",
-        "../profile/sprunk.htm",
-        "../profile/warstock_cache_n_carry.htm"
+        "../profile/elitas_travel.html",
+        "../profile/herr_kutz.html",
+        "../profile/inkinc.html",
+        "../profile/legendary_motorsport.html",
+        "../profile/los_santos_customs.html",
+        "../profile/redwood_cigarettes.html",
+        "../profile/sprunk.html",
+        "../profile/warstock_cache_n_carry.html"
     ];
 
     return phraseArray[index];
@@ -94,19 +94,19 @@ function getAdImg(index) {
 }
 function randomPage() {
     const linkArray = [
-        "profile/elitas_travel.htm",
-        "profile/herr_kutz.htm",
-        "profile/inkinc.htm",
-        "profile/jackhowitzer.htm",
-        "profile/karlkelly.htm",
-        "profile/legendary_motorsport.htm",
-        "profile/los_santos_customs.htm",
-        "profile/redwood_cigarettes.htm",
-        "profile/sprunk.htm",
-        "profile/warstock_cache_n_carry.htm",
-        "profile/alanmcclean.htm",
-        "profile/duaneearl.htm",
-        "profile/drray.htm"
+        "profile/elitas_travel.html",
+        "profile/herr_kutz.html",
+        "profile/inkinc.html",
+        "profile/jackhowitzer.html",
+        "profile/karlkelly.html",
+        "profile/legendary_motorsport.html",
+        "profile/los_santos_customs.html",
+        "profile/redwood_cigarettes.html",
+        "profile/sprunk.html",
+        "profile/warstock_cache_n_carry.html",
+        "profile/alanmcclean.html",
+        "profile/duaneearl.html",
+        "profile/drray.html"
     ]
 
     var i = Math.floor(Math.random() * (0 - linkArray.length)) + linkArray.length;
