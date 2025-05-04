@@ -46,20 +46,13 @@ All of these have been restored at this point:
 
 ## Current bug report:
 
-View picture feature
-- If pressed on photos at the top of the profile it would also show up
-
-
-Warstock sign in button broken
-
-
-Remove none r* stuff from main.js and move to custom
-
-
-Check all post dates
-
-
-As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
+- Warstock sign in button broken
+- Links like profile/elitas_travel give a 404 and not direct to profile/elitas_travel.htm
+- View picture feature
+  - If pressed on photos at the top of the profile it would also show up
+- Remove none r* stuff from main.js and move to custom
+- Check all post dates
+- As a bonus we should add loading animations if the pictures do not load fast like on the original page (files have been archived)
 
 ## What is from Rockstar Games and what was added by us?
 - All pages inside the "profile" folder are from Rockstar Games **except the example page**. It is used to show how you could create your own custom pages and for testing new features.
