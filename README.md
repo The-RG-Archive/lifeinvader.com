@@ -45,8 +45,6 @@ All of these have been restored at this point:
 - Partly restores view picture feature
 
 ## Current bug report:
-
-- Warstock sign in button broken
 - Links like profile/elitas_travel give a 404 and not direct to profile/elitas_travel.htm
 - View picture feature
   - If pressed on photos at the top of the profile it would also show up
